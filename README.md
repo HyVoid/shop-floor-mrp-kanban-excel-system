@@ -10,9 +10,9 @@
 
 > **Access, Live Demo, and Workbook Availability**
 >
-> - **Interactive Web Application:** Free, no signup or installation required. [Launch the Interactive Shop-Floor Material Flow Control Web Demo](#) *(Add published HTML demo URL here when available)*.
+> - **Interactive Web Application:** Free, no signup or installation required. [Launch the Interactive Shop-Floor Material Flow Control Web Demo](#) 
 >   
-> - **Downloadable Excel MRP Template:** Ready for daily offline production tracking. [Download the Production Control & Material Replenishment Excel Workbook (.xlsx)](#) *(Add workbook release URL here when available)*.
+> - **Downloadable Excel MRP Template:** Ready for daily offline production tracking. [Download the Production Control & Material Replenishment Excel Workbook (.xlsx)](#)
 
 ---
 
