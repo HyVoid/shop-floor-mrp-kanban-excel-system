@@ -1,0 +1,6 @@
+{
+  "name": "Shop-floor Material Flow Control System",
+  "description": "Production-grade shop-floor material flow and pull replenishment control system with live calculations, BOM explosion, supermarket inventory monitoring, and trolley dispatch tasks.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
