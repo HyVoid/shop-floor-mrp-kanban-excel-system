@@ -21,15 +21,17 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          # Disabled npm Cache Setup: Removed the cache to avoid
+          # Disabled npm Cache Setup: Removed cache to prevent
           # "Dependencies lock file is not found in /home/runner/work/" errors
 
       - name: Install Dependencies
-        run: npm install
+        run: npm install --legacy-peer-deps
 
       - name: Build Production Bundle
         # Uses base: './' defined in vite.config.ts for repository-agnostic relative asset paths
-        run: npm run build
+        run: |
+          npm run build
+          touch dist/.nojekyll
 
       - name: Deploy to GitHub Pages (gh-pages branch)
         uses: peaceiris/actions-gh-pages@v4
@@ -38,3 +40,5 @@ jobs:
           publish_dir: ./dist
           publish_branch: gh-pages
           force_orphan: true
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
