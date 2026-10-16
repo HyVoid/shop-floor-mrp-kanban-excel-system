@@ -1,114 +1,127 @@
-# Shop-floor Material Flow Control System
+# Shop-Floor Material Flow Control System: Excel MRP, Kanban Supermarket & Welding Production Planning Template
 
-**A lightweight production-to-material control framework for welding-driven manufacturing operations.**
+**A lightweight shop-floor material flow control framework, BOM explosion calculator, and lean internal logistics tracker for welding-driven manufacturing and metal fabrication operations.**
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 ![Platform: Browser + Excel](https://img.shields.io/badge/Platform-Browser%20%2B%20Excel-217346)
-![Tool Type: Production Control](https://img.shields.io/badge/Tool-Production%20Control-2251FF)
+![Tool Type: Production Control & MRP](https://img.shields.io/badge/Tool-Production%20Control%20%26%20MRP-2251FF)
 
-**Turn shift-level welding plans into actionable material requirements, supermarket replenishment signals, trolley delivery tasks, and production feedback—with a structured control framework designed to reduce avoidable shortages and manual coordination.**
+** Shop-Floor Material Flow Control System is a free browser-based and Excel MRP production planning template designed for high-mix, low-volume (HMLV) metal fabrication and welding workshops. It turns shift-level welding schedules into actionable Bill of Materials (BOM) requirements, Kanban supermarket replenishment signals, line-side trolley kitting tasks, and work-in-process (WIP) consumption tracking—eliminating line-stop shortages and spreadsheet chaos without expensive ERP/MES overhauls.**
 
-> **Access and availability**
+> **Access, Live Demo, and Workbook Availability**
 >
-> - **Browser version:** Free, no signup or installation required. Add the published HTML demo URL here when available.
-> - **Excel version:** Add the workbook download or product release URL here when available.
-> - **Excel licensing:** The project documentation specifies Apache License 2.0. Confirm that the distributed workbook and all included assets are covered by the repository license before publishing a downloadable file.
->
-> No live demo or downloadable workbook URL has been supplied with the current implementation specification.
+> - **Interactive Web Application:** Free, no signup or installation required. [Launch the Interactive Shop-Floor Material Flow Control Web Demo](#) *(Add published HTML demo URL here when available)*.
+> - **Downloadable Excel MRP Template:** Ready for daily offline production tracking. [Download the Production Control & Material Replenishment Excel Workbook (.xlsx)](#) *(Add workbook release URL here when available)*.
+> - **Open-Source Licensing:** Distributed under the [Apache 2.0 Open-Source Software License](https://www.apache.org/licenses/LICENSE-2.0). Confirm that all distributed `.xlsx` workbooks and embedded assets comply with repository license terms prior to public release.
 
-## What It Helps You Track
+---
 
-- **Material demand by shift and welding station** — identify which individual parts are required for each planned assembly before production begins.
-- **Physical material location and availability** — distinguish inventory quantity from where the material is actually held, including supermarket locations, trolleys, and production stations.
-- **Shortages and replenishment priorities** — identify material gaps and determine which upstream manufacturing source needs to replenish the supermarket.
-- **Trolley loading and delivery readiness** — organize material picking and delivery around production requirements, packaging constraints, and kit completeness.
-- **Planned versus actual production consumption** — use completed assembly reports and recorded scrap to reconcile expected material usage with shop-floor activity.
-- **Production interruption and logistics risk** — bring shortage exposure, station readiness, replenishment needs, and delivery status into one operational monitoring view.
+## Core Manufacturing Tracking Capabilities: Pain-Point to Solution Mapping
 
-## Quick Start Workflow
+For production managers searching for a reliable **manufacturing inventory tracker** or **work-in-process (WIP) control sheet**, this framework bridges the gap between static inventory balances and real-time station readiness:
 
-The operating model follows a repeatable cycle: configure the rules, maintain the master data, enter the shift plan, execute material movements, and feed actual production results back into the control process.
+| Shop-Floor Operational Pain Point | High-Frequency Search Intent / Module | How This Control Framework Solves It |
+| :--- | :--- | :--- |
+| **Unforeseen Component Shortages at Welding Stations** | **Shift-Level BOM Explosion & MRP Calculator** | Automatically expands daily welding assembly schedules through multi-part Bills of Materials (BOM) to calculate net component demand per shift and workstation before operators start welding. |
+| **Inventory Blind Spots Between Warehouse & Line-Side** | **WIP Location & Kanban Supermarket Tracker** | Separates raw ledger balances from physical stock locations—tracking exact quantities across upstream buffers, Kanban supermarkets, in-transit material trolleys, and robot/manual welding cells. |
+| **Late Material Requests to Upstream Fabrication** | **Automated Replenishment & Shortage Priority List** | Calculates real-time net material gaps against safety stock buffers and flags urgent replenishment orders for upstream laser cutting, CNC bending, and machining cells. |
+| **Dispatched Trolleys Missing Critical Parts** | **Trolley Kitting & Line-Side Delivery Readiness** | Groups picking lists by station, packaging constraints, and trolley capacity—assigning explicit visual kit statuses (`Ready`, `Partly Kitted`, `Blocked`) prior to dispatch. |
+| **Inventory Drift from Unrecorded Scrap & Rework** | **Planned vs. Actual Material Consumption Backflush** | Reconciles theoretical BOM consumption against actual shift output and recorded shop-floor scrap, dynamically recalculating remaining supermarket and station inventory balances. |
+| **Fragmented Communication Across Shifts** | **Visual Shop-Floor Andon & Logistics Risk Dashboard** | Consolidates shift plan attainment, critical shortage exposure, supermarket stockouts, and internal milk-run delivery statuses into a single operational control tower. |
 
-### 1. Configure the operating parameters
+---
 
-Establish the global settings used throughout the workbook, including shift duration, shifts per day, safety-stock buffer, emergency replenishment threshold, kit-readiness thresholds, trolley packaging capacity, and scrap tolerance.
+## Step-by-Step Tutorial: How to Run Daily Production Planning & Material Kitting
 
-These parameters form the shared control basis for downstream calculations. Changes should be deliberate and reviewed against actual shop-floor operating conditions.
+The operating model follows a repeatable 4-step Lean manufacturing control loop: configure parameters, maintain master data, run shift MRP calculations, and backflush actual production. 
 
-### 2. Maintain the material and production master data
+### Step 1: Configure Global Shop-Floor & Replenishment Parameters
+**Action:** Set up your workshop's baseline operating rules in the Configuration module.
+Define shift durations, shifts per day, safety-stock buffers, emergency Kanban replenishment triggers, kit-readiness thresholds, trolley packaging limits, and allowable scrap tolerances. These parameters govern all downstream **material requirements planning (MRP)** and shortage alert calculations.
 
-Register the individual parts, their manufacturing sources, supermarket locations, standard packaging quantities, and average daily consumption.
+### Step 2: Import Bill of Materials (BOM) & Work Center Master Data
+**Action:** Populate your part master catalog, workstation registry, and assembly structures.
+Register fabricated and purchased components, upstream manufacturing sources (e.g., laser, press brake, lathe), supermarket bin locations, standard pack quantities (SPQ), and average daily usage (ADU). Define parent-child **welding assembly BOMs**, classify robotic vs. manual welding cells, and assign physical trolley fleet resources. *(Optimized for ~500 individual SKUs and ~50 welding sub-assemblies).*
 
-Define the bill of materials (BOM) for each welding assembly. Register the welding stations, identify robot and manual workstations, and assign trolley resources.
+### Step 3: Enter Shift Production Schedules to Generate Picking Lists
+**Action:** Input your daily shift schedule to trigger automated BOM demand explosion.
+Log the production date, shift window, target welding cell, assembly part number, planned output quantity, and release status. The calculation engine immediately explodes assembly quantities into component-level demand, cross-checks **supermarket inventory availability**, highlights critical part shortages, and generates prioritized **trolley kitting and milk-run delivery tasks**.
 
-The reference operating scale is approximately 500 individual parts and 50 welding assemblies. Actual data volumes depend on the deployment.
+### Step 4: Backflush Actual Output, Log Scrap, and Transition to the Reusable Excel Template
+**Action:** Record shop-floor execution data to close the inventory control loop.
+Log upstream fabrication receipts, cycle-count adjustments, trolley dispatch confirmations, and completed welding shift reports (good pieces + scrap). The model automatically backflushes consumed components and refreshes your real-time inventory position for the next shift.
 
-### 3. Enter the shift production plan
+> **Ready to move from single-session browser testing to daily factory operations?**  
+> Once you validate the workflow in the browser sandbox, **[Download the Reusable Shop-Floor Material Flow Control Excel Template (.xlsx)](#)** to save your custom BOM master data, track multi-shift historical variance, and run repeatable daily production control offline in Microsoft Excel.
 
-Record the production date, shift, target station, assembly, planned quantity, and plan status.
+---
 
-The demand engine expands the assembly plan through the BOM to determine the required individual parts. Inventory monitoring then identifies shortages, while the logistics layer organizes material-picking and delivery requirements.
+## Why Use a Dedicated Shop-Floor Material Flow Framework for Welding Fabrication?
 
-### 4. Execute, report, and refresh
+In a **welding-driven metal fabrication workshop**, a master production schedule (MPS) often looks 100% feasible in an ERP system while the actual physical components required at the point of use are missing.
 
-Record upstream receipts, material adjustments, trolley dispatch and delivery confirmations, and actual station production.
+This operational breakdown rarely stems from zero plant-wide inventory. Instead, it is caused by a disconnect between the **shift assembly mix**, the **multi-level BOM requirements**, the physical stock sitting in the **Kanban supermarket**, and the loading status of the **line-side delivery trolley** assigned to a specific welding booth. A static stock ledger cannot resolve this four-way synchronization problem.
 
-Completed production and recorded scrap feed back into the material-consumption model. The inventory and monitoring views are then recalculated to support the next replenishment and delivery decisions.
+Consider a typical shift scheduling multiple structural weldments across robotic welding cells and manual TIG/MIG stations. Each weldment pulls a unique kit of **laser-cut plates, CNC-bent brackets, and precision-machined bushings**. Missing a single bent bracket halts the entire welding fixture—even when 95% of the kit is staged. Meanwhile, the ERP system shows the bracket "in stock," without clarifying whether it is sitting at the press brake, binned in the supermarket, loaded on a trolley, or already allocated to another shift's work order.
 
-**Configure the rules. Maintain the master data. Enter the shift plan. Execute and report. Repeat the daily control cycle.**
+This **Shop-Floor Material Flow Control System** connects those isolated operational data points into one synchronized workflow:
+1. It translates shift-level welding targets into exact component-level demand via automated BOM explosion.
+2. It nets demand against physical supermarket balances and open trolley allocations.
+3. It generates actionable upstream fabrication signals and complete kitting manifests before the shift starts.
+4. It reconciles theoretical usage with actual reported weldments and scrap to keep book inventory aligned with physical reality.
 
-## Why I Built This
+The result is a **productized Lean production control system inside Excel**—delivering consistent, auditable material-flow decisions without forcing small-to-midsize manufacturers to purchase complex MES modules, automated guided vehicle (AGV) fleet software, or heavyweight ERP customizations.
 
-In a welding-driven workshop, a production plan can look feasible while the material required to execute it is unavailable at the point of use.
+---
 
-The failure is often not a complete absence of inventory. It is a mismatch between the planned assembly mix, the individual parts required by each assembly, the material physically available in the supermarket, and the delivery status of the trolley assigned to a station.
+## Traditional Static Inventory Spreadsheets vs. Structured Material Flow Control
 
-A static inventory list cannot resolve that mismatch on its own.
+| Operational Dimension | Without This System (Ad-Hoc Inventory Spreadsheets) | With This System (Structured Shop-Floor MRP & Kitting Framework) |
+| :--- | :--- | :--- |
+| **Component Shortage Detection** | **Unplanned Welding Line Stops:** Work orders appear executable at the assembly level, but missing child components are only discovered by welders during fixture setup. | **Pre-Shift BOM Explosion & Netting:** Shift schedules automatically explode into individual part requirements, exposing exact part deficits before work orders hit the floor. |
+| **Work-in-Process (WIP) Location Visibility** | **Stock Ledger Blindness:** Parts appear available in total plant inventory, but material handlers waste time searching across supermarkets, staging lanes, and welding booths. | **Multi-Stage Location Tracking:** Master data and logistics logs clearly segregate stock held in Kanban supermarkets, loaded on delivery trolleys, or staged at workstations. |
+| **Upstream Fabrication Scheduling** | **Expediting & Firefighting:** Laser cutting, sheet metal bending, and CNC machining cells receive urgent replenishment requests via verbal expediting or paper notes. | **Pull-Based Replenishment Signals:** Net shortage algorithms categorize reorder priorities (`Normal`, `Warning`, `Critical`) and route demand directly to specific upstream work centers. |
+| **Line-Side Kitting & Trolley Dispatch** | **Partial Kits & Cluttered Workstations:** Trolleys are pushed to welding cells with incomplete part sets, causing WIP accumulation and mid-shift station changeovers. | **Gatekept Kit Readiness States:** Picking tasks enforce standard pack constraints and flag trolley kits as `Ready`, `Partly`, or `Blocked` prior to floor dispatch. |
+| **Inventory Accuracy & Scrap Reconciliation** | **Book-to-Physical Inventory Drift:** Spreadsheet stock balances lag behind actual floor usage due to unreported welding scrap, rework, and manual material substitutions. | **Automated Production Backflushing:** Shift completion and scrap logs feed directly into the consumption engine, dynamically updating real-time supermarket balances. |
+| **Plant-Wide Bottleneck Prioritization** | **Siloed Station Management:** Supervisors resolve shortages cell-by-cell, masking systemic upstream bottlenecks and conflicting material allocations across shifts. | **Centralized Shop-Floor Control Tower:** A unified dashboard correlates shift attainment, component shortage exposure, supermarket health, and internal logistics flow. |
 
-Consider a shift scheduled to produce several welding assemblies across robot and manual welding stations. Each assembly consumes a different combination of laser-cut, bent, and machined parts. A shortage of one critical component can block a station even when most of its required materials are available. Meanwhile, the same part may appear in the inventory records without a clear indication of whether it is in the supermarket, in transit, or already allocated to another task.
+---
 
-The proposed control framework connects these separate operational facts.
+## Ideal Users, Manufacturing Roles, and Industry Use Cases
 
-Instead of reviewing the production plan, BOM, inventory balance, and trolley list independently, the workflow translates planned assembly quantities into component-level demand, compares requirements with material availability, identifies replenishment needs, and organizes deliveries around station requirements.
+### Who This Is For (Role-to-Workflow Mapping)
 
-Actual production reports then close the loop. As completed assemblies and scrap are recorded, expected consumption is reconciled with shop-floor activity and the remaining material position is recalculated.
+- **Production Planners & Master Schedulers** looking for a **shift-level production scheduling Excel template** to balance daily welding assembly targets across robotic and manual work centers without causing material starvation.
+- **Material Planners, Inventory Analysts & Buyers** needing a **lightweight MRP and BOM explosion calculator** to translate parent assembly schedules into time-phased component demand and upstream replenishment priorities.
+- **Lean Engineers, Warehouse Leads & Internal Logistics (Milk-Run) Teams** searching for a **Kanban supermarket management and trolley kitting tracker** to standardize line-side picking, container loading, and point-of-use delivery.
+- **Welding Shop Supervisors, Fabrication Foremen & Plant Managers** requiring a **real-time shop-floor shortage and WIP visibility dashboard** to verify station kit readiness prior to shift handovers and track actual vs. planned output.
+- **Industrial Engineers & Manufacturing Excel Practitioners** building a **customizable, low-code production control system** to bridge the execution gap between high-level ERP planning and physical shop-floor operations.
 
-The result is a **productized operating framework rather than a one-off inventory spreadsheet**. Its purpose is to make recurring material-flow decisions more consistent, visible, and auditable without requiring the workshop to replace its existing ERP, MES, or equipment-control systems.
+### Target Manufacturing Environments & Use Cases
 
-## Common Shop-floor Material Flow Problems This Solves
+This framework is purpose-built for **High-Mix, Low-Volume (HMLV) discrete manufacturing** and **job-shop environments**, specifically:
+- **Heavy Equipment, Agricultural & Construction Machinery Sub-Assemblies**
+- **Sheet Metal Fabrication, Laser Cutting & Press Brake Job Shops**
+- **Automotive Tier-2/Tier-3 Stamping and Robotic Welding Suppliers**
+- **Custom Structural Steel, Frame & Enclosure Manufacturers**
 
-| Problem | Without This Tool | With This Tool |
-|---|---|---|
-| Hidden component shortages | A production order appears feasible because the assembly quantity is visible, but its individual material requirements are not reconciled against available stock. | The BOM expands the shift plan into individual-part requirements so shortages can be identified before or during execution. |
-| Inventory without reliable location context | A part appears in an inventory balance, but operators cannot readily distinguish its supermarket location from its position on a trolley or at a station. | Material master data and logistics records provide a structured location and movement-control framework. |
-| Reactive replenishment | Upstream cutting, bending, and machining teams receive requests through fragmented manual coordination. | Shortage calculations classify replenishment needs and help direct requests to the relevant manufacturing source. |
-| Incomplete trolley loads | A trolley is dispatched without a clear view of whether the required material kit is complete. | Delivery tasks organize picking requirements and expose readiness states such as Ready, Partly, and Blocked. |
-| Planned consumption diverges from actual consumption | Inventory updates lag behind production, scrap, and manual adjustments. | Production reports feed the consumption model, allowing the inventory position and remaining requirements to be recalculated. |
-| Local decisions hide workshop-wide risk | Individual station issues are managed separately, making recurring shortages and delivery conflicts difficult to prioritize. | A consolidated monitoring view brings production attainment, material readiness, shortage exposure, and logistics status together. |
+### System Scope & Operational Boundaries
 
-## Who This Is For
+To maintain speed, transparency, and zero-IT-overhead deployment, this tool is **intentionally scoped**:
+- **What It Is:** A tactical execution bridge between weekly/monthly ERP planning and shift-level shop-floor material movement.
+- **What It Is Not:** It is **not** a replacement for enterprise financial ERP systems (SAP, Oracle, NetSuite), a full finite-capacity Advanced Planning and Scheduling (APS) engine, a PLC-driven AGV/AMR fleet controller, or an automated IIoT/SCADA machine-monitoring platform. Physical facility layout design, barcode hardware integration, and automated machine telemetry remain outside the workbook's native scope.
 
-This framework is designed for:
+---
 
-- **Production planners** coordinating daily assembly quantities across shifts and welding stations.
-- **Material planners** translating assembly schedules into component-level demand and replenishment priorities.
-- **Supermarket and internal-logistics teams** responsible for picking, trolley loading, delivery, and material availability.
-- **Workshop supervisors** monitoring production readiness, shortages, and reported output.
-- **Excel practitioners and manufacturing analysts** building a lightweight, maintainable control layer around existing production processes.
+## About the Architecture: Spreadsheet as a Decision-Support System
 
-It is particularly relevant to high-mix, low-volume workshops in which multiple upstream manufacturing processes supply individual parts to robot and manual welding stations.
+Most factory spreadsheets fail because they are built as static data graveyards rather than interconnected operational models. This project approaches industrial spreadsheets as **reusable, low-overhead decision-support systems** governed by one core engineering question: 
 
-It is **not** a replacement for enterprise ERP or MES, a full advanced planning and scheduling system, a PLC-controlled automated vehicle platform, or an IoT/SCADA data-acquisition system. Physical layout design, equipment-level automation, operator scanning discipline, and complex process scheduling remain outside the workbook's defined scope.
+> *"What exact shop-floor data points must be connected right now so that the next scheduling, kitting, or replenishment decision can be made with zero ambiguity?"*
 
-The intended benefit is a clearer operational control process—not the elimination of every physical production constraint.
+The **Shop-Floor Material Flow Control System** applies this principle by linking five traditionally siloed manufacturing layers: **Shift Production Plans → Multi-Level BOM Demand → Kanban Supermarket Inventory → Trolley Kitting Logistics → Actual Production & Scrap Backflushing**. 
 
-## About
-
-I approach workshop spreadsheets as reusable decision-support systems rather than collections of manually maintained tables. The central question is: **What information needs to be connected so that the next operational decision can be made with less ambiguity?**
-
-The Shop-floor Material Flow Control System applies that principle to the relationship between production plans, BOM-driven material demand, supermarket inventory, internal logistics, and actual production feedback. Its design emphasizes clear responsibilities, centralized parameters, traceable calculations, and explicit exception states.
-
-The framework is intended to complement existing manufacturing systems by addressing the operational gap between planning a welding assembly and making sure the right individual parts reach the right station at the right time.
+By enforcing centralized operating parameters, traceable formula logic, and explicit exception flags, this framework gives manufacturing teams immediate control over line-side material availability—ensuring the right fabricated parts reach the right welding station on the right trolley, every shift.
 
 ## Technical Details
 
