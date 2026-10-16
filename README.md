@@ -6,13 +6,13 @@
 ![Platform: Browser + Excel](https://img.shields.io/badge/Platform-Browser%20%2B%20Excel-217346)
 ![Tool Type: Production Control & MRP](https://img.shields.io/badge/Tool-Production%20Control%20%26%20MRP-2251FF)
 
-** Shop-Floor Material Flow Control System is a free browser-based and Excel MRP production planning template designed for high-mix, low-volume (HMLV) metal fabrication and welding workshops. It turns shift-level welding schedules into actionable Bill of Materials (BOM) requirements, Kanban supermarket replenishment signals, line-side trolley kitting tasks, and work-in-process (WIP) consumption tracking—eliminating line-stop shortages and spreadsheet chaos without expensive ERP/MES overhauls.**
+**Shop-Floor Material Flow Control System is a free browser-based and Excel MRP production planning template designed for high-mix, low-volume (HMLV) metal fabrication and welding workshops. It turns shift-level welding schedules into actionable Bill of Materials (BOM) requirements, Kanban supermarket replenishment signals, line-side trolley kitting tasks, and work-in-process (WIP) consumption tracking—eliminating line-stop shortages and spreadsheet chaos without expensive ERP/MES overhauls.**
 
 > **Access, Live Demo, and Workbook Availability**
 >
 > - **Interactive Web Application:** Free, no signup or installation required. [Launch the Interactive Shop-Floor Material Flow Control Web Demo](#) *(Add published HTML demo URL here when available)*.
+>   
 > - **Downloadable Excel MRP Template:** Ready for daily offline production tracking. [Download the Production Control & Material Replenishment Excel Workbook (.xlsx)](#) *(Add workbook release URL here when available)*.
-> - **Open-Source Licensing:** Distributed under the [Apache 2.0 Open-Source Software License](https://www.apache.org/licenses/LICENSE-2.0). Confirm that all distributed `.xlsx` workbooks and embedded assets comply with repository license terms prior to public release.
 
 ---
 
