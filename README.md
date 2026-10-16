@@ -128,7 +128,8 @@ By enforcing centralized operating parameters, traceable formula logic, and expl
 <details>
 <summary>For technical reviewers, Excel practitioners, and manufacturing collaborators</summary>
 
-### Workbook Architecture
+<details>
+<summary><strong>Workbook Architecture</strong></summary>
 
 The proposed workbook contains four functional modules and ten worksheets. Each worksheet has a defined responsibility, separating configuration, master data, planning, calculations, logistics execution, feedback, and monitoring.
 
@@ -145,7 +146,8 @@ The proposed workbook contains four functional modules and ten worksheets. Each 
 | Feedback & Control | `09_ACT_Report` | Actual output, scrap, and production reporting |
 | Feedback & Control | `10_DSH_Board` | Production attainment, station readiness, shortage exposure, and logistics monitoring |
 
-#### End-to-End Data Flow
+<details>
+<summary><strong>End-to-End Data Flow</strong></summary>
 
 ```text
 01_SYS: Parameters and Thresholds
@@ -177,41 +179,65 @@ The proposed workbook contains four functional modules and ten worksheets. Each 
 
 The diagram represents the intended control flow. Actual inventory reconciliation depends on the implemented formulas, the transaction records maintained by operators, and the validation of source data.
 
-### Core Design Principles
+</details>
 
-#### 1. Separate inputs, calculations, and outputs
+</details>
+
+<details>
+<summary><strong>Core Design Principles</strong></summary>
+
+<details>
+<summary><strong>1. Separate inputs, calculations, and outputs</strong></summary>
 
 Master data and operational inputs are maintained in designated worksheets. Calculation sheets derive material requirements and control states. Monitoring sheets present the resulting operational picture.
 
 This separation makes it easier to identify whether an issue originates in source data, a calculation, or a physical execution process.
 
-#### 2. Use Excel Tables for expanding records
+</details>
+
+<details>
+<summary><strong>2. Use Excel Tables for expanding records</strong></summary>
 
 Operational transaction lists should use Excel Tables (`ListObject`) with stable table names such as `tbl_Part`, `tbl_BOM`, `tbl_ShiftPlan`, `tbl_Inventory`, and `tbl_ProductionReport`.
 
 Structured references are preferred for row-level aggregation because they expand with the table. The names above are recommended implementation conventions; the specification does not establish that a finished workbook already contains these exact table names.
 
-#### 3. Use dynamic arrays for generated lists
+</details>
+
+<details>
+<summary><strong>3. Use dynamic arrays for generated lists</strong></summary>
 
 Microsoft 365 functions such as `FILTER`, `UNIQUE`, `SORT`, and `XLOOKUP` can generate and transform lists without manually copying formulas down every row.
 
 Dynamic-array formulas must be placed where their spill ranges remain unobstructed. Scalar aggregation functions such as `SUMIFS` and `COUNTIFS` should use structured references where appropriate.
 
-#### 4. Centralize operational parameters
+</details>
+
+<details>
+<summary><strong>4. Centralize operational parameters</strong></summary>
 
 Thresholds, buffers, and other business rules should be maintained in the configuration layer rather than duplicated as unexplained constants across the workbook.
 
 The supplied design maps key parameters to `01_SYS!D4:D13`. Formulas should reference those configured values consistently, and parameter changes should be tested against the affected calculations.
 
-#### 5. Prefer explicit exceptions over silent assumptions
+</details>
+
+<details>
+<summary><strong>5. Prefer explicit exceptions over silent assumptions</strong></summary>
 
 Missing part registrations, invalid BOM relationships, incomplete location data, and unavailable material should produce recognizable exception states.
 
 A missing or invalid record must not be silently interpreted as confirmed availability. An operational status should distinguish an actual zero from a value that cannot be calculated reliably.
 
-### Module 1 — System & Master Data
+</details>
 
-#### Sheet `01_SYS` — Parameters and Thresholds
+</details>
+
+<details>
+<summary><strong>Module 1 — System & Master Data</strong></summary>
+
+<details>
+<summary><strong>Sheet `01_SYS` — Parameters and Thresholds</strong></summary>
 
 This worksheet defines the shared configuration used by downstream calculations.
 
@@ -249,7 +275,10 @@ Enter the formula at `F4` in a Microsoft 365-compatible worksheet with the inten
 
 **Implementation note:** The source specification's sample validation formula uses array expressions with `AND` and `ROW`. Those expressions should be reviewed for array-compatible behavior before deployment. A formula that returns an incorrect validation state is not an adequate control merely because it is dynamic.
 
-#### Sheet `02_MST_Part` — Individual-Part Master Data
+</details>
+
+<details>
+<summary><strong>Sheet `02_MST_Part` — Individual-Part Master Data</strong></summary>
 
 The part master maintains the attributes needed to identify, locate, and replenish each individual component.
 
@@ -309,7 +338,10 @@ The specification's sample activation formula is:
 
 This illustrates the intended validation logic. Because `OR` does not independently evaluate each row of an array, the formula should be adapted to a row-wise or `MAP`-based implementation before being used as a production validation control.
 
-#### Sheet `03_MST_BOM` — Welding Assembly Bill of Materials
+</details>
+
+<details>
+<summary><strong>Sheet `03_MST_BOM` — Welding Assembly Bill of Materials</strong></summary>
 
 The BOM establishes which individual parts are consumed by each welding assembly.
 
@@ -368,7 +400,10 @@ The intended controls are straightforward: each referenced part must exist, and 
 
 For a deployed workbook, these formulas should be tested for array behavior, duplicate keys, and incomplete records. A separate unique assembly master or a distinct assembly lookup range is preferable to looking up an assembly name against repeated BOM rows when data consistency cannot otherwise be guaranteed.
 
-#### Sheet `04_MST_Station` — Stations and Trolley Configuration
+</details>
+
+<details>
+<summary><strong>Sheet `04_MST_Station` — Stations and Trolley Configuration</strong></summary>
 
 This sheet maps production stations to the internal logistics resources that serve them.
 
@@ -403,9 +438,15 @@ The reverse search argument requests the last matching record in the specified r
 
 For production use, a trolley's current state should be derived from a defined transaction history or a single authoritative status record. A simple last-match lookup is not a substitute for validating overlapping assignments, unconfirmed returns, or duplicate trolley identifiers.
 
-### Module 2 — Planning & Demand Engine
+</details>
 
-#### Sheet `05_PLN_Shift` — Shift Production Plan
+</details>
+
+<details>
+<summary><strong>Module 2 — Planning & Demand Engine</strong></summary>
+
+<details>
+<summary><strong>Sheet `05_PLN_Shift` — Shift Production Plan</strong></summary>
 
 This worksheet is the operational entry point for the production schedule.
 
@@ -451,7 +492,10 @@ Planning validations should reject or flag:
 - Duplicate or conflicting plans according to the chosen scheduling policy.
 - Plans whose required BOM is incomplete or invalid.
 
-#### Sheet `06_ENG_Demand` — Material Demand Engine
+</details>
+
+<details>
+<summary><strong>Sheet `06_ENG_Demand` — Material Demand Engine</strong></summary>
 
 The demand engine translates assembly-level production plans into individual-part requirements.
 
@@ -495,9 +539,14 @@ This detail is essential when the same individual part is shared by several asse
 The exact availability equation and its safeguards are covered in the execution-layer specification in Part 3.
 
 </details>
-### Module 3 — Supermarket Inventory & Logistics Execution
 
-#### Sheet `07_INV_Super` — Supermarket Inventory Monitoring
+</details>
+
+<details>
+<summary><strong>Module 3 — Supermarket Inventory & Logistics Execution</strong></summary>
+
+<details>
+<summary><strong>Sheet `07_INV_Super` — Supermarket Inventory Monitoring</strong></summary>
 
 This sheet consolidates the material position and translates shortages into replenishment signals.
 
@@ -552,7 +601,7 @@ For a requirement quantity \(R\) and an available quantity \(A\):
 
 This is a planning relationship, not a complete replenishment policy. Safety-stock requirements, future demand, and material allocations must be considered separately when determining the final replenishment quantity.
 
-#### Replenishment Status
+**Replenishment Status**
 
 The reference configuration uses three states:
 
@@ -564,7 +613,7 @@ The reference configuration uses three states:
 
 The emergency threshold is configured in `01_SYS!D9`. The exact trigger must be connected to a clearly defined time basis and consumption rate. The reference value of `0.50` should not be treated as a universal emergency rule without validating its unit and operational meaning.
 
-#### Suggested Replenishment Quantity
+**Suggested Replenishment Quantity**
 
 The specification proposes rounding replenishment to a standard packaging multiple and considering both the required quantity and safety stock.
 
@@ -594,7 +643,10 @@ This is a reference formula pattern, not a verified drop-in formula for every st
 
 A production implementation should also distinguish physical receipts, eligible inbound quantities, reservations, and inventory adjustments rather than relying on ambiguous stock fields.
 
-### Sheet `08_LOG_Trolley` — Trolley Loading & Delivery Tasks
+</details>
+
+<details>
+<summary><strong>Sheet `08_LOG_Trolley` — Trolley Loading & Delivery Tasks</strong></summary>
 
 This worksheet converts material requirements into actionable internal-logistics tasks.
 
@@ -691,9 +743,15 @@ This is a reference check based on packaging multiples. The implementation must 
 
 A trolley task should progress through explicit operational states. Dispatch confirmation, delivery confirmation, and return or availability confirmation should be recorded as separate events where the workshop requires them.
 
-### Module 4 — Production Feedback & Monitoring
+</details>
 
-#### Sheet `09_ACT_Report` — Actual Production Reporting
+</details>
+
+<details>
+<summary><strong>Module 4 — Production Feedback & Monitoring</strong></summary>
+
+<details>
+<summary><strong>Sheet `09_ACT_Report` — Actual Production Reporting</strong></summary>
 
 This worksheet records the actual output of robot and manual welding stations.
 
@@ -772,7 +830,10 @@ At minimum:
 - The date, shift, and station must match a valid reporting context.
 - Duplicate or conflicting records must be flagged before their consumption is applied to inventory.
 
-#### Production Consumption and Inventory Feedback
+</details>
+
+<details>
+<summary><strong>Production Consumption and Inventory Feedback</strong></summary>
 
 Actual production reports are the feedback source for the material model.
 
@@ -794,7 +855,10 @@ The inventory model must use one consistent policy for:
 
 A report should not reduce inventory more than once. The source specification describes BOM-based consumption feedback, but does not establish a complete transaction ledger with immutable posting identifiers. That control must be implemented and tested before the workbook is used as an authoritative inventory record.
 
-#### Sheet `10_DSH_Board` — Shop-floor Operations Dashboard
+</details>
+
+<details>
+<summary><strong>Sheet `10_DSH_Board` — Shop-floor Operations Dashboard</strong></summary>
 
 The dashboard consolidates operational information for production supervisors and dispatchers.
 
@@ -880,12 +944,17 @@ The reference design uses dynamic-array functions such as `FILTER`, `SORT`, `HST
 
 A valid ranking should include the part ID, description, manufacturing source or storage location, available quantity, shortage quantity, and suggested replenishment quantity. The sorting key should be explicitly defined and should not confuse the largest absolute shortage with the most urgent time-to-stockout risk.
 
-### Formula Reference
+</details>
+
+</details>
+
+<details>
+<summary><strong>Formula Reference</strong></summary>
 
 The following groups summarize the principal calculation patterns used throughout the proposed architecture.
 
 <details>
-<summary>Configuration and master-data formulas</summary>
+<summary><strong>Configuration and master-data formulas</strong></summary>
 
 | Purpose | Formula or function | Control objective |
 |---|---|---|
@@ -899,7 +968,7 @@ The following groups summarize the principal calculation patterns used throughou
 </details>
 
 <details>
-<summary>Planning and inventory formulas</summary>
+<summary><strong>Planning and inventory formulas</strong></summary>
 
 | Purpose | Formula or function | Control objective |
 |---|---|---|
@@ -913,7 +982,7 @@ The following groups summarize the principal calculation patterns used throughou
 </details>
 
 <details>
-<summary>Logistics, reporting, and dashboard formulas</summary>
+<summary><strong>Logistics, reporting, and dashboard formulas</strong></summary>
 
 | Purpose | Formula or function | Control objective |
 |---|---|---|
@@ -931,7 +1000,10 @@ The following groups summarize the principal calculation patterns used throughou
 
 The formulas in this README are reference implementations and design patterns, not a claim that a fully tested workbook has already been delivered. Where an expression uses a recommended table name, placeholder field, or illustrative range, that reference must be mapped to the actual workbook structure.
 
-### Validation Rules
+</details>
+
+<details>
+<summary><strong>Validation Rules</strong></summary>
 
 | Field or control | Rule | Required error behavior |
 |---|---|---|
@@ -959,7 +1031,8 @@ The formulas in this README are reference implementations and design patterns, n
 | Formula inputs | Must use valid numeric or text types as defined | Flag text-formatted numbers and malformed identifiers |
 | Dashboard denominators | Must be valid for the selected reporting scope | Display an explicit no-plan or no-task state rather than implying normal performance |
 
-#### Cross-Module Integrity Checks
+<details>
+<summary><strong>Cross-Module Integrity Checks</strong></summary>
 
 Before operational deployment, verify that:
 
@@ -976,9 +1049,15 @@ Before operational deployment, verify that:
 
 The original architecture specification provides a field-level cross-check and a parameter-reference map. Those documents establish the intended design coverage; they should not be interpreted as independent runtime-test evidence for a finished workbook.
 
-### Three Traps That Catch Even Experienced Production Planners
+</details>
 
-#### Trap 1 — A positive inventory balance does not prove production readiness
+</details>
+
+<details>
+<summary><strong>Three Traps That Catch Even Experienced Production Planners</strong></summary>
+
+<details>
+<summary><strong>Trap 1 — A positive inventory balance does not prove production readiness</strong></summary>
 
 **Decision:** Release a welding plan because the supermarket shows sufficient total inventory.
 
@@ -991,7 +1070,7 @@ The original architecture specification provides a field-level cross-check and a
 **Decision implication:** Release the plan only after material readiness has been evaluated against the actual component requirements.
 
 <details>
-<summary>Calculation reference</summary>
+<summary><strong>Calculation reference</strong></summary>
 
 ```text
 Gross demand = Planned assembly quantity × BOM usage
@@ -1003,7 +1082,10 @@ Ready = Every required part satisfies the defined availability condition
 
 </details>
 
-#### Trap 2 — A delivery task is not the same as a complete kit
+</details>
+
+<details>
+<summary><strong>Trap 2 — A delivery task is not the same as a complete kit</strong></summary>
 
 **Decision:** Dispatch a trolley because one of its material lines appears ready.
 
@@ -1016,7 +1098,7 @@ Ready = Every required part satisfies the defined availability condition
 **Decision implication:** A trolley is dispatch-ready only when the actual kit-level rules are satisfied and the assignment is valid.
 
 <details>
-<summary>Calculation reference</summary>
+<summary><strong>Calculation reference</strong></summary>
 
 ```text
 For each required part:
@@ -1033,7 +1115,10 @@ Dispatch:
 
 </details>
 
-#### Trap 3 — Reported output can create false inventory confidence
+</details>
+
+<details>
+<summary><strong>Trap 3 — Reported output can create false inventory confidence</strong></summary>
 
 **Decision:** Trust the updated inventory balance immediately after entering a production report.
 
@@ -1046,7 +1131,7 @@ Dispatch:
 **Decision implication:** Inventory changes should follow validated production events, with corrections traceable to their originating records.
 
 <details>
-<summary>Calculation reference</summary>
+<summary><strong>Calculation reference</strong></summary>
 
 ```text
 Theoretical component consumption
@@ -1058,7 +1143,12 @@ Reconcile inventory corrections through an explicit adjustment process.
 
 </details>
 
-### Example Scenario
+</details>
+
+</details>
+
+<details>
+<summary><strong>Example Scenario</strong></summary>
 
 Consider a hypothetical shift scheduled to produce 20 welding assemblies. Each assembly requires four units of Part P-1001 and two units of Part P-1002.
 
@@ -1082,7 +1172,10 @@ If 18 good assemblies and one scrapped assembly are subsequently reported, the B
 
 These are illustrative figures for explaining the control logic, not observed results or a tested workbook output.
 
-### Operating Procedure — Daily Five-Step Control Cycle
+</details>
+
+<details>
+<summary><strong>Operating Procedure — Daily Five-Step Control Cycle</strong></summary>
 
 1. **Before the shift:** Enter the production plan, verify its master-data references, and release valid tasks.
 2. **Before production starts:** Review demand, identify shortages, and communicate replenishment requirements to Laser, Bending, and Machining.
@@ -1090,7 +1183,10 @@ These are illustrative figures for explaining the control logic, not observed re
 4. **During the shift:** Record good output, scrap, and operational exceptions. Validate reports before applying consumption.
 5. **At shift end:** Review production attainment, shortage exposure, and delivery performance. Reconcile physical inventory differences through documented adjustments.
 
-### Data Maintenance and Troubleshooting
+</details>
+
+<details>
+<summary><strong>Data Maintenance and Troubleshooting</strong></summary>
 
 **Adding records:** Add new entries within the designated Excel Tables so structured references can expand. Keep dynamic-array spill ranges clear.
 
@@ -1106,7 +1202,10 @@ These are illustrative figures for explaining the control logic, not observed re
 
 **Investigating invalid report codes:** Verify the station and assembly identifiers against their master data. Use controlled lists where available and remove unintended spaces or formatting differences.
 
-### Compatibility, Scale, and Collaboration
+</details>
+
+<details>
+<summary><strong>Compatibility, Scale, and Collaboration</strong></summary>
 
 The source design targets Microsoft 365 or Excel 2021 and later, subject to function availability in the installed version. Older Excel versions may not support the required dynamic-array and lookup functions.
 
@@ -1120,7 +1219,10 @@ These are design targets, not independently benchmarked performance guarantees. 
 
 OneDrive or SharePoint may support light shared viewing and editing. For operational records, centralized responsibility for production-plan entry and inventory receipt entry is recommended to reduce conflicting updates.
 
-### Scope and Implementation Boundaries
+</details>
+
+<details>
+<summary><strong>Scope and Implementation Boundaries</strong></summary>
 
 The workbook is intended to provide a lightweight shop-floor material-flow control layer. It does not implement:
 
@@ -1132,6 +1234,8 @@ The workbook is intended to provide a lightweight shop-floor material-flow contr
 - Automatic confirmation of physical movements without a defined operator or equipment feedback mechanism.
 
 These boundaries should be considered when deciding whether the framework is suitable for a particular production environment.
+
+</details>
 
 </details>
 
