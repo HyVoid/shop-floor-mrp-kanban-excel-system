@@ -11,9 +11,9 @@
 
 > **Access, Live Demo, and Workbook Availability**
 >
-> - **Interactive Web Application:** Free, no signup or installation required. [Launch the Interactive Shop-Floor Material Flow Control Web Demo](#) 
+> - **Interactive Web Application:** Free, no signup or installation required. [Launch the Interactive Shop-Floor Material Flow Control Web Demo](https://hyvoid.github.io/shop-floor-mrp-kanban-excel-system/) 
 >   
-> - **Downloadable Excel MRP Template:** Ready for daily offline production tracking. [Download the Production Control & Material Replenishment Excel Workbook (.xlsx)](https://theseusworkshop.com/l/qnojv)
+> - **Downloadable Excel MRP Template:** Ready for daily offline production tracking. [Download the Production Control & Material Replenishment Excel Workbook (.xlsx)](https://theseusworkshop.com/l/qnojv?utm_source=github&utm_medium=GitHub%20README)
 
 ---
 
@@ -53,7 +53,7 @@ Log the production date, shift window, target welding cell, assembly part number
 Log upstream fabrication receipts, cycle-count adjustments, trolley dispatch confirmations, and completed welding shift reports (good pieces + scrap). The model automatically backflushes consumed components and refreshes your real-time inventory position for the next shift.
 
 > **Ready to move from single-session browser testing to daily factory operations?**  
-> Once you validate the workflow in the browser sandbox, **[Download the Reusable Shop-Floor Material Flow Control Excel Template (.xlsx)](#)** to save your custom BOM master data, track multi-shift historical variance, and run repeatable daily production control offline in Microsoft Excel.
+> Once you validate the workflow in the browser sandbox, **[Download the Reusable Shop-Floor Material Flow Control Excel Template (.xlsx)](https://theseusworkshop.com/l/qnojv?utm_source=github&utm_medium=GitHub%20README)** to save your custom BOM master data, track multi-shift historical variance, and run repeatable daily production control offline in Microsoft Excel.
 
 ---
 
