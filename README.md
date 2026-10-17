@@ -1,6 +1,7 @@
 # Shop-Floor Material Flow Control System: Excel MRP, Kanban Supermarket & Welding Production Planning Template
 
 **A lightweight shop-floor material flow control framework, BOM explosion calculator, and lean internal logistics tracker for welding-driven manufacturing and metal fabrication operations.**
+<img width="1920" height="790" alt="image" src="https://github.com/user-attachments/assets/a63af286-1115-4c2c-aa06-6d7e04aba1e4" />
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 ![Platform: Browser + Excel](https://img.shields.io/badge/Platform-Browser%20%2B%20Excel-217346)
