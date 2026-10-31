@@ -88,10 +88,14 @@ export const TopHeader: React.FC<TopHeaderProps> = ({
 
         {/* Breadcrumb info */}
         <div className="flex items-center gap-2 text-xs">
-          <span className="text-[var(--color-muted)] font-medium hidden sm:inline">
-            {current.category}
+          <span className="font-heading font-bold text-[13px] text-[var(--color-primary)] hidden sm:inline">
+            Theseus Workshop
           </span>
           <span className="text-[var(--color-border)] hidden sm:inline">/</span>
+          <span className="text-[var(--color-muted)] font-medium hidden md:inline">
+            {current.category}
+          </span>
+          <span className="text-[var(--color-border)] hidden md:inline">/</span>
           <span className="font-mono text-[11px] font-bold text-[var(--color-accent)] bg-[var(--insight-bg)] px-2 py-0.5 rounded-[var(--radius-sm)] border border-[var(--color-border)]">
             {current.code}
           </span>

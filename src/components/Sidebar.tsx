@@ -167,15 +167,18 @@ export const Sidebar: React.FC<SidebarProps> = ({
             onCloseMobile();
           }}
         >
-          <div className="w-9 h-9 rounded-[var(--radius-sm)] bg-[var(--color-primary)] flex items-center justify-center text-white font-bold shadow-sm">
+          <div className="w-9 h-9 rounded-[var(--radius-sm)] bg-[var(--color-primary)] flex items-center justify-center text-white font-bold shadow-sm flex-shrink-0">
             <Layers className="w-5 h-5 text-white" />
           </div>
-          <div className="flex flex-col">
-            <span className="font-heading text-[17px] font-bold text-[var(--color-primary)] tracking-tight leading-tight">
-              MFCS CONTROL
+          <div className="flex flex-col min-w-0">
+            <span className="font-heading text-[17px] font-bold text-[var(--color-primary)] tracking-tight leading-tight truncate">
+              Theseus Workshop
             </span>
-            <span className="text-[10px] text-[var(--color-muted)] font-medium uppercase tracking-label leading-tight">
-              Shop-floor Pull Engine
+            <span
+              className="text-[10px] text-[var(--color-muted)] font-medium uppercase tracking-label leading-tight truncate"
+              title="Shop-floor Material Flow Control System"
+            >
+              Shop-floor Material Flow Control
             </span>
           </div>
         </div>

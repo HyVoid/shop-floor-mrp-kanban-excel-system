@@ -5,9 +5,11 @@ export const Footer: React.FC = () => {
   return (
     <footer className="mt-16 pt-8 pb-12 border-t border-[var(--color-border)] text-center text-xs text-[var(--color-muted)]">
       <div className="max-w-[1400px] mx-auto px-10 flex flex-col items-center justify-center space-y-2">
-        <div className="flex items-center gap-2 text-[var(--color-primary)] font-medium text-[12px]">
+        <div className="flex flex-wrap items-center justify-center gap-2 text-[var(--color-primary)] font-medium text-[12px]">
           <HardDrive className="w-4 h-4 text-[var(--color-accent)]" />
-          <span>Shop-floor Material Flow Control System (MFCS)</span>
+          <span className="font-heading font-bold text-[14px]">Theseus Workshop</span>
+          <span className="text-[var(--color-border)]">•</span>
+          <span>Shop-floor Material Flow Control System</span>
           <span className="text-[var(--color-border)]">|</span>
           <span className="text-[var(--color-muted)] font-normal">SaaS Execution & Replenishment Layer</span>
         </div>
