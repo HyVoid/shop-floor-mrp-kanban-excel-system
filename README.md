@@ -1,130 +1,177 @@
 [ 🌐 عربي ](README.ar.md) | [ 🇩🇪 Deutsch ](README.de.md) | [ 🇫🇷 Français ](README.fr.md) | [ 🇳🇱 Nederlands ](README.nl.md) | [ 🇪🇸 Español ](README.sp.md) | [ 🇬🇧 English ](README.md)
 
-# Shop-Floor Material Flow Control System: Excel MRP, Kanban Supermarket & Welding Production Planning Template
+# Shop-Floor Material Flow Control System: Excel MRP Template, BOM Explosion Calculator, Kanban Inventory Tracker & Welding Production Planning Spreadsheet
 <img width="1920" height="790" alt="image" src="https://github.com/user-attachments/assets/a63af286-1115-4c2c-aa06-6d7e04aba1e4" />
 
-**A lightweight shop-floor material flow control framework, BOM explosion calculator, and lean internal logistics tracker for welding-driven manufacturing and metal fabrication operations.**
+
+**A ready-to-use manufacturing inventory tracker, multi-level BOM explosion calculator, Kanban supermarket replenishment spreadsheet, and daily production scheduling Excel template for metal fabrication and welding workshops.**
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
-![Platform: Browser + Excel](https://img.shields.io/badge/Platform-Browser%20%2B%20Excel-217346)
-![Tool Type: Production Control & MRP](https://img.shields.io/badge/Tool-Production%20Control%20%26%20MRP-2251FF)
+![Platform: Free Web Tool + Microsoft Excel (.xlsx)](https://img.shields.io/badge/Platform-Free%20Web%20Tool%20%2B%20Excel%20(.xlsx)-217346)
+![Compatibility: Excel 2021+ & Microsoft 365](https://img.shields.io/badge/Compatibility-Excel%202021%2B%20%26%20M365%20Dynamic%20Arrays-2251FF)
+![Category: Manufacturing MRP & Production Control](https://img.shields.io/badge/Category-Manufacturing%20MRP%20%26%20WIP%20Tracker-0A66C2)
 
-**Shop-Floor Material Flow Control System is a free browser-based and Excel MRP production planning template designed for high-mix, low-volume (HMLV) metal fabrication and welding workshops. It turns shift-level welding schedules into actionable Bill of Materials (BOM) requirements, Kanban supermarket replenishment signals, line-side trolley kitting tasks, and work-in-process (WIP) consumption tracking—eliminating line-stop shortages and spreadsheet chaos without expensive ERP/MES overhauls.**
+**Shop-Floor Material Flow Control System** is a plug-and-play **Excel MRP template**, **manufacturing inventory control spreadsheet**, and **free browser-based production planning calculator** built for job shops, metal fabricators, and welding operations. It converts daily shift production schedules into exact **Bill of Materials (BOM) part requirements**, **Kanban bin replenishment alerts**, **line-side trolley kitting checklists**, and **work-in-process (WIP) scrap backflushing**. Small-to-midsize manufacturers and first-time planners can eliminate unexpected part shortages, stop mid-shift welding delays, and replace broken manual spreadsheets in under 1 minute without paying for complex ERP or MES software subscriptions.
 
-> **Access, Live Demo, and Workbook Availability**
+> ### Quick Access: Free Online Sandbox & Downloadable Excel System
 >
-> - **Interactive Web Application:** Free, no signup or installation required. [Launch the Interactive Shop-Floor Material Flow Control Web Demo](https://hyvoid.github.io/shop-floor-mrp-kanban-excel-system/) 
->   
-> - **Downloadable Excel MRP Template:** Ready for daily offline production tracking. [Download the Production Control & Material Replenishment Excel Workbook (.xlsx)](https://theseusworkshop.com/l/qnojv?utm_source=github&utm_medium=GitHub%20README)
+> - **Free Interactive Web Application (Instant Browser Testing):** Test the workflow online for free with pre-loaded manufacturing sample data. Zero installation or account signup required.  
+>   👉 **[Launch the Free Interactive Shop-Floor MRP, BOM Explosion & Kanban Calculator Web Tool](https://hyvoid.github.io/shop-floor-mrp-kanban-excel-system/)**
+>
+> - **Reusable Offline Microsoft Excel Workbook (.xlsx for Daily Factory Operations):** Download the full automated spreadsheet template to paste your own part numbers, save your BOM master data locally, and run repeatable shift planning offline. Backed by a **30-day unconditional money-back guarantee**.  
+>   👉 **[Download the Ready-to-Use Shop-Floor MRP, BOM Explosion & Production Planning Excel Template (.xlsx)](https://theseusworkshop.com/l/qnojv?utm_source=github&utm_medium=GitHub%20README)**
 
 ---
 
-## Core Manufacturing Tracking Capabilities: Pain-Point to Solution Mapping
+## What It Helps You Track: Shop-Floor Pain Points to Automated Excel Solutions
 
-For production managers searching for a reliable **manufacturing inventory tracker** or **work-in-process (WIP) control sheet**, this framework bridges the gap between static inventory balances and real-time station readiness:
+If you are searching for a **manufacturing inventory tracker Excel template**, **BOM shortage calculator**, or **work-in-process (WIP) tracking spreadsheet**, this system replaces guesswork with automated pre-shift calculations:
 
-| Shop-Floor Operational Pain Point | High-Frequency Search Intent / Module | How This Control Framework Solves It |
+| Daily Factory Pain Point (Beginner & Shop-Floor Reality) | High-Frequency Search Intent / Built-In Excel Module | How This Plug-and-Play Spreadsheet Solves It Automatically |
 | :--- | :--- | :--- |
-| **Unforeseen Component Shortages at Welding Stations** | **Shift-Level BOM Explosion & MRP Calculator** | Automatically expands daily welding assembly schedules through multi-part Bills of Materials (BOM) to calculate net component demand per shift and workstation before operators start welding. |
-| **Inventory Blind Spots Between Warehouse & Line-Side** | **WIP Location & Kanban Supermarket Tracker** | Separates raw ledger balances from physical stock locations—tracking exact quantities across upstream buffers, Kanban supermarkets, in-transit material trolleys, and robot/manual welding cells. |
-| **Late Material Requests to Upstream Fabrication** | **Automated Replenishment & Shortage Priority List** | Calculates real-time net material gaps against safety stock buffers and flags urgent replenishment orders for upstream laser cutting, CNC bending, and machining cells. |
-| **Dispatched Trolleys Missing Critical Parts** | **Trolley Kitting & Line-Side Delivery Readiness** | Groups picking lists by station, packaging constraints, and trolley capacity—assigning explicit visual kit statuses (`Ready`, `Partly Kitted`, `Blocked`) prior to dispatch. |
-| **Inventory Drift from Unrecorded Scrap & Rework** | **Planned vs. Actual Material Consumption Backflush** | Reconciles theoretical BOM consumption against actual shift output and recorded shop-floor scrap, dynamically recalculating remaining supermarket and station inventory balances. |
-| **Fragmented Communication Across Shifts** | **Visual Shop-Floor Andon & Logistics Risk Dashboard** | Consolidates shift plan attainment, critical shortage exposure, supermarket stockouts, and internal milk-run delivery statuses into a single operational control tower. |
+| **Welders Stop Working Because One Small Bracket Is Missing** | **Multi-Level BOM Explosion & MRP Calculator Spreadsheet** | Multiplies your planned shift welding assemblies by every child component in your **Bill of Materials (BOM)** to calculate exact part demand before the shift starts. |
+| **Parts Show "In Stock" on Paper, But Nobody Can Find Them on the Floor** | **Work-in-Process (WIP) Location & Kanban Bin Inventory Tracker** | Separates raw warehouse ledger totals into specific physical locations: upstream buffers, **Kanban supermarket bins**, loaded delivery trolleys, and active welding stations. |
+| **Laser Cutting & Bending Machines Get Interrupted by Rush Orders** | **Automated Material Shortage & Reorder Priority Alert Sheet** | Compares shift material demand against current supermarket balances and safety stock thresholds, generating prioritized reorder lists (`Critical`, `Warning`, `Normal`) for upstream laser, press brake, and CNC machines. |
+| **Material Handlers Push Incomplete Part Kits to Workstations** | **Line-Side Kitting Checklist & Trolley Dispatch Tracker** | Groups required components by workstation, container size, and trolley capacity, assigning clear readiness statuses (`Ready`, `Partly Kitted`, `Blocked`) before any trolley leaves the staging area. |
+| **Unrecorded Welding Scrap Ruins Inventory Counts Over Time** | **Planned vs. Actual Production & Scrap Backflush Calculator** | Deducts both completed good assemblies and reported shop-floor scrap from your live inventory balances at the end of every shift, keeping spreadsheet numbers aligned with physical bin counts. |
+| **Supervisors Spend Hours Updating Broken Formulas Across Tabs** | **Visual Shop-Floor Production Control & Shortage Dashboard** | Consolidates shift plan completion rates, top component bottlenecks, Kanban stockout risks, and internal delivery tasks onto one automatic summary screen. |
 
 ---
 
-## Step-by-Step Tutorial: How to Run Daily Production Planning & Material Kitting
+## Quick Start Tutorial: How to Run Production Planning & Material Kitting in 1 Minute
 
-The operating model follows a repeatable 4-step Lean manufacturing control loop: configure parameters, maintain master data, run shift MRP calculations, and backflush actual production. 
+You do not need an industrial engineering degree or advanced Excel skills to run material requirements planning. Follow this 4-step workflow to test the logic in the free web tool, then move your daily operations into the automated Excel workbook.
 
-### Step 1: Configure Global Shop-Floor & Replenishment Parameters
-**Action:** Set up your workshop's baseline operating rules in the Configuration module.
-Define shift durations, shifts per day, safety-stock buffers, emergency Kanban replenishment triggers, kit-readiness thresholds, trolley packaging limits, and allowable scrap tolerances. These parameters govern all downstream **material requirements planning (MRP)** and shortage alert calculations.
+### Step 1: Set Your Basic Shop-Floor & Safety Stock Rules
+**Search Intent:** *How to set up safety stock and Kanban replenishment rules in Excel*  
+Open the configuration panel and enter your basic workshop numbers: shift length, shifts per day, minimum safety stock buffers, Kanban trigger thresholds, and allowable scrap percentages. Every downstream **MRP shortage calculation** and **reorder alert** updates automatically based on these rules.
 
-### Step 2: Import Bill of Materials (BOM) & Work Center Master Data
-**Action:** Populate your part master catalog, workstation registry, and assembly structures.
-Register fabricated and purchased components, upstream manufacturing sources (e.g., laser, press brake, lathe), supermarket bin locations, standard pack quantities (SPQ), and average daily usage (ADU). Define parent-child **welding assembly BOMs**, classify robotic vs. manual welding cells, and assign physical trolley fleet resources. *(Optimized for ~500 individual SKUs and ~50 welding sub-assemblies).*
+### Step 2: Paste Your Part List, Workstations & Bill of Materials (BOM)
+**Search Intent:** *How to build a manufacturing Bill of Materials (BOM) and part master list*  
+Enter or paste your component catalog (part numbers, upstream fabrication source such as laser cutting or CNC machining, standard pack quantity, and Kanban bin location) along with your parent-child **welding assembly recipes**. The template supports roughly 500 individual part SKUs and 50 parent assemblies out of the box.
 
-### Step 3: Enter Shift Production Schedules to Generate Picking Lists
-**Action:** Input your daily shift schedule to trigger automated BOM demand explosion.
-Log the production date, shift window, target welding cell, assembly part number, planned output quantity, and release status. The calculation engine immediately explodes assembly quantities into component-level demand, cross-checks **supermarket inventory availability**, highlights critical part shortages, and generates prioritized **trolley kitting and milk-run delivery tasks**.
+### Step 3: Enter Today's Shift Schedule to Generate Automatic Shortage & Picking Lists
+**Search Intent:** *How to calculate material requirements and generate warehouse picking lists from a production schedule*  
+Select your production date, shift, target welding station, assembly part number, and planned quantity. The built-in calculation engine immediately explodes the schedule into child part requirements, checks available **Kanban supermarket inventory**, highlights exact part deficits, and builds a prioritized **trolley kitting checklist**.
 
-### Step 4: Backflush Actual Output, Log Scrap, and Transition to the Reusable Excel Template
-**Action:** Record shop-floor execution data to close the inventory control loop.
-Log upstream fabrication receipts, cycle-count adjustments, trolley dispatch confirmations, and completed welding shift reports (good pieces + scrap). The model automatically backflushes consumed components and refreshes your real-time inventory position for the next shift.
-
-> **Ready to move from single-session browser testing to daily factory operations?**  
-> Once you validate the workflow in the browser sandbox, **[Download the Reusable Shop-Floor Material Flow Control Excel Template (.xlsx)](https://theseusworkshop.com/l/qnojv?utm_source=github&utm_medium=GitHub%20README)** to save your custom BOM master data, track multi-shift historical variance, and run repeatable daily production control offline in Microsoft Excel.
+### Step 4: Log Actual Shift Output & Download the Reusable Excel Template for Daily Operations
+**Search Intent:** *How to track planned vs. actual production output and backflush inventory in Excel*  
+At the end of the shift, enter the number of finished good assemblies and any scrapped parts. The model automatically deducts consumed materials and updates your starting inventory for tomorrow's shift.
 
 ---
 
-## Why Use a Dedicated Shop-Floor Material Flow Framework for Welding Fabrication?
+### Turn a Complex Manufacturing Workflow into a 1-Minute Copy-and-Paste Habit
 
-In a **welding-driven metal fabrication workshop**, a master production schedule (MPS) often looks 100% feasible in an ERP system while the actual physical components required at the point of use are missing.
+Running multi-level **BOM demand explosions**, **Kanban buffer calculations**, **trolley capacity matching**, and **scrap backflushing** from scratch requires complex supply chain math. However, **you do not need to understand the underlying formulas or build a single spreadsheet rule yourself.**
 
-This operational breakdown rarely stems from zero plant-wide inventory. Instead, it is caused by a disconnect between the **shift assembly mix**, the **multi-level BOM requirements**, the physical stock sitting in the **Kanban supermarket**, and the loading status of the **line-side delivery trolley** assigned to a specific welding booth. A static stock ledger cannot resolve this four-way synchronization problem.
+ inside the downloadable **Shop-Floor Material Flow Control Excel Workbook (.xlsx)**, every dynamic array matching rule, cross-tab lookup, and automatic refresh formula is already pre-built and locked in place:
 
-Consider a typical shift scheduling multiple structural weldments across robotic welding cells and manual TIG/MIG stations. Each weldment pulls a unique kit of **laser-cut plates, CNC-bent brackets, and precision-machined bushings**. Missing a single bent bracket halts the entire welding fixture—even when 95% of the kit is staged. Meanwhile, the ERP system shows the bracket "in stock," without clarifying whether it is sitting at the press brake, binned in the supermarket, loaded on a trolley, or already allocated to another shift's work order.
+1. **Zero Formula Dragging Required:** You never even have to double-click a cell corner to drag formulas down. Paste your own part numbers, BOM list, and daily schedule straight into the input tables, and the entire dashboard updates on its own.
+2. **1-Minute Decision Clarity for Beginners:** Even with zero background in data analysis or production control, you can paste your numbers and spot your top material bottlenecks in **60 seconds**. Instead of spending peak busy season fixing broken `VLOOKUP` cells, you get immediate, executive-level decision feedback so you can focus on running your shop and shipping orders on time.
+3. **One-Time Purchase vs. Expensive Monthly Software Subscriptions:** Enterprise ERP and MES modules charge thousands of dollars in recurring annual subscriptions and setup fees. This paid Excel template turns a chaotic factory workflow into a standardized local file you buy once and reuse forever on your own computer.
+4. **100% Local Data Privacy & 30-Day Money-Back Guarantee:** Keep your proprietary BOM structures, vendor part numbers, and production capacities completely offline on your local hard drive with zero cloud security exposure. Every download is protected by a **30-day unconditional money-back guarantee**—if it does not simplify your daily shop-floor planning, request a full refund with zero hassle.
 
-This **Shop-Floor Material Flow Control System** connects those isolated operational data points into one synchronized workflow:
-1. It translates shift-level welding targets into exact component-level demand via automated BOM explosion.
-2. It nets demand against physical supermarket balances and open trolley allocations.
-3. It generates actionable upstream fabrication signals and complete kitting manifests before the shift starts.
-4. It reconciles theoretical usage with actual reported weldments and scrap to keep book inventory aligned with physical reality.
-
-The result is a **productized Lean production control system inside Excel**—delivering consistent, auditable material-flow decisions without forcing small-to-midsize manufacturers to purchase complex MES modules, automated guided vehicle (AGV) fleet software, or heavyweight ERP customizations.
+👉 **[Download the Full Automated Shop-Floor MRP & Production Planning Excel Workbook (.xlsx) — 30-Day Risk-Free Guarantee](https://theseusworkshop.com/l/qnojv?utm_source=github&utm_medium=GitHub%20README)**  
+*(Want to preview the workflow first? **[Try the Free Browser-Based MRP & Kanban Web Sandbox Here](https://hyvoid.github.io/shop-floor-mrp-kanban-excel-system/)**)*
 
 ---
 
-## Traditional Static Inventory Spreadsheets vs. Structured Material Flow Control
+## The Business Logic & Methodology: Plain-English Guide to Shop-Floor Control & Hidden Profit Leaks
 
-| Operational Dimension | Without This System (Ad-Hoc Inventory Spreadsheets) | With This System (Structured Shop-Floor MRP & Kitting Framework) |
+Most small and midsize workshops lose money on the shop floor not because they lack orders, but because of **hidden operational blind spots** in how materials move from raw fabrication to final assembly. 
+
+Below is a plain-English breakdown of the five core business blind spots that cause missed deliveries and wasted labor, along with the objective financial facts and how this spreadsheet's built-in logic fixes them automatically:
+
+### 1. The "95% Complete Kit" Blind Spot (Why One Missing $2 Bracket Stops a $5,000 Order)
+- **The Objective Reality:** Manufacturing assembly is all-or-nothing. If a welded frame requires 15 different metal parts and 14 of them are sitting at the workstation, your actual ability to finish that product is **0%, not 93%**. In most workshops, managers schedule shifts by looking only at finished product orders, discovering too late that a single small bushing or bracket is out of stock.
+- **How the Excel Logic Fixes It (BOM-Driven Demand Translation):** When you type a planned assembly quantity into the schedule, the workbook automatically breaks that parent product down into every single child part required. It flags the missing $2 bracket before you assign a welder to the booth, preventing paid operators from standing idle around an unbuildable job.
+
+### 2. The "In Stock on Paper" Illusion (Double-Counting the Same Parts Across Multiple Shifts)
+- **The Objective Reality:** A standard inventory spreadsheet only tells you the total number of parts inside the building. Suppose your sheet says you have `100 laser-cut base plates` in stock. Job A on the morning shift needs `60 plates`, and Job B on the afternoon shift needs `60 plates`. A basic spreadsheet tells you both jobs have enough parts (`60 <= 100`), so you release both to the floor—causing the afternoon shift to run out of material halfway through.
+- **How the Excel Logic Fixes It (Committed Inventory Netting):** The template automatically subtracts parts already promised to earlier shifts or loaded onto active trolleys from your physical shelf balance. You see your **true remaining available inventory**, eliminating double-booking across shifts and workstations.
+
+### 3. Treating Upstream Machines Like an Instant ATM (Emergency Changeovers & Lost Machine Hours)
+- **The Objective Reality:** Upstream machines like laser cutters, CNC punch presses, and press brakes require setup time, tooling changes, and sheet nesting. When a welding supervisor discovers an empty part bin mid-shift and demands an emergency run of 10 brackets, the press brake operator has to tear down an active production setup. Across the industry, unplanned rush setups reduce total machine capacity by **15% to 30%**.
+- **How the Excel Logic Fixes It (Threshold-Based Kanban Replenishment):** The spreadsheet compares upcoming shift demand against your minimum safety stock levels and automatically ranks restock urgency (`Critical`, `Warning`, `Normal`) by upstream machine type. Upstream operators get a clean, prioritized batch list hours before the bins actually hit zero.
+
+### 4. Turning Welding Booths into Cluttered Storage Bays (Hidden Part-Searching Labor Costs)
+- **The Objective Reality:** When warehouse handlers push partial kits or unorganized pallets onto the shop floor just to "get materials moving," high-value welding cells become congested storage lanes. Skilled welders end up spending **30 to 45 minutes per shift** walking around the shop searching for missing parts or moving half-finished assemblies out of the way.
+- **How the Excel Logic Fixes It (Gatekept Trolley Kitting Readiness):** The template links picking lists directly to physical delivery trolleys and container limits. A trolley is automatically marked as `Blocked` or `Partly Kitted` until every required part is available in full pack quantities, ensuring only 100% build-ready kits reach the production line.
+
+### 5. Invisible Scrap Silently Corrupting Tomorrow's Schedule (Book-to-Physical Inventory Drift)
+- **The Objective Reality:** Every factory produces occasional scrap, warped parts, or setup rejects. When a welder scraps 4 brackets and quietly grabs 4 extra pieces from the Kanban bin without logging them, your spreadsheet becomes inaccurate by 4 units. Over a single month, unrecorded scrap creates massive "phantom inventory"—your computer says you have parts on the shelf when the bin is completely empty.
+- **How the Excel Logic Fixes It (Automated Production & Scrap Backflushing):** At the end of each shift, you enter both completed good units and scrapped pieces into the log. The workbook automatically deducts the theoretical BOM usage *plus* the exact scrap quantity from your live inventory, keeping your digital numbers locked to physical reality without daily manual recounting.
+
+---
+
+## Comparison: Ad-Hoc Manual Spreadsheets vs. Automated Shop-Floor MRP Excel System
+
+| Operational Dimension | Manual Inventory Spreadsheets (Broken Formulas & Guesswork) | This Automated Excel MRP & Kitting System (Pre-Built Dynamic Logic) |
 | :--- | :--- | :--- |
-| **Component Shortage Detection** | **Unplanned Welding Line Stops:** Work orders appear executable at the assembly level, but missing child components are only discovered by welders during fixture setup. | **Pre-Shift BOM Explosion & Netting:** Shift schedules automatically explode into individual part requirements, exposing exact part deficits before work orders hit the floor. |
-| **Work-in-Process (WIP) Location Visibility** | **Stock Ledger Blindness:** Parts appear available in total plant inventory, but material handlers waste time searching across supermarkets, staging lanes, and welding booths. | **Multi-Stage Location Tracking:** Master data and logistics logs clearly segregate stock held in Kanban supermarkets, loaded on delivery trolleys, or staged at workstations. |
-| **Upstream Fabrication Scheduling** | **Expediting & Firefighting:** Laser cutting, sheet metal bending, and CNC machining cells receive urgent replenishment requests via verbal expediting or paper notes. | **Pull-Based Replenishment Signals:** Net shortage algorithms categorize reorder priorities (`Normal`, `Warning`, `Critical`) and route demand directly to specific upstream work centers. |
-| **Line-Side Kitting & Trolley Dispatch** | **Partial Kits & Cluttered Workstations:** Trolleys are pushed to welding cells with incomplete part sets, causing WIP accumulation and mid-shift station changeovers. | **Gatekept Kit Readiness States:** Picking tasks enforce standard pack constraints and flag trolley kits as `Ready`, `Partly`, or `Blocked` prior to floor dispatch. |
-| **Inventory Accuracy & Scrap Reconciliation** | **Book-to-Physical Inventory Drift:** Spreadsheet stock balances lag behind actual floor usage due to unreported welding scrap, rework, and manual material substitutions. | **Automated Production Backflushing:** Shift completion and scrap logs feed directly into the consumption engine, dynamically updating real-time supermarket balances. |
-| **Plant-Wide Bottleneck Prioritization** | **Siloed Station Management:** Supervisors resolve shortages cell-by-cell, masking systemic upstream bottlenecks and conflicting material allocations across shifts. | **Centralized Shop-Floor Control Tower:** A unified dashboard correlates shift attainment, component shortage exposure, supermarket health, and internal logistics flow. |
+| **Setup & Formula Maintenance** | **Hours of Manual `VLOOKUP` Debugging:** Inserting new rows or part numbers breaks cell references, requiring constant formula dragging and manual fixes. | **Zero-Maintenance Paste & Go:** Built with native Excel dynamic array formulas that expand and recalculate automatically the moment you paste your data. |
+| **Component Shortage Detection** | **Mid-Shift Line Stops:** Work orders look ready at the top assembly level, and missing child parts are only discovered by operators during fixture setup. | **Pre-Shift BOM Explosion & Netting:** Shift schedules automatically break down into individual part requirements, exposing exact part deficits before work hits the floor. |
+| **Work-in-Process (WIP) Location Tracking** | **Single-Column Stock Blindness:** Parts appear available in total plant inventory, while material handlers waste time hunting across racks, aisles, and booths. | **Multi-Stage Physical Location Visibility:** Clearly separates stock held in **Kanban supermarkets**, loaded onto **delivery trolleys**, or staged at **welding workstations**. |
+| **Upstream Fabrication Scheduling** | **Verbal Expediting & Firefighting:** Laser cutting, sheet metal bending, and CNC machining cells get interrupted by urgent paper notes and walk-up requests. | **Automated Pull Replenishment Signals:** Shortage algorithms categorize reorder priorities (`Normal`, `Warning`, `Critical`) and group tasks by upstream work center. |
+| **Line-Side Kitting & Trolley Dispatch** | **Partial Kits & Floor Congestion:** Trolleys are pushed to stations with missing components, causing WIP pile-ups and wasted changeover time. | **Strict Kit Readiness Gating:** Picking manifests enforce standard pack quantities (SPQ) and flag trolley kits as `Ready`, `Partly Kitted`, or `Blocked` prior to dispatch. |
+| **Scrap & Inventory Accuracy** | **Phantom Inventory Drift:** Stock balances fall out of sync with physical bins within days due to unrecorded welding scrap, rework, and floor substitutions. | **Automated Shift Backflushing:** Shift completion and scrap logs feed directly into the consumption engine, updating net supermarket balances in real time. |
+| **Cost & Data Security** | **High Hidden Labor Cost or Expensive SaaS:** Either waste 10+ hours a week fixing manual sheets or pay thousands per year for cloud ERP/MES seats. | **One-Time Purchase & 100% Local Privacy:** Pay once, reuse forever on your local desktop with a **30-day money-back guarantee** and zero cloud data exposure. |
 
 ---
 
-## Ideal Users, Manufacturing Roles, and Industry Use Cases
+## Who This Is For: Manufacturing Roles, Search Scenarios & Job-Shop Use Cases
 
-### Who This Is For (Role-to-Workflow Mapping)
+### Role-to-Workflow Mapping (Find Your Exact Use Case)
 
-- **Production Planners & Master Schedulers** looking for a **shift-level production scheduling Excel template** to balance daily welding assembly targets across robotic and manual work centers without causing material starvation.
-- **Material Planners, Inventory Analysts & Buyers** needing a **lightweight MRP and BOM explosion calculator** to translate parent assembly schedules into time-phased component demand and upstream replenishment priorities.
-- **Lean Engineers, Warehouse Leads & Internal Logistics (Milk-Run) Teams** searching for a **Kanban supermarket management and trolley kitting tracker** to standardize line-side picking, container loading, and point-of-use delivery.
-- **Welding Shop Supervisors, Fabrication Foremen & Plant Managers** requiring a **real-time shop-floor shortage and WIP visibility dashboard** to verify station kit readiness prior to shift handovers and track actual vs. planned output.
-- **Industrial Engineers & Manufacturing Excel Practitioners** building a **customizable, low-code production control system** to bridge the execution gap between high-level ERP planning and physical shop-floor operations.
+- **Small Factory Owners, Job-Shop Managers & First-Time Planners** searching for an **easy-to-use manufacturing inventory and production tracking Excel template**: Stop relying on whiteboard schedules and memory. Paste your orders and let the pre-built spreadsheet tell you exactly what to fabricate and kit today.
+- **Production Planners, Master Schedulers & Shop Dispatchers** looking for a **daily production scheduling Excel template and shift capacity tracker**: Balance daily assembly targets across robotic welding cells and manual TIG/MIG booths while verifying 100% component availability before releasing work orders.
+- **Material Planners, Inventory Controllers & Purchasing Buyers** needing a **lightweight Excel MRP template and multi-level BOM explosion calculator**: Translate parent assembly schedules into exact child-part demand, track safety stock coverage, and generate clear upstream replenishment priorities in seconds.
+- **Warehouse Supervisors, Lean Engineers & Internal Logistics (Milk-Run) Teams** searching for a **Kanban inventory spreadsheet and line-side trolley kitting checklist**: Standardize supermarket bin locations, container pack sizes, and trolley loading states so material handlers deliver complete kits to the point of use.
+- **Welding Foremen, Fabrication Leads & Shift Supervisors** requiring a **work-in-process (WIP) tracking sheet and shop-floor shortage dashboard**: Check station kit readiness in 1 minute during shift handovers and log actual output plus scrap without touching complex formulas.
+- **Industrial Engineers & Manufacturing Operations Analysts** seeking a **customizable Microsoft 365 dynamic array production control workbook**: Deploy a transparent, macro-free (`no VBA`) local decision system that bridges the gap between weekly ERP exports and daily floor execution.
 
-### Target Manufacturing Environments & Use Cases
+### Common Factory Scenarios Where This Template Saves Hours Every Week
 
-This framework is purpose-built for **High-Mix, Low-Volume (HMLV) discrete manufacturing** and **job-shop environments**, specifically:
-- **Heavy Equipment, Agricultural & Construction Machinery Sub-Assemblies**
-- **Sheet Metal Fabrication, Laser Cutting & Press Brake Job Shops**
-- **Automotive Tier-2/Tier-3 Stamping and Robotic Welding Suppliers**
-- **Custom Structural Steel, Frame & Enclosure Manufacturers**
+1. **You Are Tired of ERP/MRP Software Overkill:** Your company either cannot justify a $20,000+ ERP/MES rollout or your existing ERP is too rigid to handle shift-by-shift welding schedule changes and trolley kitting on the floor.
+2. **Your Peak-Season Orders Are Growing Faster Than Your Spreadsheet:** Order volume is ramping up, and manually cross-checking 50 assemblies against 500 individual laser-cut, bent, and machined parts is causing costly human errors.
+3. **You Need an Offline, Macro-Free Tool That IT Will Not Block:** Because the workbook uses native **Excel 2021+ / Microsoft 365 dynamic array functions** with zero VBA macros, it opens cleanly on standard company computers without security pop-ups or cloud login requirements.
+
+---
+
+## Target Manufacturing Industries & System Scope
+
+### Ideal Manufacturing Environments
+This template is purpose-built for **High-Mix, Low-Volume (HMLV) discrete manufacturing**, custom metal fabrication, and batch assembly workshops, including:
+- **Welding & Metal Fabrication Job Shops** (MIG, TIG, Spot, and Robotic Welding Cells)
+- **Sheet Metal Fabrication Workshops** (Laser Cutting, Turret Punching, CNC Press Brake Bending)
+- **Heavy Equipment, Agricultural & Construction Machinery Sub-Assembly Plants**
+- **Automotive Tier-2 / Tier-3 Stamping, Frame & Structural Bracket Suppliers**
+- **Custom Industrial Enclosures, Racks, Trailers & Structural Steel Manufacturers**
 
 ### System Scope & Operational Boundaries
-
-To maintain speed, transparency, and zero-IT-overhead deployment, this tool is **intentionally scoped**:
-- **What It Is:** A tactical execution bridge between weekly/monthly ERP planning and shift-level shop-floor material movement.
-- **What It Is Not:** It is **not** a replacement for enterprise financial ERP systems (SAP, Oracle, NetSuite), a full finite-capacity Advanced Planning and Scheduling (APS) engine, a PLC-driven AGV/AMR fleet controller, or an automated IIoT/SCADA machine-monitoring platform. Physical facility layout design, barcode hardware integration, and automated machine telemetry remain outside the workbook's native scope.
+To keep the workbook fast, transparent, and immediately usable by anyone on day one, it is **intentionally focused**:
+- **What It Is:** A plug-and-play tactical execution workbook that connects daily shift schedules, multi-level BOM part math, Kanban bin balances, trolley kitting lists, and shift backflushing inside Microsoft Excel.
+- **What It Is Not:** It is not an accounting general ledger, a full enterprise ERP replacement (such as SAP or NetSuite), an automated PLC/AGV robot controller, or a live machine-sensor SCADA platform.
 
 ---
 
-## About the Architecture: Spreadsheet as a Decision-Support System
+## About the Architecture & Theseus Workshop
 
-Most factory spreadsheets fail because they are built as static data graveyards rather than interconnected operational models. This project approaches industrial spreadsheets as **reusable, low-overhead decision-support systems** governed by one core engineering question: 
+Most factory spreadsheets fail because they are built as static data graveyards where users spend more time fixing broken cells than making operational decisions. 
 
-> *"What exact shop-floor data points must be connected right now so that the next scheduling, kitting, or replenishment decision can be made with zero ambiguity?"*
+This project is developed by **[Theseus Workshop](https://theseusworkshop.com?utm_source=github&utm_medium=GitHub%20README)** under a strict engineering philosophy: **"Pure utility. Zero fluff."** Every template is designed as a self-contained, low-overhead decision-support system governed by one practical question:
 
-The **Shop-Floor Material Flow Control System** applies this principle by linking five traditionally siloed manufacturing layers: **Shift Production Plans → Multi-Level BOM Demand → Kanban Supermarket Inventory → Trolley Kitting Logistics → Actual Production & Scrap Backflushing**. 
+> *"What exact operational numbers must be connected right now so a business owner or planner can paste their data and make the right scheduling, purchasing, or pricing decision in under 60 seconds?"*
 
-By enforcing centralized operating parameters, traceable formula logic, and explicit exception flags, this framework gives manufacturing teams immediate control over line-side material availability—ensuring the right fabricated parts reach the right welding station on the right trolley, every shift.
+By linking **Shift Production Plans → Multi-Level BOM Demand → Kanban Supermarket Inventory → Trolley Kitting Logistics → Actual Production & Scrap Backflushing** into one automated calculation loop, this toolkit gives your workshop enterprise-grade visibility inside a familiar Excel file you own forever.
+
+### Explore More Plug-and-Play Business Decision Toolkits & Excel Templates
+
+Looking for more zero-VBA, automated Microsoft Excel models for manufacturing, cost estimating, cash flow control, and operations management?
+
+- 🛒 **[Get This Shop-Floor Material Flow Control & MRP Excel Template (.xlsx) on Gumroad (30-Day Money-Back Guarantee)](https://theseusworkshop.com/l/qnojv?utm_source=github&utm_medium=GitHub%20README)**
+- 🌐 **[Visit the Official Theseus Workshop Storefront (theseusworkshop.com) to Browse All Business Decision Excel Toolkits, Cost Estimators & Financial Dashboards](https://theseusworkshop.com?utm_source=github&utm_medium=GitHub%20README)**
+- 🖥️ **[Test the Free Interactive Browser Demo of the Shop-Floor Material Flow Control System](https://hyvoid.github.io/shop-floor-mrp-kanban-excel-system/)**
+
 
 ## Technical Details
 
@@ -1242,17 +1289,7 @@ These boundaries should be considered when deciding whether the framework is sui
 
 </details>
 
-## The Business Logic & Methodology
-
-The system is built around a simple operational principle: production plans should generate material requirements, material availability should constrain execution, and actual production should feed back into the next planning decision.
-
-- **BOM-driven demand translation** converts planned welding assemblies into individual-part requirements. This exposes component shortages that are invisible in an assembly-only schedule and gives planners a clearer basis for releasing production.
-- **Inventory-position reconciliation** distinguishes physical stock from material already committed or expected. This reduces the risk of treating the same stock as available for multiple production requirements.
-- **Threshold-based replenishment** compares material requirements with the defined stock position and highlights shortages according to configured operating rules. The result is a prioritized upstream replenishment signal rather than a generic inventory warning.
-- **Containerized internal logistics** connects material-picking requirements to trolley assignments, delivery destinations, packaging constraints, and kit readiness. This helps the logistics team focus on the material needed at each production station.
-- **Actual-output feedback** uses production reports and the approved consumption policy to update the material position. The workshop can then revise its replenishment priorities using current operating information instead of relying solely on the original plan.
-
-Together, these methods connect planning, inventory, logistics, and production reporting into a repeatable daily control process. The framework improves visibility and decision consistency; its reliability still depends on accurate master data, disciplined physical confirmations, and validated calculation rules.
+--
 
 ## Other Tools in This Series
 
