@@ -1,130 +1,177 @@
 [ 🌐 عربي ](README.ar.md) | [ 🇩🇪 Deutsch ](README.de.md) | [ 🇫🇷 Français ](README.fr.md) | [ 🇳🇱 Nederlands ](README.nl.md) | [ 🇪🇸 Español ](README.sp.md) | [ 🇬🇧 English ](README.md)
 
-# Sistema de Control de Flujo de Materiales en Planta: Plantilla Excel de MRP, Supermercado Kanban y Planificación de Producción de Soldadura
+# Sistema de Control de Flujo de Materiales en Planta: Plantilla Excel de MRP, Calculadora de Explosión de BOM, Rastreador de Inventario Kanban y Hoja de Cálculo de Planificación de Producción de Soldadura
 <img width="1920" height="790" alt="image" src="https://github.com/user-attachments/assets/a63af286-1115-4c2c-aa06-6d7e04aba1e4" />
 
-**Un marco ligero de control de flujo de materiales en planta, una calculadora de explosión de listas de materiales (BOM) y un rastreador de logística interna lean para operaciones de fabricación basadas en soldadura y trabajo de metales.**
+
+**Un rastreador de inventario de manufactura listo para usar, una calculadora de explosión de BOM multinivel, una hoja de cálculo de reabastecimiento de supermercado Kanban y una plantilla Excel de programación de producción diaria para talleres de fabricación y soldadura de metales.**
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
-![Platform: Browser + Excel](https://img.shields.io/badge/Platform-Browser%20%2B%20Excel-217346)
-![Tool Type: Production Control & MRP](https://img.shields.io/badge/Tool-Production%20Control%20%26%20MRP-2251FF)
+![Platform: Free Web Tool + Microsoft Excel (.xlsx)](https://img.shields.io/badge/Platform-Free%20Web%20Tool%20%2B%20Excel%20(.xlsx)-217346)
+![Compatibility: Excel 2021+ & Microsoft 365](https://img.shields.io/badge/Compatibility-Excel%202021%2B%20%26%20M365%20Dynamic%20Arrays-2251FF)
+![Category: Manufacturing MRP & Production Control](https://img.shields.io/badge/Category-Manufacturing%20MRP%20%26%20WIP%20Tracker-0A66C2)
 
-**El Sistema de Control de Flujo de Materiales en Planta es una plantilla gratuita de planificación de producción MRP basada en navegador y Excel, diseñada para talleres de trabajo de metales y soldadura de alta mezcla y bajo volumen (HMLV). Convierte los programas de soldadura por turno en requisitos accionables de lista de materiales (BOM), señales de reabastecimiento de supermercado Kanban, tareas de preparación de carritos junto a la línea y seguimiento del consumo de trabajo en proceso (WIP)—eliminando las faltas que detienen la línea y el caos de hojas de cálculo sin costosas renovaciones de ERP/MES.**
+**El Sistema de Control de Flujo de Materiales en Planta** es una **plantilla Excel de MRP** lista para usar, una **hoja de cálculo de control de inventario de manufactura** y una **calculadora gratuita de planificación de producción basada en navegador** diseñada para talleres de trabajo de metales, fabricantes de metal y operaciones de soldadura. Convierte los programas de producción por turno en requisitos exactos de piezas de la **lista de materiales (BOM)**, **alertas de reabastecimiento de contenedores Kanban**, **listas de verificación de preparación de carritos junto a la línea** y **consumo retroactivo de merma de trabajo en proceso (WIP)**. Los fabricantes pequeños y medianos y los planificadores primerizos pueden eliminar faltas de piezas inesperadas, detener los retrasos de soldadura a mitad de turno y reemplazar hojas de cálculo manuales defectuosas en menos de 1 minuto sin pagar suscripciones de software ERP o MES complejas.
 
-> **Acceso, Demostración en Vivo y Disponibilidad del Libro de Trabajo**
+> ### Acceso Rápido: Sandbox Gratuito en Línea y Sistema Excel Descargable
 >
-> - **Aplicación Web Interactiva:** Gratuita, sin registro ni instalación. [Lanzar la demostración web interactiva del Sistema de Control de Flujo de Materiales en Planta](https://hyvoid.github.io/shop-floor-mrp-kanban-excel-system/) 
->   
-> - **Plantilla Excel de MRP Descargable:** Lista para el seguimiento de producción diario sin conexión. [Descargar el libro de trabajo Excel de Control de Producción y Reabastecimiento de Materiales (.xlsx)](https://theseusworkshop.com/l/qnojv?utm_source=github&utm_medium=GitHub%20README)
+> - **Aplicación Web Interactiva Gratuita (Prueba Instantánea en el Navegador):** Pruebe el flujo de trabajo en línea gratis con datos de muestra de manufactura precargados. Sin instalación ni registro de cuenta.  
+>   👉 **[Lanzar la Herramienta Web Gratuita de MRP en Planta, Explosión de BOM y Calculadora Kanban](https://hyvoid.github.io/shop-floor-mrp-kanban-excel-system/)**
+>
+> - **Libro de Trabajo de Microsoft Excel Reutilizable Sin Conexión (.xlsx para Operaciones Diarias de Fábrica):** Descargue la plantilla de hoja de cálculo completamente automatizada para pegar sus propios números de pieza, guardar sus datos maestros de BOM localmente y ejecutar la planificación de turnos repetible sin conexión. Respaldado por una **garantía incondicional de devolución del dinero de 30 días**.  
+>   👉 **[Descargar la Plantilla Excel Lista para Usar de MRP en Planta, Explosión de BOM y Planificación de Producción (.xlsx)](https://theseusworkshop.com/l/qnojv?utm_source=github&utm_medium=GitHub%20README)**
 
 ---
 
-## Capacidades Principales de Seguimiento de Manufactura: Mapeo de Puntos de Dolor a Soluciones
+## Lo Que Le Ayuda a Rastrear: De los Puntos de Dolor en Planta a Soluciones Excel Automatizadas
 
-Para los gerentes de producción que buscan un **rastreador de inventario de manufactura** confiable o una **hoja de control de trabajo en proceso (WIP)**, este marco tiende un puente entre los saldos de inventario estáticos y la preparación de estaciones en tiempo real:
+Si está buscando una **plantilla Excel de rastreador de inventario de manufactura**, una **calculadora de faltantes de BOM** o una **hoja de seguimiento de trabajo en proceso (WIP)**, este sistema reemplaza las suposiciones con cálculos automatizados previos al turno:
 
-| Punto de Dolor Operativo en Planta | Intención de Búsqueda de Alta Frecuencia / Módulo | Cómo Resuelve Este Marco de Control |
+| Punto de Dolor Diario en Fábrica (Realidad de Principiantes y de Planta) | Intención de Búsqueda de Alta Frecuencia / Módulo Excel Integrado | Cómo Lo Resuelve Automáticamente Esta Hoja de Cálculo Lista para Usar |
 | :--- | :--- | :--- |
-| **Faltas de Componentes Imprevistas en las Estaciones de Soldadura** | **Explosión de BOM por Turno y Calculadora MRP** | Expande automáticamente los programas diarios de ensamblaje de soldadura mediante listas de materiales (BOM) multiparte para calcular la demanda neta de componentes por turno y estación de trabajo antes de que los operadores comiencen a soldar. |
-| **Puntos Ciegos de Inventario entre Almacén y la Línea** | **Rastreador de Ubicación de WIP y Supermercado Kanban** | Separa los saldos contables brutos de las ubicaciones físicas de stock—rastreando cantidades exactas en buffers aguas arriba, supermercados Kanban, carritos de material en tránsito y celdas de soldadura robotizada/manual. |
-| **Solicitudes Tardías de Material a la Fabricación Aguas Arriba** | **Reabastecimiento Automatizado y Lista de Prioridades de Faltantes** | Calcula las brechas netas de material en tiempo real contra los buffers de stock de seguridad y marca órdenes de reabastecimiento urgentes para las celdas de corte láser, plegado CNC y mecanizado aguas arriba. |
-| **Carritos Despachados sin Piezas Críticas** | **Preparación de Kits de Carrito y Listitud de Entrega junto a la Línea** | Agrupa las listas de picking por estación, restricciones de embalaje y capacidad del carrito—asignando estados visuales explícitos de kit (`Ready`, `Partly Kitted`, `Blocked`) antes del despacho. |
-| **Deriva de Inventario por Merma y Reproceso No Registrados** | **Consumo Retroactivo de Material Planificado vs. Real** | Concilia el consumo teórico de BOM contra la producción real del turno y la merma registrada en planta, recalculando dinámicamente los saldos restantes del supermercado y de las estaciones. |
-| **Comunicación Fragmentada entre Turnos** | **Panel Andon y de Riesgo Logístico Visual en Planta** | Consolida el cumplimiento del plan de turno, la exposición a faltantes críticos, los desabastecimientos del supermercado y los estados de entrega milk-run internos en una única torre de control operativa. |
+| **Los Soldadores Dejan de Trabajar Porque Falta un Soporte Pequeño** | **Hoja de Cálculo de Explosión de BOM Multinivel y Calculadora MRP** | Multiplica sus conjuntos de soldadura planificados por turno por cada componente hijo en su **lista de materiales (BOM)** para calcular la demanda exacta de piezas antes de que comience el turno. |
+| **Las Piezas Aparecen "En Stock" en el Papel, Pero Nadie Las Encuentra en la Planta** | **Rastreador de Inventario de Ubicación de Trabajo en Proceso (WIP) y Contenedores Kanban** | Separa los totales contables brutos del almacén en ubicaciones físicas específicas: buffers aguas arriba, **contenedores de supermercado Kanban**, carritos de entrega cargados y estaciones de soldadura activas. |
+| **Las Máquinas de Corte Láser y Plegado Son Interrumpidas por Pedidos Urgentes** | **Hoja Automatizada de Alertas de Faltantes de Material y Prioridad de Reorden** | Compara la demanda de material del turno contra los saldos actuales del supermercado y los umbrales de stock de seguridad, generando listas de reorden priorizadas (`Critical`, `Warning`, `Normal`) para las máquinas de láser, plegadora y CNC aguas arriba. |
+| **Los Manejadores de Material Empujan Kits de Piezas Incompletos a las Estaciones** | **Lista de Verificación de Preparación de Kits junto a la Línea y Rastreador de Despacho de Carritos** | Agrupa los componentes requeridos por estación de trabajo, tamaño de contenedor y capacidad del carrito, asignando estados claros de preparación (`Ready`, `Partly Kitted`, `Blocked`) antes de que cualquier carrito salga del área de staging. |
+| **La Merma de Soldadura No Registrada Arruina los Recuentos de Inventario con el Tiempo** | **Calculadora de Producción Planificada vs. Real y Consumo Retroactivo de Merma** | Deduce tanto los conjuntos buenos completados como la merma reportada en planta de sus saldos de inventario en vivo al final de cada turno, manteniendo los números de la hoja de cálculo alineados con los recuentos físicos de contenedores. |
+| **Los Supervisores Pasan Horas Actualizando Fórmulas Rotos entre Pestañas** | **Panel de Control de Producción y Faltantes Visual en Planta** | Consolida las tasas de cumplimiento del plan de turno, los principales cuellos de botella de componentes, los riesgos de desabastecimiento Kanban y las tareas de entrega internas en una sola pantalla de resumen automática. |
 
 ---
 
-## Tutorial Paso a Paso: Cómo Ejecutar la Planificación de Producción Diaria y la Preparación de Materiales
+## Tutorial de Inicio Rápido: Cómo Ejecutar la Planificación de Producción y la Preparación de Materiales en 1 Minuto
 
-El modelo operativo sigue un bucle de control lean de manufactura repetible de 4 pasos: configurar parámetros, mantener datos maestros, ejecutar cálculos MRP del turno y realizar el consumo retroactivo de la producción real. 
+No necesita un título en ingeniería industrial ni habilidades avanzadas de Excel para ejecutar la planificación de necesidades de material. Siga este flujo de trabajo de 4 pasos para probar la lógica en la herramienta web gratuita, y luego traslade sus operaciones diarias al libro de trabajo Excel automatizado.
 
-### Paso 1: Configurar los Parámetros Globales de Planta y Reabastecimiento
-**Acción:** Establezca las reglas operativas básicas de su taller en el módulo de Configuración.
-Defina las duraciones de los turnos, los turnos por día, los buffers de stock de seguridad, los disparadores de reabastecimiento Kanban de emergencia, los umbrales de preparación de kits, los límites de embalaje de carritos y las tolerancias de merma permitidas. Estos parámetros rigen todos los cálculos posteriores de **planificación de necesidades de material (MRP)** y alertas de faltantes.
+### Paso 1: Configure Sus Reglas Básicas de Planta y de Stock de Seguridad
+**Intención de Búsqueda:** *Cómo configurar el stock de seguridad y las reglas de reabastecimiento Kanban en Excel*  
+Abra el panel de configuración e ingrese los números básicos de su taller: duración del turno, turnos por día, buffers mínimos de stock de seguridad, umbrales de disparo Kanban y porcentajes de merma permitidos. Cada **cálculo de faltantes MRP** y **alerta de reorden** aguas abajo se actualiza automáticamente según estas reglas.
 
-### Paso 2: Importar la Lista de Materiales (BOM) y los Datos Maestros de Centros de Trabajo
-**Acción:** Complete su catálogo maestro de piezas, el registro de estaciones de trabajo y las estructuras de ensamblaje.
-Registre los componentes fabricados y comprados, las fuentes de fabricación aguas arriba (p. ej., láser, plegadora, torno), las ubicaciones de contenedores del supermercado, las cantidades de embalaje estándar (SPQ) y el uso diario promedio (ADU). Defina las **BOM de ensamblajes de soldadura** padre-hijo, clasifique las celdas de soldadura robotizadas frente a las manuales y asigne los recursos físicos de la flota de carritos. *(Optimizado para ~500 SKU individuales y ~50 subensamblajes de soldadura).*
+### Paso 2: Pegue Su Lista de Piezas, Estaciones de Trabajo y Lista de Materiales (BOM)
+**Intención de Búsqueda:** *Cómo construir una lista de materiales (BOM) de manufactura y una lista maestra de piezas*  
+Ingrese o pegue su catálogo de componentes (números de pieza, fuente de fabricación aguas arriba como corte láser o mecanizado CNC, cantidad de empaque estándar y ubicación del contenedor Kanban) junto con sus **recetas de conjuntos de soldadura** padre-hijo. La plantilla admite de fábrica aproximadamente 500 SKU de piezas individuales y 50 conjuntos padre.
 
-### Paso 3: Ingresar los Programas de Producción por Turno para Generar Listas de Picking
-**Acción:** Ingrese su programa de turnos diario para activar la explosión automatizada de demanda de BOM.
-Registre la fecha de producción, la ventana del turno, la celda de soldadura objetivo, el número de pieza del ensamblaje, la cantidad de producción planificada y el estado de liberación. El motor de cálculo expande inmediatamente las cantidades de ensamblaje a demanda a nivel de componente, verifica la **disponibilidad de inventario del supermercado**, resalta los faltantes de piezas críticas y genera **tareas priorizadas de preparación de carritos y entrega milk-run**.
+### Paso 3: Ingrese el Programa del Turno de Hoy para Generar Listas Automáticas de Faltantes y Picking
+**Intención de Búsqueda:** *Cómo calcular requisitos de material y generar listas de picking de almacén a partir de un programa de producción*  
+Seleccione su fecha de producción, turno, estación de soldadura objetivo, número de pieza del ensamblaje y cantidad planificada. El motor de cálculo integrado explota inmediatamente el programa en requisitos de piezas hijas, verifica el **inventario del supermercado Kanban** disponible, resalta los déficits exactos de piezas y construye una **lista de verificación de preparación de carritos** priorizada.
 
-### Paso 4: Realizar el Consumo Retroactivo de la Producción Real, Registrar la Merma y Pasar a la Plantilla Excel Reutilizable
-**Acción:** Registre los datos de ejecución de planta para cerrar el bucle de control de inventario.
-Registre las recepciones de fabricación aguas arriba, los ajustes de recuento cíclico, las confirmaciones de despacho de carritos y los informes de turnos de soldadura completados (piezas buenas + merma). El modelo realiza automáticamente el consumo retroactivo de los componentes utilizados y actualiza su posición de inventario en tiempo real para el siguiente turno.
-
-> **¿Listo para pasar de las pruebas de una sola sesión en el navegador a las operaciones diarias de fábrica?**  
-> Una vez validado el flujo de trabajo en el sandbox del navegador, **[Descargue la Plantilla Excel Reutilizable de Control de Flujo de Materiales en Planta (.xlsx)](https://theseusworkshop.com/l/qnojv?utm_source=github&utm_medium=GitHub%20README)** para guardar sus datos maestros de BOM personalizados, rastrear la variación histórica de múltiples turnos y ejecutar un control de producción diario repetible sin conexión en Microsoft Excel.
+### Paso 4: Registre la Producción Real del Turno y Descargue la Plantilla Excel Reutilizable para Operaciones Diarias
+**Intención de Búsqueda:** *Cómo rastrear la producción planificada vs. real y realizar el consumo retroactivo del inventario en Excel*  
+Al final del turno, ingrese el número de conjuntos buenos terminados y las piezas desechadas. El modelo deduce automáticamente los materiales consumidos y actualiza su inventario inicial para el turno de mañana.
 
 ---
 
-## ¿Por Qué Usar un Marco Dedicado de Control de Flujo de Materiales para la Fabricación de Soldadura?
+### Convierta un Flujo de Trabajo de Manufactura Complejo en un Hábito de Copiar y Pegar de 1 Minuto
 
-En un **taller de trabajo de metales basado en soldadura**, un programa maestro de producción (MPS) a menudo parece 100% viable en un sistema ERP mientras faltan los componentes físicos reales requeridos en el punto de uso.
+Ejecutar **explosiones de demanda de BOM** multinivel, **cálculos de buffers Kanban**, **emparejamiento de capacidad de carritos** y **consumo retroactivo de merma** desde cero requiere cálculos complejos de cadena de suministro. Sin embargo, **no necesita entender las fórmulas subyacentes ni construir ni una sola regla de hoja de cálculo usted mismo.**
 
-Esta falla operativa rara vez se debe a un inventario nulo en toda la planta. En cambio, es causada por una desconexión entre la **mezcla de ensamblaje del turno**, los **requisitos de BOM multinivel**, el stock físico que se encuentra en el **supermercado Kanban** y el estado de carga del **carrito de entrega junto a la línea** asignado a un puesto de soldadura específico. Un libro contable de stock estático no puede resolver este problema de sincronización cuádruple.
+dentro del **Libro de Trabajo Excel de Control de Flujo de Materiales en Planta (.xlsx)** descargable, cada regla de emparejamiento de matriz dinámica, búsqueda cruzada entre pestañas y fórmula de actualización automática ya está preconstruida y bloqueada en su lugar:
 
-Considere un turno típico que programa múltiples conjuntos soldados estructurales en celdas de soldadura robotizada y estaciones TIG/MIG manuales. Cada conjunto soldado extrae un kit único de **placas cortadas láser, soportes plegados CNC y bujes mecanizados con precisión**. La falta de un solo soporte plegado detiene todo el utillaje de soldadura—incluso cuando el 95% del kit ya está preparado. Mientras tanto, el sistema ERP muestra el soporte "en stock", sin aclarar si está en la plegadora, guardado en el supermercado, cargado en un carrito o ya asignado a la orden de trabajo de otro turno.
+1. **Cero Arrastre de Fórmulas Requerido:** Nunca tendrá que hacer doble clic en la esquina de una celda para arrastrar fórmulas hacia abajo. Pegue sus propios números de pieza, lista de BOM y programa diario directamente en las tablas de entrada, y todo el panel se actualiza por sí solo.
+2. **Claridad de Decisión en 1 Minuto para Principiantes:** Incluso sin experiencia previa en análisis de datos o control de producción, puede pegar sus números y detectar sus principales cuellos de botella de material en **60 segundos**. En lugar de pasar la temporada pico arreglando celdas de `VLOOKUP` rotas, obtiene retroalimentación inmediata de decisión a nivel ejecutivo para que pueda enfocarse en operar su taller y enviar pedidos a tiempo.
+3. **Compra Única vs. Costosas Suscripciones Mensuales de Software:** Los módulos empresariales de ERP y MES cobran miles de dólares en suscripciones anuales recurrentes y tarifas de configuración. Esta plantilla Excel de pago convierte un flujo de trabajo de fábrica caótico en un archivo local estandarizado que compra una vez y reutiliza para siempre en su propia computadora.
+4. **100% de Privacidad de Datos Local y Garantía de Devolución del Dinero de 30 Días:** Mantenga sus estructuras de BOM propietarias, números de pieza de proveedores y capacidades de producción completamente fuera de línea en su disco duro local con cero exposición de seguridad en la nube. Cada descarga está protegida por una **garantía incondicional de devolución del dinero de 30 días**—si no simplifica su planificación diaria en planta, solicite un reembolso completo sin complicaciones.
 
-Este **Sistema de Control de Flujo de Materiales en Planta** conecta esos puntos de datos operativos aislados en un flujo de trabajo único y sincronizado:
-1. Traduce los objetivos de soldadura del turno en demanda exacta a nivel de componente mediante la explosión automatizada de BOM.
-2. Calcula la demanda neta contra los saldos físicos del supermercado y las asignaciones abiertas de carritos.
-3. Genera señales accionables de fabricación aguas arriba y manifiestos completos de preparación de kits antes de que comience el turno.
-4. Concilia el uso teórico con los conjuntos soldados informados y la merma para mantener el inventario contable alineado con la realidad física.
-
-El resultado es un **sistema de control de producción lean productizado dentro de Excel**—entregando decisiones de flujo de materiales consistentes y auditables sin obligar a los fabricantes pequeños y medianos a comprar módulos MES complejos, software de flotas de vehículos de guía automática (AGV) o personalizaciones pesadas de ERP.
+👉 **[Descargue el Libro de Trabajo Excel Completamente Automatizado de MRP en Planta y Planificación de Producción (.xlsx) — Garantía Sin Riesgo de 30 Días](https://theseusworkshop.com/l/qnojv?utm_source=github&utm_medium=GitHub%20README)**  
+*(¿Quiere previsualizar primero el flujo de trabajo? **[Pruebe Aquí el Sandbox Web Gratuito de MRP y Kanban en el Navegador](https://hyvoid.github.io/shop-floor-mrp-kanban-excel-system/)**)*
 
 ---
 
-## Hojas de Cálculo de Inventario Estáticas Tradicionales vs. Control Estructurado del Flujo de Materiales
+## La Lógica de Negocio y la Metodología: Guía en Lenguaje Sencillo del Control en Planta y las Fugas Ocultas de Beneficio
 
-| Dimensión Operativa | Sin Este Sistema (Hojas de Inventario Ad-Hoc) | Con Este Sistema (Marco Estructurado de MRP y Preparación de Kits en Planta) |
+La mayoría de los talleres pequeños y medianos pierden dinero en la planta no porque les falten pedidos, sino por **puntos ciegos operativos ocultos** en la forma en que los materiales se mueven desde la fabricación bruta hasta el ensamblaje final.
+
+A continuación se presenta un desglose en lenguaje sencillo de los cinco puntos ciegos de negocio fundamentales que causan entregas incumplidas y mano de obra desperdiciada, junto con los hechos financieros objetivos y cómo la lógica integrada de esta hoja de cálculo los corrige automáticamente:
+
+### 1. El Punto Ciego del "Kit 95% Completo" (Por Qué un Soporte de $2 Que Falta Detiene un Pedido de $5,000)
+- **La Realidad Objetiva:** El ensamblaje de manufactura es todo o nada. Si un bastidor soldado requiere 15 piezas metálicas diferentes y 14 de ellas ya están en la estación de trabajo, su capacidad real de terminar ese producto es del **0%, no del 93%**. En la mayoría de los talleres, los gerentes programan los turnos mirando únicamente los pedidos de producto terminado, y descubren demasiado tarde que un solo buje o soporte pequeño está agotado.
+- **Cómo Lo Corrige la Lógica de Excel (Traducción de Demanda Basada en BOM):** Cuando escribe una cantidad de ensamblaje planificada en el programa, el libro de trabajo descompone automáticamente ese producto padre en cada pieza hija requerida. Señala el soporte de $2 que falta antes de que asigne un soldador al puesto, evitando que operadores pagados permanezcan inactivos alrededor de un trabajo imposible de construir.
+
+### 2. La Ilusión del "En Stock en el Papel" (Doble Conteo de las Mismas Piezas entre Múltiples Turnos)
+- **La Realidad Objetiva:** Una hoja de cálculo de inventario estándar solo le indica el número total de piezas dentro de la planta. Suponga que su hoja dice que tiene `100 placas base cortadas láser` en stock. El Trabajo A del turno de mañana necesita `60 placas`, y el Trabajo B del turno de tarde necesita `60 placas`. Una hoja de cálculo básica le dice que ambos trabajos tienen suficientes piezas (`60 <= 100`), así que libera ambos al piso de planta—haciendo que el turno de tarde se quede sin material a mitad del proceso.
+- **Cómo Lo Corrige la Lógica de Excel (Compensación de Inventario Comprometido):** La plantilla resta automáticamente de su saldo físico en estantería las piezas ya prometidas a turnos anteriores o cargadas en carritos activos. Usted ve su **inventario verdadero restante disponible**, eliminando la doble reserva entre turnos y estaciones de trabajo.
+
+### 3. Tratar las Máquinas Aguas Arriba como un Cajero Automático Instantáneo (Cambios de Utillaje de Emergencia y Horas de Máquina Perdidas)
+- **La Realidad Objetiva:** Las máquinas aguas arriba como cortadoras láser, prensas punzonadoras CNC y plegadoras requieren tiempo de configuración, cambios de herramental y anidado de chapa. Cuando un supervisor de soldadura descubre un contenedor de piezas vacío a mitad del turno y exige una corrida de emergencia de 10 soportes, el operador de la plegadora tiene que desarmar una configuración de producción activa. En toda la industria, las configuraciones de emergencia no planificadas reducen la capacidad total de máquina en un **15% a 30%**.
+- **Cómo Lo Corrige la Lógica de Excel (Reabastecimiento Kanban Basado en Umbrales):** La hoja de cálculo compara la demanda del próximo turno contra sus niveles mínimos de stock de seguridad y clasifica automáticamente la urgencia de reabastecimiento (`Critical`, `Warning`, `Normal`) por tipo de máquina aguas arriba. Los operadores aguas arriba reciben una lista de lotes limpia y priorizada horas antes de que los contenedores lleguen realmente a cero.
+
+### 4. Convertir las Celdas de Soldadura en Bahías de Almacenamiento Desordenadas (Costos Ocultos de Mano de Obra en Búsqueda de Piezas)
+- **La Realidad Objetiva:** Cuando los manejadores de almacén empujan kits parciales o palés desorganizados al piso de planta solo para "poner los materiales en movimiento", las celdas de soldadura de alto valor se convierten en carriles de almacenamiento congestionados. Los soldadores calificados terminan gastando **30 a 45 minutos por turno** caminando por la planta buscando piezas faltantes o apartando ensamblajes a medio terminar.
+- **Cómo Lo Corrige la Lógica de Excel (Preparación de Kits de Carritos con Control de Acceso):** La plantilla vincula las listas de picking directamente a los carritos de entrega físicos y a los límites de los contenedores. Un carrito se marca automáticamente como `Blocked` o `Partly Kitted` hasta que cada pieza requerida esté disponible en cantidades completas de empaque, garantizando que solo kits 100% listos para construir lleguen a la línea de producción.
+
+### 5. Merma Invisible que Corrompe Silenciosamente el Programa de Mañana (Deriva Contable-Física del Inventario)
+- **La Realidad Objetiva:** Toda fábrica produce ocasionalmente merma, piezas combadas o rechazos de configuración. Cuando un soldador desecha 4 soportes y toma silenciosamente 4 piezas adicionales del contenedor Kanban sin registrarlas, su hoja de cálculo queda inexacta en 4 unidades. En un solo mes, la merma no registrada crea un masivo "inventario fantasma"—su computadora dice que tiene piezas en la estantería cuando el contenedor está completamente vacío.
+- **Cómo Lo Corrige la Lógica de Excel (Consumo Retroactivo Automatizado de Producción y Merma):** Al final de cada turno, usted ingresa tanto las unidades buenas completadas como las piezas desechadas en el registro. El libro de trabajo deduce automáticamente el uso teórico de BOM *más* la cantidad exacta de merma de su inventario en vivo, manteniendo sus números digitales anclados a la realidad física sin recuentos manuales diarios.
+
+---
+
+## Comparación: Hojas de Cálculo Manuales Ad-Hoc vs. Sistema Excel de MRP en Planta Automatizado
+
+| Dimensión Operativa | Hojas de Inventario Manuales (Fórmulas Rotas y Suposiciones) | Este Sistema Excel de MRP y Preparación de Kits Automatizado (Lógica Dinámica Preconstruida) |
 | :--- | :--- | :--- |
-| **Detección de Faltantes de Componentes** | **Paradas No Planificadas de la Línea de Soldadura:** Las órdenes de trabajo parecen ejecutables a nivel de ensamblaje, pero los componentes hijos faltantes solo los descubren los soldadores durante la configuración del utillaje. | **Explosión y Cálculo Neto de BOM Antes del Turno:** Los programas de turno se expanden automáticamente en requisitos individuales de piezas, exponiendo los déficits exactos de piezas antes de que las órdenes de trabajo lleguen al suelo de planta. |
-| **Visibilidad de Ubicación del Trabajo en Proceso (WIP)** | **Ceguera del Libro Contable de Stock:** Las piezas aparecen disponibles en el inventario total de la planta, pero los manejadores de material pierden tiempo buscando entre supermercados, carriles de preparación y puestos de soldadura. | **Seguimiento de Ubicación Multietapa:** Los datos maestros y los registros logísticos segregan claramente el stock retenido en supermercados Kanban, cargado en carritos de entrega o preparado en estaciones de trabajo. |
-| **Programación de Fabricación Aguas Arriba** | **Urgencias y Bombeo de Incendios:** Las celdas de corte láser, plegado de chapa y mecanizado CNC reciben solicitudes urgentes de reabastecimiento mediante urgencias verbales o notas de papel. | **Señales de Reabastecimiento Basadas en Extracción:** Los algoritmos de faltante neto categorizan las prioridades de reorden (`Normal`, `Warning`, `Critical`) y enrutan la demanda directamente a centros de trabajo específicos aguas arriba. |
-| **Preparación de Kits junto a la Línea y Despacho de Carritos** | **Kits Parciales y Estaciones Desordenadas:** Los carritos llegan a las celdas de soldadura con conjuntos incompletos de piezas, causando acumulación de WIP y cambios de estación a mitad de turno. | **Estados de Preparación de Kit con Control de Acceso:** Las tareas de picking aplican las restricciones de embalaje estándar y marcan los kits del carrito como `Ready`, `Partly` o `Blocked` antes del despacho al suelo de planta. |
-| **Precisión de Inventario y Conciliación de Merma** | **Deriva Contable-Física del Inventario:** Los saldos de stock de la hoja de cálculo se retrasan respecto al uso real de la planta debido a mermas de soldadura no reportadas, reprocesos y sustituciones manuales de material. | **Consumo Retroactivo Automatizado de Producción:** Los cierres de turno y los registros de merma alimentan directamente el motor de consumo, actualizando dinámicamente los saldos del supermercado en tiempo real. |
-| **Priorización de Cuellos de Botella en Toda la Planta** | **Gestión Aislada por Estación:** Los supervisores resuelven los faltantes celda por celda, ocultando los cuellos de botella sistémicos aguas arriba y las asignaciones de material en conflicto entre turnos. | **Torre de Control Centralizada en Planta:** Un panel unificado correlaciona el cumplimiento de turnos, la exposición a faltantes de componentes, la salud del supermercado y el flujo logístico interno. |
+| **Configuración y Mantenimiento de Fórmulas** | **Horas de Depuración Manual de `VLOOKUP`:** Insertar filas nuevas o números de pieza rompe las referencias de celda, lo que exige arrastrar fórmulas constantemente y hacer correcciones manuales. | **Pegar y Funcionar Sin Mantenimiento:** Construido con fórmulas nativas de matriz dinámica de Excel que se expanden y recalculan automáticamente en el momento en que pega sus datos. |
+| **Detección de Faltantes de Componentes** | **Paradas de Línea a Mitad de Turno:** Las órdenes de trabajo parecen listas a nivel de ensamblaje superior, y las piezas hijas faltantes solo las descubren los operadores durante la configuración del utillaje. | **Explosión y Compensación de BOM Antes del Turno:** Los programas de turno se desglosan automáticamente en requisitos individuales de piezas, exponiendo los déficits exactos de piezas antes de que el trabajo llegue al piso de planta. |
+| **Seguimiento de Ubicación del Trabajo en Proceso (WIP)** | **Ceguera de Stock de una Sola Columna:** Las piezas parecen disponibles en el inventario total de la planta, mientras los manejadores de material pierden tiempo buscando entre racks, pasillos y puestos. | **Visibilidad de Ubicación Física Multietapa:** Separa claramente el stock retenido en **supermercados Kanban**, cargado en **carritos de entrega** o preparado en **estaciones de soldadura**. |
+| **Programación de Fabricación Aguas Arriba** | **Urgencias Verbales y Bombeo de Incendios:** Las celdas de corte láser, plegado de chapa y mecanizado CNC son interrumpidas por notas urgentes en papel y solicitudes presenciales. | **Señales Automatizadas de Reabastecimiento por Extracción:** Los algoritmos de faltantes categorizan las prioridades de reorden (`Normal`, `Warning`, `Critical`) y agrupan las tareas por centro de trabajo aguas arriba. |
+| **Preparación de Kits junto a la Línea y Despacho de Carritos** | **Kits Parciales y Congestión en Planta:** Los carritos llegan a las estaciones con componentes faltantes, causando acumulaciones de WIP y tiempo de cambio de utillaje desperdiciado. | **Compuerta Estricta de Preparación de Kits:** Los manifiestos de picking aplican las cantidades de empaque estándar (SPQ) y marcan los kits del carrito como `Ready`, `Partly Kitted` o `Blocked` antes del despacho. |
+| **Precisión de Merma e Inventario** | **Deriva de Inventario Fantasma:** Los saldos de stock se desincronizan de los contenedores físicos en cuestión de días debido a merma de soldadura no registrada, reprocesos y sustituciones en planta. | **Consumo Retroactivo Automatizado por Turno:** Los registros de finalización de turno y de merma alimentan directamente el motor de consumo, actualizando los saldos netos del supermercado en tiempo real. |
+| **Costo y Seguridad de Datos** | **Alto Costo Oculto de Mano de Obra o SaaS Costoso:** O desperdicia más de 10 horas por semana arreglando hojas manuales o paga miles al año por puestos de ERP/MES en la nube. | **Compra Única y 100% de Privacidad Local:** Pague una vez y reutilice para siempre en su escritorio local con una **garantía de devolución del dinero de 30 días** y cero exposición de datos en la nube. |
 
 ---
 
-## Usuarios Ideales, Roles de Manufactura y Casos de Uso Industriales
+## Para Quién Es Esto: Roles de Manufactura, Escenarios de Búsqueda y Casos de Uso de Talleres de Trabajo
 
-### Para Quién Es Esto (Mapeo de Rol a Flujo de Trabajo)
+### Mapeo de Rol a Flujo de Trabajo (Encuentre Su Caso de Uso Exacto)
 
-- **Planificadores de Producción y Programadores Maestros** que buscan una **plantilla Excel de programación de producción por turno** para equilibrar los objetivos diarios de ensamblaje de soldadura entre centros de trabajo robotizados y manuales sin causar hambre de material.
-- **Planificadores de Material, Analistas de Inventario y Compradores** que necesitan una **calculadora ligera de MRP y explosión de BOM** para traducir los programas de ensamblajes padre en demanda de componentes por periodos y prioridades de reabastecimiento aguas arriba.
-- **Ingenieros Lean, Responsables de Almacén y Equipos de Logística Interna (Milk-Run)** que buscan un **rastreador de gestión de supermercado Kanban y preparación de carritos** para estandarizar el picking junto a la línea, la carga de contenedores y la entrega en el punto de uso.
-- **Supervisores de Talleres de Soldadura, Jefes de Fabricación y Gerentes de Planta** que requieren un **panel de visibilidad en tiempo real de faltantes en planta y WIP** para verificar la preparación de kits de estación antes de los relevos de turno y rastrear la producción real vs. planificada.
-- **Ingenieros Industriales y Practicantes de Excel de Manufactura** que construyen un **sistema de control de producción personalizable y de bajo código** para cerrar la brecha de ejecución entre la planificación ERP de alto nivel y las operaciones físicas de planta.
+- **Propietarios de Pequeñas Fábricas, Gerentes de Talleres de Trabajo y Planificadores Primerizos** que buscan una **plantilla Excel fácil de usar de inventario y seguimiento de producción de manufactura**: Deje de depender de pizarras blancas y de la memoria. Pegue sus pedidos y deje que la hoja de cálculo preconstruida le diga exactamente qué fabricar y preparar en kits hoy.
+- **Planificadores de Producción, Programadores Maestros y Despachadores de Planta** que buscan una **plantilla Excel de programación de producción diaria y rastreador de capacidad por turno**: Equilibre los objetivos diarios de ensamblaje entre celdas de soldadura robotizadas y puestos manuales TIG/MIG mientras verifica la disponibilidad del 100% de los componentes antes de liberar órdenes de trabajo.
+- **Planificadores de Material, Controladores de Inventario y Compradores** que necesitan una **plantilla Excel ligera de MRP y calculadora de explosión de BOM multinivel**: Traduzca los programas de ensamblajes padre en demanda exacta de piezas hijas, rastree la cobertura de stock de seguridad y genere prioridades claras de reabastecimiento aguas arriba en segundos.
+- **Supervisores de Almacén, Ingenieros Lean y Equipos de Logística Interna (Milk-Run)** que buscan una **hoja de cálculo de inventario Kanban y lista de verificación de preparación de carritos junto a la línea**: Estandarice las ubicaciones de contenedores del supermercado, los tamaños de empaque de contenedores y los estados de carga de carritos para que los manejadores de material entreguen kits completos en el punto de uso.
+- **Jefes de Soldadura, Líderes de Fabricación y Supervisores de Turno** que requieren una **hoja de seguimiento de trabajo en proceso (WIP) y panel de faltantes en planta**: Verifique la preparación de kits de estación en 1 minuto durante los relevos de turno y registre la producción real más la merma sin tocar fórmulas complejas.
+- **Ingenieros Industriales y Analistas de Operaciones de Manufactura** que buscan un **libro de trabajo de control de producción personalizable con matrices dinámicas de Microsoft 365**: Despliegue un sistema de decisión local, transparente y sin macros (`no VBA`) que cierre la brecha entre las exportaciones semanales del ERP y la ejecución diaria en planta.
 
-### Entornos de Manufactura Objetivo y Casos de Uso
+### Escenarios Comunes de Fábrica en los Que Esta Plantilla Ahorra Horas Cada Semana
 
-Este marco está diseñado específicamente para la **manufactura discreta de Alta Mezcla, Bajo Volumen (HMLV)** y **entornos de taller a medida**, específicamente:
-- **Subensamblajes de Maquinaria Pesada, Agrícola y de Construcción**
-- **Talleres de Fabricación de Chapa Metálica, Corte Láser y Plegado con Prensa**
-- **Proveedores Automotrices de Estampado y Soldadura Robotizada Tier-2/Tier-3**
-- **Fabricantes de Acero Estructural, Bastidores y Carcasas Personalizadas**
+1. **Está Cansado del Exceso de Software ERP/MRP:** Su empresa o no puede justificar una implementación de ERP/MES de más de $20,000, o su ERP existente es demasiado rígido para manejar cambios de programa de soldadura turno a turno y la preparación de kits de carritos en la planta.
+2. **Sus Pedidos de Temporada Alta Crecen Más Rápido que Su Hoja de Cálculo:** El volumen de pedidos va en aumento, y verificar manualmente 50 ensamblajes contra 500 piezas individuales cortadas láser, dobladas y mecanizadas está causando errores humanos costosos.
+3. **Necesita una Herramienta Sin Conexión y Sin Macros que TI No Bloquee:** Debido a que el libro de trabajo usa **funciones nativas de matriz dinámica de Excel 2021+ / Microsoft 365** con cero macros VBA, se abre sin problemas en computadoras corporativas estándar sin ventanas emergentes de seguridad ni requisitos de inicio de sesión en la nube.
+
+---
+
+## Industrias de Manufactura Objetivo y Alcance del Sistema
+
+### Entornos de Manufactura Ideales
+Esta plantilla está diseñada específicamente para la **manufactura discreta de Alta Mezcla, Bajo Volumen (HMLV)**, la fabricación de metal a medida y los talleres de ensamblaje por lotes, incluyendo:
+- **Talleres de Trabajo de Soldadura y Fabricación de Metal** (Celdas de Soldadura MIG, TIG, por Puntos y Robotizadas)
+- **Talleres de Fabricación de Chapa Metálica** (Corte Láser, Punzonado con Torreta, Plegado con Prensa Plegadora CNC)
+- **Plantas de Subensamblaje de Maquinaria Pesada, Agrícola y de Construcción**
+- **Proveedores Automotrices Tier-2 / Tier-3 de Estampado, Bastidores y Soportes Estructurales**
+- **Fabricantes de Carcasas Industriales, Racks, Remolques y Acero Estructural a Medida**
 
 ### Alcance del Sistema y Límites Operativos
-
-Para mantener velocidad, transparencia y despliegue sin sobrecarga de TI, esta herramienta está **deliberadamente limitada en alcance**:
-- **Lo Que Es:** Un puente táctico de ejecución entre la planificación ERP semanal/mensual y el movimiento de materiales a nivel de turno en planta.
-- **Lo Que No Es:** **No** es un reemplazo de los sistemas ERP financieros empresariales (SAP, Oracle, NetSuite), ni un motor completo de Planificación y Programación Avanzada (APS) de capacidad finita, ni un controlador de flota AGV/AMR impulsado por PLC, ni una plataforma automatizada de monitoreo de máquinas IIoT/SCADA. El diseño físico de la distribución de la planta, la integración de hardware de códigos de barras y la telemetría automática de máquinas quedan fuera del alcance nativo del libro de trabajo.
+Para mantener el libro de trabajo rápido, transparente e inmediatamente utilizable por cualquiera desde el primer día, está **intencionalmente enfocado**:
+- **Lo Que Es:** Un libro de trabajo de ejecución táctica listo para usar que conecta los programas de turnos diarios, los cálculos de piezas de BOM multinivel, los saldos de contenedores Kanban, las listas de preparación de kits de carritos y el consumo retroactivo por turno dentro de Microsoft Excel.
+- **Lo Que No Es:** No es un libro mayor contable, ni un reemplazo completo de ERP empresarial (como SAP o NetSuite), ni un controlador automatizado de robots PLC/AGV, ni una plataforma SCADA de sensores de máquina en tiempo real.
 
 ---
 
-## Sobre la Arquitectura: la Hoja de Cálculo como Sistema de Soporte a Decisiones
+## Sobre la Arquitectura y Theseus Workshop
 
-La mayoría de las hojas de cálculo de fábrica fallan porque se construyen como cementerios de datos estáticos en lugar de modelos operativos interconectados. Este proyecto aborda las hojas de cálculo industriales como **sistemas de soporte a decisiones reutilizables y de baja sobrecarga**, regidos por una pregunta central de ingeniería: 
+La mayoría de las hojas de cálculo de fábrica fallan porque se construyen como cementerios de datos estáticos donde los usuarios dedican más tiempo a reparar celdas dañadas que a tomar decisiones operativas.
 
-> *"¿Qué puntos de datos exactos de planta deben conectarse ahora mismo para que la próxima decisión de programación, preparación de kits o reabastecimiento se tome con cero ambigüedad?"*
+Este proyecto es desarrollado por **[Theseus Workshop](https://theseusworkshop.com?utm_source=github&utm_medium=GitHub%20README)** bajo una estricta filosofía de ingeniería: **"Utilidad pura. Cero relleno."** Cada plantilla está diseñada como un sistema de soporte a decisiones autosuficiente y de baja sobrecarga, regido por una pregunta práctica:
 
-El **Sistema de Control de Flujo de Materiales en Planta** aplica este principio vinculando cinco capas de manufactura tradicionalmente aisladas: **Planes de Producción por Turno → Demanda de BOM Multinivel → Inventario del Supermercado Kanban → Logística de Preparación de Carritos → Consumo Retroactivo de Producción Real y Merma**. 
+> *"¿Qué números operativos exactos deben conectarse ahora mismo para que un propietario de negocio o un planificador pueda pegar sus datos y tomar la decisión correcta de programación, compra o precios en menos de 60 segundos?"*
 
-Al imponer parámetros operativos centralizados, lógica de fórmulas trazable y marcas explícitas de excepciones, este marco brinda a los equipos de manufactura control inmediato sobre la disponibilidad de material junto a la línea—garantizando que las piezas fabricadas correctas lleguen a la estación de soldadura correcta en el carrito correcto, en cada turno.
+Al vincular **Planes de Producción por Turno → Demanda de BOM Multinivel → Inventario del Supermercado Kanban → Logística de Preparación de Carritos → Consumo Retroactivo de Producción Real y Merma** en un único bucle de cálculo automatizado, este kit de herramientas brinda a su taller visibilidad de nivel empresarial dentro de un archivo familiar de Excel que le pertenece para siempre.
+
+### Explore Más Kits de Herramientas de Decisiones de Negocio Listos para Usar y Plantillas Excel
+
+¿Busca más modelos de Microsoft Excel automatizados y sin VBA para manufactura, estimación de costos, control de flujo de caja y gestión de operaciones?
+
+- 🛒 **[Obtenga Esta Plantilla Excel de Control de Flujo de Materiales en Planta y MRP (.xlsx) en Gumroad (Garantía de Devolución de 30 Días)](https://theseusworkshop.com/l/qnojv?utm_source=github&utm_medium=GitHub%20README)**
+- 🌐 **[Visite la Tienda Oficial de Theseus Workshop (theseusworkshop.com) para Explorar Todos los Kits de Herramientas Excel de Decisiones de Negocio, Estimadores de Costos y Paneles Financieros](https://theseusworkshop.com?utm_source=github&utm_medium=GitHub%20README)**
+- 🖥️ **[Pruebe la Demostración Web Interactiva Gratuita del Sistema de Control de Flujo de Materiales en Planta](https://hyvoid.github.io/shop-floor-mrp-kanban-excel-system/)**
+
 
 ## Detalles Técnicos
 
@@ -1242,25 +1289,32 @@ Estos límites deben considerarse al decidir si el marco es adecuado para un ent
 
 </details>
 
-## La Lógica de Negocio y la Metodología
-
-El sistema se construye alrededor de un principio operativo simple: los planes de producción deben generar requisitos de material, la disponibilidad de material debe limitar la ejecución, y la producción real debe retroalimentar la próxima decisión de planificación.
-
-- **Traducción de demanda basada en BOM** convierte los ensamblajes de soldadura planificados en requisitos de piezas individuales. Esto expone los faltantes de componentes invisibles en un programa solo de ensamblajes y da a los planificadores una base más clara para liberar producción.
-- **Conciliación de posición de inventario** distingue el stock físico del material ya comprometido o esperado. Esto reduce el riesgo de tratar el mismo stock como disponible para múltiples requisitos de producción.
-- **Reabastecimiento basado en umbrales** compara los requisitos de material con la posición de stock definida y resalta los faltantes según las reglas operativas configuradas. El resultado es una señal priorizada de reabastecimiento aguas arriba en lugar de una advertencia genérica de inventario.
-- **Logística interna contenizada** conecta los requisitos de picking de material con las asignaciones de carritos, destinos de entrega, restricciones de embalaje y preparación de kits. Esto ayuda al equipo logístico a centrarse en el material necesario en cada estación de producción.
-- **Retroalimentación de producción real** usa los informes de producción y la política de consumo aprobada para actualizar la posición de material. El taller puede entonces revisar sus prioridades de reabastecimiento usando información operativa actual en lugar de depender únicamente del plan original.
-
-Juntos, estos métodos conectan la planificación, el inventario, la logística y los informes de producción en un proceso de control diario repetible. El marco mejora la visibilidad y la consistencia de las decisiones; su confiabilidad aún depende de datos maestros precisos, confirmaciones físicas disciplinadas y reglas de cálculo validadas.
+--
 
 ## Otras Herramientas de Esta Serie
 
 Explore herramientas adicionales ligeras de soporte a decisiones de manufactura y operaciones en el perfil de GitHub del propietario del proyecto:
 
-- [HyVoid en GitHub](https://github.com/HyVoid) — herramientas de hojas de cálculo de manufactura, planificación y operaciones.
+- **[project-time-tracking-excel-template](https://github.com/HyVoid/project-time-tracking-excel-template)** — ¿Qué proyectos se están desviando en costos de tiempo o margen? — Analice la asignación de costos de mano de obra de proyectos y la rentabilidad a través de carteras de proyectos activos.
+- **[Caf-audit-tool-for-efficient-reviews](https://github.com/HyVoid/Caf-audit-tool-for-efficient-reviews)** — ¿Qué dimensión operativa está costando más ingresos y la fuga financiera exige una intervención inmediata? — Convierta observaciones estructuradas de cafeterías en una puntuación de diagnóstico ponderada, una estimación de fuga financiera y una lista priorizada de acciones correctivas.
+- **[Restaurant-Menu-Configuration-Modifier-Pricing-Toolkit](https://github.com/HyVoid/Restaurant-Menu-Configuration-Modifier-Pricing-Toolkit)** — ¿El menú tiene precios consistentes en todas las combinaciones de modificadores y tamaños o hay errores de precios ocultos esperando salir a la luz? — Centralice la configuración del menú del restaurante, las reglas de precios de modificadores y los datos de menú listos para POS en una única fuente de verdad gobernada.
+- **[wedding-planner](https://github.com/HyVoid/wedding-planner)** — ¿Qué tareas, costos y plazos de la planificación de la boda necesitan coordinación? — Coordine la gestión de proveedores, el seguimiento de tareas y el control presupuestario en los flujos de trabajo de planificación de bodas.
+- **[manufacturing-capacity-planning-template](https://github.com/HyVoid/manufacturing-capacity-planning-template)** — ¿Se está utilizando la capacidad de mano de obra de manera eficiente o la operación necesita diferente personal o programación? — Transforme los planes de producción y los datos de mano de obra en utilización de capacidad, asignación de costos laborales y decisiones de dotación de personal.
+- **[cin7-excel-reporting-template](https://github.com/HyVoid/cin7-excel-reporting-template)** — ¿Qué dicen los datos operativos de Cin7 sobre el rendimiento del negocio? — Traduzca los datos de inventario y operaciones de Cin7 en información accionable sobre el rendimiento del negocio.
+- **[employee-performance-dashboard-excel](https://github.com/HyVoid/employee-performance-dashboard-excel)** — ¿Qué empleados y proyectos están en riesgo de incumplir la entrega y dónde debe intervenir la gerencia antes de que venzan los plazos? — Conecte la planificación anual de trabajo, el seguimiento de ejecución, la evaluación ponderada del rendimiento y los informes de gerencia en un flujo de trabajo operativo continuo.
+- **[rental-property-management-excel-template](https://github.com/HyVoid/rental-property-management-excel-template)** — ¿Qué unidades están perdiendo ingresos por vacancia no detectada y qué rotaciones de inquilinos necesitan acción inmediata? — Transforme los registros de reservas en estado de ocupación en vivo, inteligencia de vacancia y alertas operativas en toda una cartera de alquileres.
+- **[workforce-planning-payroll-excel-dashboard](https://github.com/HyVoid/workforce-planning-payroll-excel-dashboard)** — ¿La organización está consumiendo su capacidad anual de personal más rápido de lo planificado y qué departamentos necesitan intervención antes de que los costos de horas extra se disparen? — Consolidate el gasto en nómina, las horas contratadas anuales, los ratios de horas extra y la utilización de la fuerza laboral en un marco de planificación de capacidad entre departamentos.
+- **[warehouse-billing-excel-template](https://github.com/HyVoid/warehouse-billing-excel-template)** — ¿Los cargos de facturación de almacén son precisos y trazables a los registros operativos subyacentes? — Calcule los cargos de almacenamiento, manipulación y transporte de almacén en estados de cuenta de clientes auditables.
+- **[commercial-hvac-plumbing-bid-estimator](https://github.com/HyVoid/commercial-hvac-plumbing-bid-estimator)** — ¿Cuál es un precio de oferta defendible y auditable para este proyecto MEP comercial? — Estime y realice el seguimiento de los costos de proyectos MEP comerciales desde el cómputo métrico hasta la presentación final de la oferta.
+- **[landed-cost-calculator-excel](https://github.com/HyVoid/landed-cost-calculator-excel)** — ¿Por qué el costo landed a nivel de SKU de mi ERP difiere del de la API del agente de carga, y qué método de asignación está causando la erosión del margen? — Concilie y compare los cálculos de costo landed contra una plantilla de profesional para rastrear las diferencias de asignación de costos a nivel de SKU hasta su lógica contable subyacente.
+- **[hoa-budget-accounting-spreadsheet](https://github.com/HyVoid/hoa-budget-accounting-spreadsheet)** — ¿Se están asignando correctamente los fondos de nuestra asociación de propietarios (HOA) y vamos bien con el presupuesto? — Categorice transacciones y genere informes de variaciones presupuestarias para la gestión financiera de HOA.
+- **[homeowner-management-excel-template](https://github.com/HyVoid/homeowner-management-excel-template)** — ¿Cuál es mi costo total real de ser propietario de una vivienda, incluyendo todos los gastos ocultos? — Calcule el costo total de propiedad de la vivienda integrando hipoteca, servicios públicos, mantenimiento y mejoras de capital.
+- **[crew-scheduling-excel-template](https://github.com/HyVoid/crew-scheduling-excel-template)** — ¿Podrá mi cuadrilla actual manejar la carga de trabajo cuando las fechas del proyecto se desplacen y se superpongan? — Pronostique la demanda de cuadrillas y las brechas de personal en un horizonte de 12 meses para respaldar decisiones de planificación de capacidad.
+- **[Schedule-Driven-Construction-Cash-Curve-Workbook](https://github.com/HyVoid/Schedule-Driven-Construction-Cash-Curve-Workbook)** — ¿Cómo evolucionarán con el tiempo el flujo de caja y el avance planificado de mi proyecto de construcción según el cronograma? — Convierta cronogramas de construcción y registros de partidas de oferta en curvas S automatizadas, pronósticos de costos por fases y rastreadores de avance planificado.
 
 ## Licencia
 
 Este proyecto especifica la **Licencia Apache 2.0**. Consulte el archivo `LICENSE` del repositorio para los términos de aplicación.
+
+
 
