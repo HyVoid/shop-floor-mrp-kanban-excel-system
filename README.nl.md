@@ -1,130 +1,177 @@
 [ 🌐 عربي ](README.ar.md) | [ 🇩🇪 Deutsch ](README.de.md) | [ 🇫🇷 Français ](README.fr.md) | [ 🇳🇱 Nederlands ](README.nl.md) | [ 🇪🇸 Español ](README.sp.md) | [ 🇬🇧 English ](README.md)
 
-# Systeem voor Materiaalstroomregeling op de Werkvloer: Excel MRP-sjabloon, Kanban-supermarkt en lasproductieplanning
+# Systeem voor Materiaalstroomregeling op de Werkvloer: Excel MRP-sjabloon, BOM-ontkoppelingscalculator, Kanban-voorraadtracker & Excel-spreadsheet voor lasproductieplanning
 <img width="1920" height="790" alt="image" src="https://github.com/user-attachments/assets/a63af286-1115-4c2c-aa06-6d7e04aba1e4" />
 
-**Een lichtgewicht raamwerk voor materiaalstroomregeling op de werkvloer, een rekkenlijst-ontkoppelingscalculator en een tracker voor interne lean-logistiek voor lassen-gedreven productie en metaalbewerking.**
+
+**Een kant-en-klare voorraadtracker voor productie, een BOM-ontkoppelingscalculator op meerdere niveaus, een aanvullingsspreadsheet voor de Kanban-supermarkt en een Excel-sjabloon voor dagelijkse productieplanning, voor metaalbewerkings- en laswerkplaatsen.**
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
-![Platform: Browser + Excel](https://img.shields.io/badge/Platform-Browser%20%2B%20Excel-217346)
-![Tool Type: Production Control & MRP](https://img.shields.io/badge/Tool-Production%20Control%20%26%20MRP-2251FF)
+![Platform: Free Web Tool + Microsoft Excel (.xlsx)](https://img.shields.io/badge/Platform-Free%20Web%20Tool%20%2B%20Excel%20(.xlsx)-217346)
+![Compatibility: Excel 2021+ & Microsoft 365](https://img.shields.io/badge/Compatibility-Excel%202021%2B%20%26%20M365%20Dynamic%20Arrays-2251FF)
+![Category: Manufacturing MRP & Production Control](https://img.shields.io/badge/Category-Manufacturing%20MRP%20%26%20WIP%20Tracker-0A66C2)
 
-**Het Systeem voor Materiaalstroomregeling op de Werkvloer is een gratis MRP-productieplanningssjabloon voor browser en Excel, ontworpen voor lassen- en metaalbewerkingswerkplaatsen met hoge mix en laag volume (HMLV). Het zet ploegendienst-planningen voor lasmontages om in uitvoerbare rekkenlijstvereisten (BOM), aanvulsignalen voor de Kanban-supermarkt, taken voor het samenstellen van karren naast de lijn en tracking van het verbruik van onderhanden werk (WIP)—waardoor lijnstilstand veroorzakende tekorten en spreadsheetchaos worden geëlimineerd zonder dure ERP/MES-vervangingen.**
+**Het Systeem voor Materiaalstroomregeling op de Werkvloer** is een plug-and-play **Excel MRP-sjabloon**, een **voorraadbeheerspreadsheet voor productie** en een **gratis browsergebaseerde productieplanningscalculator**, gebouwd voor job shops, metaalbewerkers en lasoperaties. Het zet dagelijkse ploegproductieschema's om in exacte **onderdeelbehoeften volgens de rekkenlijst (BOM)**, **aanvulwaarschuwingen voor Kanban-bins**, **kitting-checklists voor leverkarren naast de lijn** en **retourboeking van uitval in onderhanden werk (WIP)**. Kleine en middelgrote fabrikanten en startende planners kunnen onverwachte onderdeeltekorten elimineren, lasvertragingen midden in de ploeg stoppen en kapotte handmatige spreadsheets vervangen in minder dan 1 minuut—zonder te betalen voor complexe ERP- of MES-softwareabonnementen.
 
-> **Toegang, Live Demo en Beschikbaarheid van het Werkboek**
+> ### Snelle toegang: gratis online sandbox & downloadbaar Excel-systeem
 >
-> - **Interactieve webapplicatie:** Gratis, zonder registratie of installatie. [Start de interactieve webdemo van het Systeem voor Materiaalstroomregeling op de Werkvloer](https://hyvoid.github.io/shop-floor-mrp-kanban-excel-system/) 
->   
-> - **Downloadbaar Excel MRP-sjabloon:** Klaar voor dagelijkse offline productieopvolging. [Download het Excel-werkboek voor Productieregeling en Materiaalaanvulling (.xlsx)](https://theseusworkshop.com/l/qnojv?utm_source=github&utm_medium=GitHub%20README)
+> - **Gratis interactieve webapplicatie (direct testen in de browser):** Test de workflow gratis online met voorgeladen productievoorbeeldgegevens. Geen installatie of accountregistratie nodig.  
+>   👉 **[Start de gratis interactieve webtool voor MRP op de werkvloer, BOM-ontkoppeling & Kanban-berekeningen](https://hyvoid.github.io/shop-floor-mrp-kanban-excel-system/)**
+>
+> - **Herbruikbaar offline Microsoft Excel-werkboek (.xlsx voor dagelijkse fabrieksactiviteiten):** Download de volledig geautomatiseerde spreadsheetsjabloon om uw eigen onderdeelnummers te plakken, uw BOM-stamgegevens lokaal op te slaan en herhaalbare ploegplanning offline uit te voeren. Verzekerd door een **30 dagen onvoorwaardelijke geld-terug-garantie**.  
+>   👉 **[Download het kant-en-klare Excel-sjabloon voor MRP op de werkvloer, BOM-ontkoppeling & productieplanning (.xlsx)](https://theseusworkshop.com/l/qnojv?utm_source=github&utm_medium=GitHub%20README)**
 
 ---
 
-## Kernmogelijkheden voor Productieopvolging: Pijnpunten Koppelen aan Oplossingen
+## Wat dit u helpt bij te houden: van werkvloerpijnpunten naar geautomatiseerde Excel-oplossingen
 
-Voor productiemanagers die op zoek zijn naar een betrouwbare **voorraadtracker voor productie** of een **controlemat voor onderhanden werk (WIP)**, overbrugt dit raamwerk de kloof tussen statische voorraadsaldi en real-time gereedheid van werkplekken:
+Als u op zoek bent naar een **Excel-sjabloon voor een voorraadtracker voor productie**, een **BOM-tekortcalculator** of een **trackingsspreadsheet voor onderhanden werk (WIP)**, vervangt dit systeem giswerk door geautomatiseerde berekeningen vóór de ploeg:
 
-| Operationeel pijnpunt op de werkvloer | Vaak voorkomende zoekintentie / Module | Hoe dit regelraamwerk het oplost |
+| Dagelijks pijnpunt op de fabrieksvloer (realiteit voor beginners & werkvloer) | Zoekintentie met hoge frequentie / ingebouwde Excel-module | Hoe deze plug-and-play spreadsheet dit automatisch oplost |
 | :--- | :--- | :--- |
-| **Onverwachte componententekorten bij laswerkplekken** | **Ploeg-niveau BOM-ontkoppeling & MRP-calculator** | Ontkoppelt dagelijkse lasmontageplanningen automatisch via meerdelige rekkenlijsten (BOM) om de nettobehoefte aan componenten per ploeg en werkplek te berekenen voordat operators beginnen met lassen. |
-| **Voorraadblinde vlekken tussen magazijn en lijn** | **WIP-locatietracker & Kanban-supermarkt** | Scheidt ruwe boekhoudsaldi van fysieke voorraadlocaties—volgt exacte hoeveelheden in stroomopwaartse buffers, Kanban-supermarkten, transportkarren onderweg en robotische/handmatige lascellen. |
-| **Laat-materialaanvragen naar stroomopwaartse fabricage** | **Geautomatiseerde aanvulling & prioriteitenlijst tekorten** | Berekent netto materiaaltekorten in realtime ten opzichte van veiligheidsbuffers en markeert dringende aanvulorders voor stroomopwaartse lasersnij-, CNC-kant- en verspaningscellen. |
-| **Verzonden karren zonder kritieke onderdelen** | **Kar-commissionering & gereedheid van lijnaanlevering** | Groepeert picklijsten per werkplek, verpakkingbeperkingen en karcapaciteit—met expliciete visuele kit-statussen (`Ready`, `Partly Kitted`, `Blocked`) vóór verzending. |
-| **Voorraadafwijking door niet-geregistreerd uitval en herstelwerk** | **Geplande versus werkelijke materiaalverbruik-terugkoppeling** | Vergelijkt theoretisch BOM-verbruik met de werkelijke ploegproductie en geregistreerde uitval op de werkvloer, en herberekent resterende supermarkt- en werkpleksaldi dynamisch. |
-| **Versnipperde communicatie tussen ploegen** | **Visueel Andon- en logistiekrisicodashboard op de werkvloer** | Consolideert ploegplan-naleving, blootstelling aan kritieke tekorten, supermarktleegloop en interne milk-run leverstatussen in één operationele controlekamer. |
+| **Lassers stoppen met werken omdat één klein beugeltje ontbreekt** | **BOM-ontkoppeling op meerdere niveaus & MRP-calculator-spreadsheet** | Vermenigvuldigt uw geplande lasmontages per ploeg met elke onderliggende component in uw **rekkenlijst (BOM)** om de exacte onderdeelbehoefte te berekenen voordat de ploeg begint. |
+| **Onderdelen staan "op voorraad" op papier, maar niemand kan ze op de vloer vinden** | **Locatie- & Kanban-bin-voorraadtracker voor onderhanden werk (WIP)** | Splitst ruwe magazijntotalen op in specifieke fysieke locaties: stroomopwaartse buffers, **Kanban-supermarkt-bins**, geladen leverkarren en actieve laswerkplekken. |
+| **Lasersnij- & kantmachines worden onderbroken door spoedopdrachten** | **Geautomatiseerd materiaaltekort- & bestelprioriteiten-blad** | Vergelijkt de materiaalbehoefte per ploeg met de huidige supermarktsaldi en veiligheidsvoorraaddrempels en genereert geprioriteerde bestellijsten (`Critical`, `Warning`, `Normal`) voor stroomopwaartse laser-, kantpers- en CNC-machines. |
+| **Materieelbewerkers pushen incomplete onderdeelkits naar werkplekken** | **Kitting-checklist naast de lijn & kar-verzendingstracker** | Groepeert benodigde componenten per werkplek, containerformaat en karcapaciteit en wijst duidelijke gereedheidsstatussen toe (`Ready`, `Partly Kitted`, `Blocked`) voordat een kar de verzamelzone verlaat. |
+| **Niet-geregistreerde lasuitval bederft voorraadtellingen in de loop van de tijd** | **Geplande versus werkelijke productie & uitval-retourboekingscalculator** | Trekt zowel voltooide goede montages als gemelde werkvloeruitval af van uw actuele voorraadsaldi aan het einde van elke ploeg, waardoor spreadsheetcijfers synchroon blijven met fysieke bintellingen. |
+| **Supervisoren besteden uren aan het bijwerken van kapotte formules over tabs heen** | **Visueel productieregelings- & tekortdashboard voor de werkvloer** | Consolideert ploegplan-naleving, de grootste componentknelpunten, Kanban-leeglooprisico's en interne leveringstaken op één automatisch overzichtsscherm. |
 
 ---
 
-## Stapsgewijze Handleiding: Dagelijkse Productieplanning en Materiaalcommissionering Uitvoeren
+## Snelstart-tutorial: hoe u productieplanning & materiaal-kitting in 1 minuut uitvoert
 
-Het operationele model volgt een herhaalbare lean productieregellus in 4 stappen: parameters configureren, stamgegevens beheren, ploeg-MRP-berekeningen uitvoeren en werkelijke productie terugkoppelen. 
+U hebt geen industrieel-technische opleiding of geavanceerde Excel-vaardigheden nodig om materiaalbehoefteplanning uit te voeren. Volg deze 4-stappenworkflow om de logica te testen in de gratis webtool en verplaats vervolgens uw dagelijkse activiteiten naar het geautomatiseerde Excel-werkboek.
 
-### Stap 1: Globale werkvloer- en aanvulparameters configureren
-**Actie:** Stel de basisbedrijfsregels van uw werkplaats in via het configuratiemodule.
-Definieer ploegduren, ploegen per dag, veiligheidsbuffers, nood-Kanban-aanvultriggers, gereedheidsdrempels voor kits, karverpakkingslimieten en toegestane uitvaltoleranties. Deze parameters sturen alle daaropvolgende berekeningen van **material requirements planning (MRP)** en tekortmeldingen aan.
+### Stap 1: Stel uw basisregels voor de werkvloer & veiligheidsvoorraad in
+**Zoekintentie:** *Hoe stelt u veiligheidsvoorraad- en Kanban-aanvulregels in Excel in*  
+Open het configuratiepaneel en voer uw basisbedrijfsgetallen in: ploegduren, ploegen per dag, minimale veiligheidsvoorraadbuffers, Kanban-triggerdrempels en toegestane uitvalpercentages. Elke daaropvolgende **MRP-tekortberekening** en **bestelwaarschuwing** wordt automatisch bijgewerkt op basis van deze regels.
 
-### Stap 2: Rekkenlijst (BOM) en stamgegevens van werkcentra importeren
-**Actie:** Vul uw basisartikelcatalogus, het werkplekregister en de montagestructuren in.
-Registreer vervaardigde en ingekochte componenten, stroomopwaartse fabricagebronnen (bijv. laser, kantpers, draaibank), supermarktbinlocaties, standaardverpakkingshoeveelheden (SPQ) en gemiddeld dagelijks verbruik (ADU). Definieer bovenliggende/onderliggende **las-BOM's**, classificeer robotische versus handmatige lascellen en wijs de fysieke karvloot-bronnen toe. *(Geoptimaliseerd voor ca. 500 afzonderlijke SKU's en ca. 50 las-ondermontages).*
+### Stap 2: Plak uw onderdelenlijst, werkplekken & rekkenlijst (BOM)
+**Zoekintentie:** *Hoe bouwt u een productie-rekkenlijst (BOM) en een onderdelenstamlijst*  
+Voer uw componentcatalogus in of plak deze (onderdeelnummers, stroomopwaartse fabricagebron zoals lasersnijden of CNC-bewerking, standaardverpakkingshoeveelheid en Kanban-binlocatie), samen met uw bovenliggende **lasassemblagerecepten**. De sjabloon ondersteunt standaard ongeveer 500 afzonderlijke onderdeel-SKU's en 50 bovenliggende assemblages.
 
-### Stap 3: Ploeg-productieplanningen invoeren om picklijsten te genereren
-**Actie:** Voer uw dagelijkse ploegplanning in om automatische BOM-behoefte-ontkoppeling te activeren.
-Registreer de productiedatum, het ploegvenster, de doellascel, het montageartikelnummer, de geplande productiehoeveelheid en de vrijgavestatus. De berekeningsmotor ontkoppelt montagematen onmiddellijk naar behoefte op componentniveau, controleert de **beschikbaarheid van supermarktvoorraad**, benadrukt kritieke onderdeelsTekorten en genereert geprioriteerde **taken voor kar-samenstelling en milk-run-levering**.
+### Stap 3: Voer het ploegschema van vandaag in om automatische tekort- & picklijsten te genereren
+**Zoekintentie:** *Hoe berekent u materiaalbehoeften en genereert u magazijnpicklijsten uit een productieschema*  
+Selecteer uw productiedatum, ploeg, doellaswerkplek, assemblageonderdeelnummer en geplande hoeveelheid. De ingebouwde rekenengine ontkoppelt het schema onmiddellijk naar behoeften voor onderliggende onderdelen, controleert de beschikbare **Kanban-supermarktvoorraad**, markeert exacte onderdeeltekorten en stelt een geprioriteerde **kitting-checklist voor karren** op.
 
-### Stap 4: Werkelijke productie terugkoppelen, uitval registreren en overstappen op het herbruikbare Excel-sjabloon
-**Actie:** Registreer de uitvoeringsgegevens van de werkvloer om de voorraadregellus te sluiten.
-Registreer stroomopwaartse fabricage-ontvangsten, cyclustellingcorrecties, bevestigingen van karverzending en afgeronde lasploegrapporten (goede onderdelen + uitval). Het model boekt verbruikte componenten automatisch terug en actualiseert uw realtime voorraadpositie voor de volgende ploeg.
-
-> **Klaar om van eenmalige browsertests over te gaan naar dagelijkse fabrieksactiviteiten?**  
-> Zodra u de werkstroom in de browsersandbox heeft gevalideerd, **[downloadt u het herbruikbare Excel-sjabloon voor materiaalstroomregeling op de werkvloer (.xlsx)](https://theseusworkshop.com/l/qnojv?utm_source=github&utm_medium=GitHub%20README)** om uw eigen BOM-stamgegevens op te slaan, historische variatie over meerdere ploegen te volgen en een herhaalbare dagelijkse productieregeling offline in Microsoft Excel uit te voeren.
+### Stap 4: Registreer de werkelijke ploegoutput & download het herbruikbare Excel-sjabloon voor dagelijkse activiteiten
+**Zoekintentie:** *Hoe volgt u geplande versus werkelijke productieoutput en boekt u voorraad terug in Excel*  
+Aan het einde van de ploeg voert u het aantal voltooide goede assemblages en eventueel afgekeurde onderdelen in. Het model trekt verbruikte materialen automatisch af en werkt uw startvoorraad voor de ploeg van morgen bij.
 
 ---
 
-## Waarom een specifiek raamwerk voor materiaalstroomregeling voor lasfabricage?
+### Van een complexe productieworkflow naar een gewoonte van 1 minuut kopiëren-en-plakken
 
-In een **lassen-gedreven metaalbewerkingswerkplaats** lijkt een hoofdproductieschema (MPS) vaak 100% uitvoerbaar in een ERP-systeem, terwijl de werkelijk benodigde fysieke componenten op de gebruikslocatie ontbreken.
+Het vanaf nul draaien van **BOM-behoefte-ontkoppelingen op meerdere niveaus**, **Kanban-bufferberekeningen**, **karcapaciteitsafstemming** en **uitval-retourboeking** vereist complexe supply chain-wiskunde. Maar **u hoeft de onderliggende formules niet te begrijpen en hoeft zelf geen enkele spreadsheetregel te bouwen.**
 
-Deze operationele storing komt zelden door een afwezigheid van voorraad in de hele fabriek. Het wordt eerder veroorzaakt door een ontkoppeling tussen de **montagemix van de ploeg**, **meerlagen-BOM-vereisten**, de fysieke voorraad in de **Kanban-supermarkt** en de laadstatus van de **aanleverkar naast de lijn** die aan een specifieke laspost is toegewezen. Een statisch voorraadregister kan dit viervoudige synchronisatieprobleem niet oplossen.
+In het downloadbare **Excel-werkboek voor Materiaalstroomregeling op de Werkvloer (.xlsx)** is elke dynamische matrix-matchingregel, cross-tab opzoekformule en automatische vernieuwingsformule al vooraf gebouwd en vergrendeld:
 
-Denk aan een typische ploeg die meerdere gelaste constructies verdeelt over robotische lascellen en handmatige TIG/MIG-stations. Elke lasconstructie trekt een unieke kit van **lasergesneden platen, CNC-gebogen beugels en nauwkeurig verspaande bussen**. Eén ontbrekende gebogen beugel legt de hele lasopstelling stil—zelfs wanneer 95% van de kit al klaarstaat. Ondertussen toont het ERP-systeem de beugel als "op voorraad", zonder te verduidelijken of die bij de kantpers ligt, in de supermarkt is opgeslagen, op een kar staat of al is toegewezen aan de werkorder van een andere ploeg.
+1. **Geen enkele formule hoeft te worden doorgetrokken:** U hoeft niet eens op de hoek van een cel te dubbelklikken om formules naar beneden te slepen. Plak uw eigen onderdeelnummers, BOM-lijst en dagelijkse planning rechtstreeks in de invoertabellen en het hele dashboard wordt vanzelf bijgewerkt.
+2. **In 1 minuut beslissingsduidelijkheid voor beginners:** Zelfs zonder enige achtergrond in data-analyse of productieregeling kunt u uw cijfers plakken en binnen **60 seconden** uw grootste materiaalknelpunten zien. In plaats van het drukke hoogseizoen te besteden aan het repareren van kapotte `VLOOKUP`-cellen, krijgt u directe beslisfeedback op managementniveau, zodat u zich kunt concentreren op het draaiende houden van uw werkplaats en het op tijd verzenden van orders.
+3. **Eenmalige aankoop versus dure maandelijkse softwareabonnementen:** ERP- en MES-modules voor bedrijven rekenen duizenden dollars aan terugkerende jaarabonnementen en installatiekosten. Dit betaalde Excel-sjabloon maakt van een chaotische fabrieksworkflow een gestandaardiseerd lokaal bestand dat u één keer koopt en voor altijd hergebruikt op uw eigen computer.
+4. **100% lokale gegevensprivacy & 30 dagen geld-terug-garantie:** Bewaar uw propriëtaire BOM-structuren, leverancieronderdeelnummers en productiecapaciteiten volledig offline op uw lokale harde schijf, zonder cloudbeveiligingsrisico. Elke download wordt beschermd door een **30 dagen onvoorwaardelijke geld-terug-garantie**—als het uw dagelijkse werkvloerplanning niet vereenvoudigt, vraagt u zonder gedoe een volledige terugbetaling aan.
 
-Dit **Systeem voor Materiaalstroomregeling op de Werkvloer** verbindt die geïsoleerde operationele datapunten in één gesynchroniseerde werkstroom:
-1. Het vertaalt ploeg-lasdoelen via automatische BOM-ontkoppeling naar exacte behoefte op componentniveau.
-2. Het verrekent de behoefte met de fysieke supermarktsaldi en open kar-toewijzingen.
-3. Het genereert uitvoerbare stroomopwaartse fabricsignalen en volledige kitmanifesten voordat de ploeg begint.
-4. Het stemt theoretisch verbruik af op gerapporteerde lasconstructies en uitval om de boekhoudvoorraad in lijn te houden met de fysieke realiteit.
-
-Het resultaat is een **geproduceerd lean productieregelingsysteem in Excel**—het levert consistente, controleerbare materiaalstroombeslissingen zonder dat kleine en middelgrote fabrikanten complexe MES-modules, software voor automatisch geleide voertuigvloten (AGV) of zware ERP-maatwerkoplossingen hoeven aan te schaffen.
+👉 **[Download het volledig geautomatiseerde Excel-werkboek voor MRP op de werkvloer & productieplanning (.xlsx) — 30 dagen risicovrij](https://theseusworkshop.com/l/qnojv?utm_source=github&utm_medium=GitHub%20README)**  
+*(Wilt u de workflow eerst bekijken? **[Probeer hier de gratis browsergebaseerde MRP- & Kanban-websandbox](https://hyvoid.github.io/shop-floor-mrp-kanban-excel-system/)**)*
 
 ---
 
-## Traditionele statische voorraadspreadsheets versus gestructureerde materiaalstroomregeling
+## De bedrijfslogica & methodiek: gids in begrijpelijke taal voor werkvloerregeling & verborgen winstlekken
 
-| Operationele dimensie | Zonder dit systeem (ad-hoc voorraadspreadsheets) | Met dit systeem (gestructureerd werkvloer-MRP- en kitraamwerk) |
+De meeste kleine en middelgrote werkplaatsen verliezen geld op de werkvloer niet omdat ze geen orders hebben, maar door **verborgen operationele blinde vlekken** in de manier waarop materialen van ruwe fabricage naar eindassemblage bewegen. 
+
+Hieronder volgt een uiteenzetting in begrijpelijke taal van de vijf centrale blinde vlekken die tot gemiste leveringen en verspilde arbeid leiden, samen met de objectieve financiële feiten en hoe de ingebouwde logica van deze spreadsheet ze automatisch oplost:
+
+### 1. De blinde vlek van het "95% complete kit"-probleem (waarom één ontbrekend beugeltje van $2 een order van $5,000 stopt)
+- **De objectieve realiteit:** Assemblage in de productie is alles-of-niets. Als een gelast frame 15 verschillende metalen onderdelen vereist en 14 daarvan liggen bij de werkplek, dan is uw werkelijke vermogen om dat product af te maken **0%, niet 93%**. In de meeste werkplaatsen plannen managers ploegen alleen op basis van orders voor eindproducten en ontdekken te laat dat één klein busje of beugeltje niet op voorraad is.
+- **Hoe de Excel-logica dit oplost (BOM-gestuurde behoeftevertaling):** Zodra u een geplande assemblagehoeveelheid in het schema typt, splitst het werkboek dat bovenliggende product automatisch op in elk benodigd onderliggend onderdeel. Het markeert het ontbrekende beugeltje van $2 voordat u een lasser aan de cabine toewijst, zodat betaalde operators niet onwerkzaam rond een onbouwbaan taak blijven staan.
+
+### 2. De illusie van "op voorraad op papier" (dezelfde onderdelen dubbel tellen over meerdere ploegen)
+- **De objectieve realiteit:** Een standaardvoorraadspreadsheet vertelt u alleen het totale aantal onderdelen in het gebouw. Stel dat uw blad zegt dat u `100 laser-cut base plates` op voorraad hebt. Job A op de ochtendploeg heeft `60 plates` nodig en Job B op de middagploeg heeft `60 plates` nodig. Een basisspreadsheet vertelt u dat beide jobs genoeg onderdelen hebben (`60 <= 100`), dus u geeft beide vrij aan de vloer—waardoor de middagploeg halverwege zonder materiaal komt te zitten.
+- **Hoe de Excel-logica dit oplost (netting van toegewezen voorraad):** De sjabloon trekt onderdelen die al aan eerdere ploegen zijn toegezegd of al op actieve karren zijn geladen automatisch af van uw fysieke planksaldo. U ziet uw **werkelijk resterende beschikbare voorraad**, waardoor dubbelboekingen over ploegen en werkplekken verdwijnen.
+
+### 3. Stroomopwaartse machines behandelen als een directe geldautomaat (noodomstelingen & verloren machine-uren)
+- **De objectieve realiteit:** Stroomopwaartse machines zoals lasersnijders, CNC-persponsen en kantpersen vereisen insteltijd, gereedschapswissels en plaatnesting. Wanneer een lassupervisor midden in de ploeg een lege onderdeelbin ontdekt en een noodrun van 10 beugels eist, moet de kantpersoperator een actieve productie-instelling afbreken. In de hele sector verlagen ongeplande spoedinstellingen de totale machinecapaciteit met **15% tot 30%**.
+- **Hoe de Excel-logica dit oplost (drempelgebaseerde Kanban-aanvulling):** De spreadsheet vergelijkt de komende ploegbehoefte met uw minimale veiligheidsvoorraadniveaus en rangschikt de aanvulurgentie (`Critical`, `Warning`, `Normal`) automatisch per type stroomopwaartse machine. Stroomopwaartse operators krijgen uren voordat de bins daadwerkelijk leeg zijn een overzichtelijke, geprioriteerde batchlijst.
+
+### 4. Lascabines veranderen in rommelige opslagstallen (verborgen kosten van onderdelenzoekarbeid)
+- **De objectieve realiteit:** Wanneer magazijnmedewerkers gedeeltelijke kits of ongeorganiseerde pallets naar de werkvloer pushen om alleen maar "het materiaal in beweging te krijgen", veranderen hoogwaardige lascellen in verstopte opslaglanen. Vaklassers brengen uiteindelijk **30 tot 45 minuten per ploeg** door met rondlopen op de vloer om ontbrekende onderdelen te zoeken of halfvoltooide assemblages uit de weg te ruimen.
+- **Hoe de Excel-logica dit oplost (vergrendelde kitgereedheid van karren):** De sjabloon koppelt picklijsten rechtstreeks aan fysieke leverkarren en containerlimieten. Een kar wordt automatisch gemarkeerd als `Blocked` of `Partly Kitted` totdat elk benodigd onderdeel in volledige verpakkingshoeveelheden beschikbaar is, zodat alleen 100% bouwklare kits de productielijn bereiken.
+
+### 5. Onzichtbare uitval die het schema van morgen stilzwijgend corrumpeert (boek-fysieke voorraadafwijking)
+- **De objectieve realiteit:** Elke fabriek produceert af en toe uitval, vervormde onderdelen of instelafkeur. Wanneer een lasser 4 beugels afkeurt en stilletjes 4 extra stuks uit de Kanban-bin pakt zonder ze te registreren, wordt uw spreadsheet met 4 eenheden onnauwkeurig. Binnen één maand creëert niet-geregistreerde uitval enorme "fantoomvoorraad"—uw computer zegt dat u onderdelen op de plank hebt terwijl de bin volledig leeg is.
+- **Hoe de Excel-logica dit oplost (geautomatiseerde productie- & uitvalretourboeking):** Aan het einde van elke ploeg voert u zowel voltooide goede eenheden als afgekeurde stuks in het logboek in. Het werkboek trekt het theoretische BOM-verbruik *plus* de exacte uitvalhoeveelheid automatisch af van uw actuele voorraad, zodat uw digitale cijfers vergrendeld blijven aan de fysieke realiteit zonder dagelijkse handmatige hertelling.
+
+---
+
+## Vergelijking: ad-hoc handmatige spreadsheets versus geautomatiseerd MRP Excel-systeem voor de werkvloer
+
+| Operationele dimensie | Handmatige voorraadspreadsheets (kapotte formules & giswerk) | Dit geautomatiseerde Excel MRP- & kitsysteem (vooraf gebouwde dynamische logica) |
 | :--- | :--- | :--- |
-| **Detectie van componententekorten** | **Ongeplande stilstand van de laslijn:** Werkorders lijken op montagenaiveau uitvoerbaar, maar ontbrekende onderliggende componenten worden pas ontdekt door lassers bij het opbouwen van de opstelling. | **BOM-ontkoppeling en netting vóór de ploeg:** Ploegplanningen worden automatisch ontkoppeld naar individuele onderdeelbehoeften, die exacte onderdeelsdeficieten blootleggen voordat werkorders de hal bereiken. |
-| **Locatiezichtbaarheid van onderhanden werk (WIP)** | **Blindheid van het voorraadregister:** Onderdelen lijken beschikbaar in de totale fabrieksvoorraad, maar materialenbewerkers verspillen zoektijd tussen supermarkten, samenstelgangen en lasposten. | **Meerstaps locatieopvolging:** Stamgegevens en logistieklogboeken scheiden duidelijk voorraad in Kanban-supermarkten, geladen op leverkarren of samengesteld aan werkplekken. |
-| **Planning van stroomopwaartse fabricage** | **Versnelling en brandbestrijding:** Lasersnij-, plaatkant- en CNC-verspaningscellen ontvangen dringende aanvulverzoeken via mondelinge aandringen of papiertjes. | **Pull-gebaseerde aanvulsignalen:** Netto-tekortalgoritmen categoriseren nabestelprioriteiten (`Normal`, `Warning`, `Critical`) en sturen de behoefte rechtstreeks naar specifieke stroomopwaartse werkcentra. |
-| **Kit-commissionering naast de lijn en karverzending** | **Gedeeltelijke kits en rommelige werkplekken:** Karren bereiken lascellen met onvolledige onderdelensets, wat WIP-opstoppingen en werkplekwisselingen midden in de ploeg veroorzaken. | **Vergrendelde kitgereedheidsstatussen:** Picktaken dwingen standaardverpakkingsbeperkingen af en markeren kar-kits als `Ready`, `Partly` of `Blocked` vóór verzending naar de hal. |
-| **Voorraadnauwkeurigheid en uitvalafstemming** | **Boekhoud-fysieke voorraadafwijking:** Spreadsheetsaldi lopen achter op het werkelijke verbruik op de vloer door niet-gemelde lasuitval, herstelwerk en handmatige materiaalvervanging. | **Geautomatiseerde productieterugkoppeling:** Ploegafsluitingen en uitvallogboeken voeden rechtstreeks de verbruiksmotor en actualiseren realtime supermarktsaldi dynamisch. |
-| **Prioritering van knelpunten fabrieksbreed** | **Silo-per-werkplek management:** Supervisoren lossen tekorten cel voor cel op, waardoor systemische stroomopwaartse knelpunten en conflicterende materiaaltoewijzingen tussen ploegen verborgen blijven. | **Gecentraliseerde werkvloercontrolekamer:** Eén uniform dashboard correleert ploegnaleving, blootstelling aan onderdeeltekorten, supermarktgezondheid en interne logistiekstroom. |
+| **Installatie & formuleonderhoud** | **Uren handmatig `VLOOKUP`-debuggen:** Nieuwe rijen of onderdeelnummers invoegen breekt celverwijzingen, met constant doortrekken van formules en handmatige reparaties tot gevolg. | **Plakken & gaan zonder onderhoud:** Gebouwd met native Excel dynamische matrixformules die automatisch uitbreiden en herberekenen zodra u uw gegevens plakt. |
+| **Detectie van componenttekorten** | **Lijnstilstand midden in de ploeg:** Werkorders lijken klaar op assemblageniveau en ontbrekende onderliggende onderdelen worden pas door operators ontdekt tijdens het opbouwen van de opstelling. | **BOM-ontkoppeling & netting vóór de ploeg:** Ploegplanningen worden automatisch opgesplitst in individuele onderdeelbehoeften, waardoor exacte onderdeeltekorten zichtbaar worden voordat het werk de vloer bereikt. |
+| **Locatietracking van onderhanden werk (WIP)** | **Enkelkoloms voorraadblindheid:** Onderdelen lijken beschikbaar in de totale fabrieksvoorraad, terwijl materieelbewerkers tijd verspillen aan zoeken tussen rekken, gangen en cabines. | **Zichtbaarheid van fysieke locaties in meerdere stappen:** Scheidt duidelijk voorraad in **Kanban-supermarkten**, geladen op **leverkarren** of klaargezet bij **laswerkplekken**. |
+| **Planning van stroomopwaartse fabricage** | **Mondeling expediteren & brandbestrijding:** Lasersnij-, plaatkant- en CNC-verspaningscellen worden onderbroken door urgente papiertjes en langslopende verzoeken. | **Geautomatiseerde pull-aanvulsignalen:** Tekortalgoritmen categoriseren bestelprioriteiten (`Normal`, `Warning`, `Critical`) en groeperen taken per stroomopwaarts werkcentrum. |
+| **Kitting naast de lijn & karverzending** | **Gedeeltelijke kits & verstopte vloer:** Karren worden met ontbrekende componenten naar werkplekken geduwd, wat WIP-opstoppingen en verspilde omsteltijd veroorzaakt. | **Strikte kitgereedheidscontrole:** Pickmanifesten dwingen standaardverpakkingshoeveelheden (SPQ) af en markeren karkits als `Ready`, `Partly Kitted` of `Blocked` vóór verzending. |
+| **Uitval & voorraadnauwkeurigheid** | **Fantoomvoorraadafwijking:** Voorraadsaldi lopen binnen enkele dagen uit de pas met fysieke bins door niet-geregistreerde lasuitval, herstelwerk en vloervervangingen. | **Geautomatiseerde ploeg-retourboeking:** Ploegvoltooiing en uitvallogboeken voeden rechtstreeks de verbruiksmotor en werken de netto supermarktsaldi in realtime bij. |
+| **Kosten & gegevensbeveiliging** | **Hoge verborgen arbeidskosten of dure SaaS:** Of u verspilt 10+ uur per week aan het repareren van handmatige bladen, of betaalt duizenden per jaar voor cloud ERP/MES-licenties. | **Eenmalige aankoop & 100% lokale privacy:** Eén keer betalen, voor altijd hergebruiken op uw lokale desktop met een **30 dagen geld-terug-garantie** en nul blootstelling van gegevens in de cloud. |
 
 ---
 
-## Ideaal gebruikers, productierollen en industriële toepassingen
+## Voor wie dit is: productierollen, zoekscenario's & gebruiksscenario's voor job shops
 
-### Voor wie is dit bedoeld (rol-naar-werkstroom toewijzing)
+### Rol-naar-workflow toewijzing (vind uw exacte gebruiksscenario)
 
-- **Productieplanners en hoofdplanners** die een **ploeg-niveau Excel-sjabloon voor productieplanning** zoeken om dagelijkse lasmontagedoelen te balanceren over robotische en handmatige werkcentra zonder materiaaluitputting te veroorzaken.
-- **Materiaalplanners, voorraadanalisten en inkopers** die een **lichtgewicht MRP- en BOM-ontkoppelingcalculator** nodig hebben om bovenliggende montageschema's om te zetten in getimede componentbehoefte en stroomopwaartse aanvulprioriteiten.
-- **Lean-ingenieurs, magazijnleiders en interne logistiekteams (Milk-Run)** die een **tracker voor Kanban-supermarktbeheer en kar-samenstelling** zoeken om picken naast de lijn, containerbelading en levering op de gebruikslocatie te standaardiseren.
-- **Laswerkplaats-supervisoren, productiemeesters en fabrieksmanagers** die een **realtime dashboard voor werkvloertekorten en WIP-zichtbaarheid** nodig hebben om de kitgereedheid van werkplekken te verifiëren vóór ploegoverdrachten en werkelijke versus geplande productie te volgen.
-- **Industrial engineers en Excel-praktijkexperts in productie** die een **aanpasbaar low-code productieregelingsysteem** bouwen om de uitvoeringskloof tussen ERP-planning op hoog niveau en fysieke werkvloeractiviteiten te dichten.
+- **Eigenaren van kleine fabrieken, job shop-managers & startende planners** die op zoek zijn naar een **eenvoudig te gebruiken Excel-sjabloon voor voorraad- en productietracking in de productie**: Stop met vertrouwen op whiteboard-schema's en geheugen. Plak uw orders en laat de vooraf gebouwde spreadsheet u exact vertellen wat u vandaag moet fabriceren en als kit moet samenstellen.
+- **Productieplanners, hoofdplanners & werkvloer-dispatchers** die zoeken naar een **Excel-sjabloon voor dagelijkse productieplanning en ploegcapaciteitstracker**: Balanceer dagelijkse assemblagedoelen over robotische lascellen en handmatige TIG/MIG-cabines terwijl u 100% componentbeschikbaarheid verifieert voordat u werkorders vrijgeeft.
+- **Materiaalplanners, voorraadbeheerders & inkoopbuyers** die een **lichtgewicht Excel MRP-sjabloon en BOM-ontkoppelingscalculator op meerdere niveaus** nodig hebben: Vertaal bovenliggende assemblageschema's naar exacte onderliggende onderdeelbehoefte, volg de veiligheidsvoorraaddekking en genereer in seconden duidelijke stroomopwaartse aanvulprioriteiten.
+- **Magazijnsupervisoren, lean-ingenieurs & interne logistiekteams (milk-run)** die zoeken naar een **Kanban-voorraadspreadsheet en kitting-checklist voor karren naast de lijn**: Standaardiseer supermarktbinlocaties, containerverpakkingsgroottes en karbeladingsstatussen zodat materieelbewerkers complete kits op de gebruikslocatie afleveren.
+- **Lasvoormannen, fabricageleiders & ploegsupervisoren** die een **trackingblad voor onderhanden werk (WIP) en werkvloertekortdashboard** nodig hebben: Controleer de kitgereedheid van werkplekken in 1 minuut tijdens ploegoverdrachten en registreer werkelijke output plus uitval zonder complexe formules aan te raken.
+- **Industriële ingenieurs & productieoperations-analisten** die zoeken naar een **aanpasbaar productieregelingswerkboek met Microsoft 365 dynamische arrays**: Implementeer een transparant, macrovrij (`no VBA`) lokaal beslissingsysteem dat de kloof overbrugt tussen wekelijkse ERP-exports en dagelijkse vloeruitvoering.
 
-### Doelproductieomgevingen en toepassingen
+### Veelvoorkomende fabrieksscenario's waarin deze sjabloon elke week uren bespaart
 
-Dit raamwerk is specifiek ontworpen voor **discrete productie met hoge mix en laag volume (HMLV)** en **werkplaatsomgevingen**, met name:
-- **Ondermontages voor zware machines, landbouwmachines en bouwmachines**
-- **Plaatwerk-, lasersnij- en kantperswerkplaatsen**
-- **Tier-2/Tier-3 automotive toeleveranciers van stansen en robotlassen**
-- **Fabrikanten van maatwerk constructiestaal, frames en behuizingen**
-
-### Systeemomvang en operationele grenzen
-
-Om snelheid, transparantie en inzet zonder IT-overhead te behouden, is deze tool **bewust beperkt van omvang**:
-- **Wat het is:** Een tactische uitvoeringsbrug tussen wekelijkse/maandelijkse ERP-planning en ploeg-niveau materiaalbeweging op de werkvloer.
-- **Wat het niet is:** Het is **geen** vervanging van financiële ERP-systemen op ondernemingsniveau (SAP, Oracle, NetSuite), geen volledige eindige-capaciteit APS-plannings- en planningsmotor, geen PLC-gestuurde AGV/AMR-vlootcontroller en geen geautomatiseerd IIoT/SCADA-machinebewakingsplatform. Fysiek fabriekslayoutontwerp, barcodehardware-integratie en geautomatiseerde machinetelemetrie vallen buiten de native omvang van het werkboek.
+1. **U bent het overkill van ERP/MRP-software beu:** Uw bedrijf kan een ERP/MES-implementatie van $20,000+ niet rechtvaardigen, of uw bestaande ERP is te star om ploeg-voor-ploeg wijzigingen in het laserschema en kitting van karren op de vloer aan te kunnen.
+2. **Uw piekseizoenorders groeien sneller dan uw spreadsheet:** Het ordervolume loopt op en het handmatig afvinken van 50 assemblages tegen 500 afzonderlijke lasergesneden, gebogen en verspaande onderdelen veroorzaakt kostelijke menselijke fouten.
+3. **U hebt een offline, macrovrij hulpmiddel nodig dat IT niet blokkeert:** Omdat het werkboek native **Excel 2021+ / Microsoft 365 dynamische arrayfuncties** gebruikt zonder VBA-macro's, opent het soepel op standaardbedrijfscomputers zonder beveiligingspop-ups of cloud-loginvereisten.
 
 ---
 
-## Over de architectuur: de spreadsheet als beslissingsondersteunend systeem
+## Doelproductie-industrieën & systeemomvang
 
-De meeste fabrieksspreadsheets falen omdat ze zijn gebouwd als statische databegraafplaatsen in plaats van onderling verbonden operationele modellen. Dit project benadert industriële spreadsheets als **herbruikbare, lichtgewicht beslissingsondersteunende systemen**, gestuurd door één centrale ontwerpvraag: 
+### Ideale productieomgevingen
+Deze sjabloon is specifiek gebouwd voor **discrete productie met hoge mix en laag volume (HMLV)**, maatwerk metaalbewerking en batch-assemblagewerkplaatsen, waaronder:
+- **Las- & metaalbewerkingsjob shops** (MIG-, TIG-, punt- en robotische lascellen)
+- **Plaatwerkbewerkingswerkplaatsen** (lasersnijden, turretponsen, CNC-kantpersbuigen)
+- **Sub-assemblagefabrieken voor zware apparatuur, landbouw- & bouwmachines**
+- **Tier-2 / Tier-3 leveranciers van autostansen, frames & constructiebeugels**
+- **Fabrikanten van maatwerk industriële behuizingen, rekken, aanhangwagens & constructiestaal**
 
-> *"Welke exacte werkvloerdatumpunten moeten nu met elkaar verbonden worden, zodat de volgende plannings-, samenstellings- of aanvulbeslissing zonder enige dubbelzinnigheid kan worden genomen?"*
+### Systeemomvang & operationele grenzen
+Om het werkboek snel, transparant en vanaf dag één direct bruikbaar voor iedereen te houden, is het **bewust gefocust**:
+- **Wat het is:** Een plug-and-play tactisch uitvoeringswerkboek dat dagelijkse ploegplanningen, BOM-onderdeelberekeningen op meerdere niveaus, Kanban-binsaldi, kittinglijsten voor karren en ploeg-retourboeking binnen Microsoft Excel verbindt.
+- **Wat het niet is:** Het is geen algemeen boekhoudgrootboek, geen volledige vervanging van bedrijfs-ERP (zoals SAP of NetSuite), geen geautomatiseerde PLC/AGV-robotcontroller en geen live machine-sensor SCADA-platform.
 
-Het **Systeem voor Materiaalstroomregeling op de Werkvloer** past dit principe toe door vijf traditioneel gescheiden productielagen te koppelen: **Ploegproductieplannen → Meerlagen-BOM-behoefte → Kanban-supermarktvoorraad → Kar-kit-logistiek → Terugkoppeling van werkelijke productie en uitval**. 
+---
 
-Door gecentraliseerde bedrijfsparameters, traceerbare formulelogica en expliciete uitzonderingsmarkeringen af te dwingen, geeft dit raamwerk productieteams directe controle over de materiaalbeschikbaarheid naast de lijn—en garandeert het dat de juiste gefabriceerde onderdelen op de juiste laspost aankomen op de juiste kar, in elke ploeg.
+## Over de architectuur & Theseus Workshop
+
+De meeste fabrieksspreadsheets falen omdat ze zijn gebouwd als statische databegraafplaatsen waar gebruikers meer tijd besteden aan het repareren van kapotte cellen dan aan het nemen van operationele beslissingen.
+
+Dit project is ontwikkeld door **[Theseus Workshop](https://theseusworkshop.com?utm_source=github&utm_medium=GitHub%20README)** onder een strikte ontwerpfilosofie: **"Zuiver nut. Nul overbodigs."** Elke sjabloon is ontworpen als een zelfstandig, lichtgewicht beslissingsondersteunend systeem dat wordt gestuurd door één praktische vraag:
+
+> *"Welke exacte operationele cijfers moeten nu met elkaar worden verbonden, zodat een bedrijfseigenaar of planner zijn gegevens kan plakken en in minder dan 60 seconden de juiste plannings-, inkoop- of prijsbeslissing kan nemen?"*
+
+Door **Ploegproductieplannen → Meerlagen-BOM-behoefte → Kanban-supermarktvoorraad → Kar-kit-logistiek → Terugboeking van werkelijke productie en uitval** te koppelen in één geautomatiseerde rekenlus, geeft deze toolkit uw werkplaats zichtbaarheid op ondernemingsniveau in een vertrouwd Excel-bestand waarvoor u voor eeuwig de eigenaar bent.
+
+### Ontdek Meer Plug-and-Play Zakelijke Beslissingstoolkits & Excel-sjablonen
+
+Zoekt u naar meer zero-VBA, geautomatiseerde Microsoft Excel-modellen voor productie, kostenraming, cashflowcontrole en operations management?
+
+- 🛒 **[Download dit Excel-sjabloon voor Materiaalstroomregeling op de Werkvloer & MRP (.xlsx) op Gumroad (30 dagen geld-terug-garantie)](https://theseusworkshop.com/l/qnojv?utm_source=github&utm_medium=GitHub%20README)**
+- 🌐 **[Bezoek de officiële Theseus Workshop Storefront (theseusworkshop.com) om alle zakelijke beslissingstoolkits, kostenramers & financiële dashboards in Excel te bekijken](https://theseusworkshop.com?utm_source=github&utm_medium=GitHub%20README)**
+- 🖥️ **[Test de gratis interactieve browserdemo van het Systeem voor Materiaalstroomregeling op de Werkvloer](https://hyvoid.github.io/shop-floor-mrp-kanban-excel-system/)**
+
 
 ## Technische details
 
@@ -142,8 +189,8 @@ Het voorgestelde werkboek bevat vier functionele modules en tien werkbladen. Elk
 | Systeem en stamgegevens | `02_MST_Part` | Stamgegevens van afzonderlijke onderdelen, fabricagebron, supermarktlocatie, verpakking en voorraadparameters |
 | Systeem en stamgegevens | `03_MST_BOM` | Relaties lasmontage-onderdeel en standaardcomponentverbruik |
 | Systeem en stamgegevens | `04_MST_Station` | Definities van robotische/handmatige stations en kar-toewijzingen |
-| Planning en motor | `05_PLN_Shift` | Ploeg-niveau productieplanning |
-| Planning en motor | `06_ENG_Demand` | BOM-ontkoppeling en materiaalbehoefte op componentniveau |
+| Planning en engine | `05_PLN_Shift` | Ploeg-niveau productieplanning |
+| Planning en engine | `06_ENG_Demand` | BOM-explosie en materiaalbehoefte op componentniveau |
 | Uitvoering en logistiek | `07_INV_Super` | Supermarktvoorraad, verbruik, tekorten en aanvulling |
 | Uitvoering en logistiek | `08_LOG_Trolley` | Karbelading, verzending, levering en kitgereedheid |
 | Terugkoppeling en regeling | `09_ACT_Report` | Werkelijke productie, uitval en productierapportage |
@@ -180,7 +227,7 @@ Het voorgestelde werkboek bevat vier functionele modules en tien werkbladen. Elk
                   10_DSH_Board
 ```
 
-Het diagram toont de beoogde regeltroom. De werkelijke voorraadafstemming hangt af van de geïmplementeerde formules, de transactieregistraties die door operators worden bijgehouden en de validatie van brongegevens.
+Het diagram toont de beoogde regelstroom. De werkelijke voorraadafstemming hangt af van de geïmplementeerde formules, de transactieregistraties die door operators worden bijgehouden en de validatie van brongegevens.
 
 </details>
 
@@ -257,7 +304,7 @@ Dit werkblad definieert de gedeelde configuratie die wordt gebruikt door de daar
 | `D12` | `CFG_TROLLEY_MAX_SNP` | `12` | Maximum standaardverpakkingsdozen per kar |
 | `D13` | `CFG_SCRAP_TOLERANCE` | `0.02` | Uitvalpercentagetolerantie |
 
-Dit zijn referentiestandaardwaarden uit de implementatiespecificatie, geen universele productienormen. Ze moeten vóór operationeel gebruik worden gevalideerd tegen werkelijke verpakking, verbruik, aanvul doorlooptijden en werkplaatspraktijken.
+Dit zijn referentiestandaardwaarden uit de implementatiespecificatie, geen universele productienormen. Ze moeten vóór operationeel gebruik worden gevalideerd tegen werkelijke verpakking, verbruik, aanvuldoorlooptijden en werkplaatspraktijken.
 
 De voor dit blad gespecificeerde validatiewoordenboeken omvatten:
 
@@ -276,7 +323,7 @@ De specificatie definieert ook parameterweergave- en validatie-uitvoer in de kol
 
 Voer de formule in `F4` in op een Microsoft 365-compatibel werkblad, waarbij het beoogde overloopgebied vrij blijft.
 
-**Implementatienotitie:** De voorbeeldvalidatieformule van de bronspecificatie gebruikt matrixuitdrukkingen met `AND` en `ROW`. Die uitdrukkingen moeten vóór uitrol worden beoordeeld op matrixcompatibel gedrag. Een formule die een onjuiste validatiestatus teruggeeft is niet alleen daarom een adequate regeling omdat ze dynamisch is.
+**Implementatienotitie:** De voorbeeldvalidatieformule van de bronspecificatie gebruikt matrixuitdrukkingen met `AND` en `ROW`. Die uitdrukkingen moeten vóór uitrol worden beoordeeld op matrixcompatibel gedrag. Een formule die een onjuiste validatiestatus teruggeeft, is niet daarom al een adequate regeling omdat ze dynamisch is.
 
 </details>
 
@@ -322,7 +369,7 @@ De specificatie definieert de maximale voorraad als het dubbele van de berekende
 
 **Belangrijke implementatieoverwegingen**
 
-- De veiligheidsvoorraadbasislijn moet een duidelijk gedefinieerde tijdsbasis hebben. De meegeleverde formule gebruikt het gemiddelde dagelijkse verbruik maar vermenigvuldigt dit niet expliciet met de aanvul doorlooptijd. De buffer mag daarom niet worden geïnterpreteerd als een volledig doorlooptijd-gebaseerd voorraadbeleid.
+- De veiligheidsvoorraadbasislijn moet een duidelijk gedefinieerde tijdsbasis hebben. De meegeleverde formule gebruikt het gemiddelde dagelijkse verbruik maar vermenigvuldigt dit niet expliciet met de aanvuldoorlooptijd. De buffer mag daarom niet worden geïnterpreteerd als een volledig doorlooptijd-gebaseerd voorraadbeleid.
 - `SNP` moet positief zijn voordat het als afrondingsstapgrootte wordt gebruikt.
 - Ontbrekende verbruiksgegevens moeten worden onderscheiden van echt nulverbruik.
 - Een activeringscontrole moet de onderdeelidentificatie, broncategorie, locatie en verpakkingsattributen valideren voordat het onderdeel in planningsberekeningen wordt gebruikt.
@@ -339,7 +386,7 @@ De voorbeeldactiveringsformule van de specificatie is:
 )
 ```
 
-Dit illustert de beoogde validatielogica. Omdat `OR` niet elke rij van een matrix onafhankelijk evalueert, moet de formule worden aangepast naar een rijgewijze of `MAP`-gebaseerde implementatie voordat ze als productieve validatieregeling wordt gebruikt.
+Dit illustreert de beoogde validatielogica. Omdat `OR` niet elke rij van een matrix onafhankelijk evalueert, moet de formule worden aangepast naar een rijgewijze of `MAP`-gebaseerde implementatie voordat ze als productieve validatieregeling wordt gebruikt.
 
 </details>
 
@@ -408,7 +455,7 @@ Voor een uitgerold werkboek moeten deze formules worden getest op matrixgedrag, 
 <details>
 <summary><strong>Blad `04_MST_Station` — Stations en karconfiguratie</strong></summary>
 
-Dit blad koppelt productiestations aan de interne logistiekbronnen die ze bedienen.
+Dit blad koppelt productiestations aan de interne logistieke bronnen die ze bedienen.
 
 | Veld | Doel |
 |---|---|
@@ -418,7 +465,7 @@ Dit blad koppelt productiestations aan de interne logistiekbronnen die ze bedien
 | Standaard kar-ID | Toegewezen materiaaltransportkar |
 | Karcapaciteit | Maximum standaardverpakkingsdozen per kar |
 | Stationsstatus | Planning- en gereedheidsindicator |
-| Karbeschikbaarheid | Huidig geregistreerd karstatus |
+| Karbeschikbaarheid | Huidige geregistreerde karstatus |
 
 De voorgestelde stationsstam omvat ongeveer 15–20 stations, afhankelijk van de werkelijke werkplaats.
 
@@ -457,7 +504,7 @@ Dit werkblad is de operationele toegangspoort tot de productieplanning.
 |---|---|
 | Productiedatum | Geplande uitvoeringsdatum |
 | Ploeg-ID | Ploegbenaming |
-| Station-ID | Doellaser-lasstation |
+| Station-ID | Doellasstation |
 | Montage-ID | Geplande lasmontage |
 | Geplande hoeveelheid | Doelmontageproductie |
 | Planstatus | Gepland, Vrijgegeven of Voltooid |
@@ -506,13 +553,13 @@ Zijn berekeningsvolgorde is:
 
 1. Geldige productieplanrecords lezen.
 2. De toepasselijke BOM-rijen voor elke geplande montage selecteren.
-3. Geplande montagematen vermenigvuldigen met de standaardhoeveelheid van elk onderdeel per montage.
+3. Geplande montagehoeveelheden vermenigvuldigen met de standaardhoeveelheid van elk onderdeel per montage.
 4. Datum-, ploeg-, station-, montage- en onderdeelcontext vasthouden voor elk behoefterecord.
-5. Behoeften aggregeren waar de voorraadcontrolemening een totaal op onderdeelniveau nodig heeft.
+5. Behoeften aggregeren waar het voorraadcontroloverzicht een totaal op onderdeelniveau nodig heeft.
 6. Behoefte vergelijken met de gedefinieerde beschikbare voorraadmaatstaf.
 7. Tekorten markeren en resultaten blootstellen aan de aanvul- en logistiekwerkstromen.
 
-Voor een geplande montagemate \(Q_a\), en een standaardcomponentverbruik \(B_{a,p}\), is de brutobehoefte aan onderdeel \(p\):
+Voor een geplande montagehoeveelheid \(Q_a\), en een standaardcomponentverbruik \(B_{a,p}\), is de brutobehoefte aan onderdeel \(p\):
 
 \[
 D_p=\sum_a Q_a B_{a,p}
@@ -561,7 +608,7 @@ Dit blad consolideert de materiaalpositie en vertaalt tekorten naar aanvulsignal
 | D | Beginvoorraad | Overgedragen voorraad |
 | E | Ontvangen hoeveelheid | Stroomopwaartse materiaalontvangsten |
 | F | Cumulatief verbruik | Materiaalverbruik afgeleid uit productierapporten |
-| G | Fysiek beschikbare voorraad | Huidig geregistreerde fysieke voorraad |
+| G | Fysiek beschikbare voorraad | Huidige geregistreerde fysieke voorraad |
 | H | Gereserveerde / inkomende voorraad | Voorraad gekoppeld aan reserveringen of inkomende bewegingen, zoals gedefinieerd door de implementatie |
 | I | Netto beschikbare voorraad | Voorraad beschikbaar voor de relevante planningsberekening |
 | J | Benodigde hoeveelheid | Behoefteverwijzing voor het geselecteerde planningsbereik |
@@ -618,7 +665,7 @@ De nooddrempel is geconfigureerd in `01_SYS!D9`. De exacte trigger moet worden g
 
 **Voorgestelde aanvulhoeveelheid**
 
-De specificatie stelt voor om aanvulling af te ronden op een standaardverpakkingsveelvoud en zowel de benodigde hoeveelheid als de veiligheidsvoorraad te meewegen.
+De specificatie stelt voor om aanvulling af te ronden op een standaardverpakkingsveelvoud en zowel de benodigde hoeveelheid als de veiligheidsvoorraad mee te wegen.
 
 ```excel
 =LET(
@@ -642,7 +689,7 @@ De specificatie stelt voor om aanvulling af te ronden op een standaardverpakking
 )
 ```
 
-Dit is een referentieformulepatroon, geen verifieerde kant-en-klare formule voor elke voorraaduitwerking. Bevestig vóór uitrol of kolom E ontvangsten vertegenwoordigt die al in kolom I zijn meegerekend. Als dezelfde inkomende hoeveelheid dubbel wordt geteld, valt de aanvulaanbeveling te laag uit.
+Dit is een referentieformulepatroon, geen verifieerde kant-en-klare formule voor elke voorraadindeling. Bevestig vóór uitrol of kolom E ontvangsten vertegenwoordigt die al in kolom I zijn meegerekend. Als dezelfde inkomende hoeveelheid dubbel wordt geteld, valt de aanvulaanbeveling te laag uit.
 
 Een productie-implementatie moet ook fysieke ontvangsten, in aanmerking komende inkomende hoeveelheden, reserveringen en voorraadcorrecties onderscheiden in plaats van te vertrouwen op dubbelzinnige voorraadvelden.
 
@@ -664,7 +711,7 @@ Dit werkblad zet materiaalbehoeften om in uitvoerbare interne logistiektaken.
 | Kit-status | Ready, Partly of Blocked |
 | Taakstatus | Loading, In-Transit of Delivered |
 | Verzendbevestiging | Bevestiging van fysieke belading en vertrek |
-| Leverbegstigingstijd | Geregistreerde aankomsttijd |
+| Tijdstip leverbevestiging | Geregistreerde aankomsttijd |
 | Leverend persoon | Verantwoordelijke operator |
 | Capaciteitswaarschuwing | Controle van karverpakkingscapaciteit |
 
@@ -717,7 +764,7 @@ De meegeleverde specificatie definieert volledige gereedheid op 100% en een waar
 )
 ```
 
-Deze formule illustert de drempellogica voor een enkele materiaalbehoefte. Een productie-niveau kitgereedheidsberekening **moet alle benodigde onderdelen voor de doelstation en ploeg evalueren**. De beschikbare hoeveelheid van één onderdeel gedeeld door zijn laadhoeveelheid is op zichzelf geen bewijs dat de hele kit compleet is.
+Deze formule illustreert de drempellogica voor een enkele materiaalbehoefte. Een productie-niveau kitgereedheidsberekening **moet alle benodigde onderdelen voor het doelstation en de ploeg evalueren**. De beschikbare hoeveelheid van één onderdeel gedeeld door zijn laadhoeveelheid is op zichzelf geen bewijs dat de hele kit compleet is.
 
 De verzendpoort moet daarom de volledige vereistenset gebruiken, valideren dat elk benodigd onderdeel in voldoende hoeveelheid beschikbaar is, en voorkomen dat materiaal aan meerdere taken wordt toegewezen.
 
@@ -818,7 +865,7 @@ Een positief resultaat betekent productie boven het overeenkomende doel; een neg
 )
 ```
 
-De referentieuitvalpercentage wordt berekend als uitval gedeeld door goede productie plus uitval. De standaardtolerantie is 2%, maar de werkelijke drempel moet worden goedgekeurd voor het betreffende fabricageproces.
+Het referentie-uitvalpercentage wordt berekend als uitval gedeeld door goede productie plus uitval. De standaardtolerantie is 2%, maar de werkelijke drempel moet worden goedgekeurd voor het betreffende fabricageproces.
 
 **Productievalidatie**
 
@@ -863,7 +910,7 @@ Een rapport mag de voorraad niet vaker dan één keer verlagen. De bronspecifica
 <details>
 <summary><strong>Blad `10_DSH_Board` — Werkvloer-operationsdashboard</strong></summary>
 
-Het dashboard consolideert operationele informatie voor productiesupervisoren en vlootregelaars.
+Het dashboard consolideert operationele informatie voor productiesupervisoren en dispatchers.
 
 Het referentiefiltergebied bevat:
 
@@ -921,7 +968,7 @@ Dit is een referentieberekening. Ze moet worden uitgebreid met het stationfilter
 )
 ```
 
-Deze metric hangt af van de taakgranulariteit. Als een enkele karlevertaak één onderdeel vertegenwoordigt in plaats van een volledige werkplekkit, is het resultaat een taakgereedheidspercentage, geen volledig werkplekkit-percentage. De dashboardlabel moet de geïmplementeerde meting weerspiegelen.
+Deze metric hangt af van de taakgranulariteit. Als een enkele karlevertaak één onderdeel vertegenwoordigt in plaats van een volledige stationkit, is het resultaat een taakgereedheidspercentage, geen volledig stationkit-percentage. Het dashboardlabel moet de geïmplementeerde meting weerspiegelen.
 
 **Aantal geblokkeerde stations**
 
@@ -945,7 +992,7 @@ Dit geeft stroomopwaartse productieteams een geconsolideerd beeld van de per bro
 
 De referentieconstructie gebruikt functies voor dynamische matrices zoals `FILTER`, `SORT`, `HSTACK` en `CHOOSEROWS` om een gerangschikte tekortlijst te genereren.
 
-Een geldige rangschikking moet onderdeel-ID, omschrijving, fabricagebron of opslaglocatie, beschikbare hoeveelheid, tekorthoeveelheid en voorgestelde aanvulhoeveelheid bevatten. De sorteersleutel moet expliciet worden gedefinieerd en mag het grootste absolute tekort niet verwarren met het dringendste risico van tijd tot voorraadop.
+Een geldige rangschikking moet onderdeel-ID, omschrijving, fabricagebron of opslaglocatie, beschikbare hoeveelheid, tekorthoeveelheid en voorgestelde aanvulhoeveelheid bevatten. De sorteersleutel moet expliciet worden gedefinieerd en mag het grootste absolute tekort niet verwarren met het dringendste risico van de tijd tot voorraaduitputting.
 
 </details>
 
@@ -975,10 +1022,10 @@ De volgende groepen vatten de belangrijkste berekeningspatronen samen die in de 
 
 | Doel | Formule of functie | Regeldoel |
 |---|---|---|
-| Plan-naar-BOM-ontkoppeling | Planhoeveelheid × BOM-gebruik | Brutto componentbehoefte berekenen |
+| Plan-naar-BOM-explosie | Planhoeveelheid × BOM-gebruik | Brutto componentbehoefte berekenen |
 | Behoefteaggregatie op onderdeelniveau | `SUMIFS` | Behoefte combineren over het gedefinieerde planningsbereik |
 | Tekortberekening | `MAX(0, required - available)` | Negatieve tekortwaarden voorkomen |
-| Aanvulhoeveelheid | `LET`, `XLOOKUP`, `CEILING.MATH` | Veiligheidsvoorraad en verpakkingafronding toepassen |
+| Aanvulhoeveelheid | `LET`, `XLOOKUP`, `CEILING.MATH` | Veiligheidsvoorraad en verpakkingsafronding toepassen |
 | Aanvulclassificatie | `IF` met geconfigureerde drempels | Normal-, Replenish- en Urgent-statussen blootleggen |
 | Tekortrangschikking | `FILTER`, `SORT`, `CHOOSEROWS` | Zichtbare materiaaluitzonderingen prioriteren |
 
@@ -1047,10 +1094,10 @@ Controleer vóór de operationele uitrol dat:
 6. Een kar niet als beschikbaar kan worden behandeld terwijl er een onopgeloste actieve toewijzing bestaat.
 7. Een levering niet als voltooid wordt gemarkeerd alleen omdat een taak is verzonden.
 8. Dashboardmetrics consistente data, ploegen, stationfilters en aggregatieregels gebruiken.
-9. Parameterwijzigingen doorsijpelen naar elke beoogde afhankelijke berekening.
+9. Parameterwijzigingen moeten doorwerken naar elke beoogde afhankelijke berekening.
 10. Ontbrekende of ongeldige invoer onderscheidbaar blijft van echte nulwaarden.
 
-De oorspronkelijke architectuurspecificatie levert een veldniveau kruiscontrole en een parameterreferentiekaart. Die documenten vestigen de beoogde ontwerpdekking; ze mogen niet worden geïnterpreteerd als onafhankelijk runtime-testbewijs voor een voltooid werkboek.
+De oorspronkelijke architectuurspecificatie levert een kruiscontrole op veldniveau en een parameterreferentiekaart. Die documenten vestigen de beoogde ontwerpdekking; ze mogen niet worden geïnterpreteerd als onafhankelijk runtime-testbewijs voor een voltooid werkboek.
 
 </details>
 
@@ -1066,7 +1113,7 @@ De oorspronkelijke architectuurspecificatie levert een veldniveau kruiscontrole 
 
 **Verborgen fout:** Het voorraadsaldo houdt geen rekening met alle concurrerende behoeften, reserveringen of fysieke leveringsbeperkingen.
 
-**Waarom de redenering faalt:** Voorraad kan in totaliteit bestaan terwijl de specifieke onderdelen die voor een werkplek nodig zijn, niet beschikbaar zijn in de benodigde hoeveelheid of elders zijn vastgelegd.
+**Waarom de redenering faalt:** Voorraad kan geaggregeerd bestaan terwijl de specifieke onderdelen die voor een werkplek nodig zijn, niet beschikbaar zijn in de benodigde hoeveelheid of elders zijn vastgelegd.
 
 **Gecorrigeerde aanpak:** Bereken behoefte per onderdeel en planningsbereik, leid netto beschikbaarheid af en controleer de volledige kit vóór verzending.
 
@@ -1157,7 +1204,7 @@ Denk aan een hypothetische ploeg gepland om 20 lasmontages te produceren. Elke m
 
 | Invoer | Onderdeel P-1001 | Onderdeel P-1002 |
 |---|---:|---:|
-| Geplande montagemate | 20 | 20 |
+| Geplande montagehoeveelheid | 20 | 20 |
 | BOM-gebruik per montage | 4 | 2 |
 | Brutobehoefte | 80 | 40 |
 | Kwalificerende netto beschikbare voorraad | 70 | 50 |
@@ -1165,11 +1212,11 @@ Denk aan een hypothetische ploeg gepland om 20 lasmontages te produceren. Elke m
 
 Het plan creëert een behoefte aan 80 eenheden P-1001 en 40 eenheden P-1002. Voor P-1001 ontbreken 10 eenheden, terwijl P-1002 voldoende voorraad heeft voor de geplande behoefte.
 
-Stel dat de geconfigureerde standaardverpakkingshoeveelheid voor P-1001 10 eenheden is. Als geen extra behoefte of voorraadverbintenis de berekening verandert, kan het onmiddellijke brutotekort worden afgerond op één standaardpakket van 10 eenheden.
+Stel dat de geconfigureerde standaardverpakkingshoeveelheid voor P-1001 10 eenheden is. Als geen extra behoefte of voorraadtoewijzing de berekening verandert, kan het onmiddellijke brutotekort worden afgerond op één standaardpakket van 10 eenheden.
 
 Dat bewijst niet automatisch dat de ploeg gereed is. De planner moet ook het veiligheidsvoorraadbeleid, de behoefte van andere stations, bevestigde ontvangsten, reserveringen en of het fysieke materiaal vóór productiestart kan worden geleverd meewegen.
 
-De operationele aanbeveling is daarom P-1001 voor aanvulling te markeren, de bron en levertijd te verifiëren en de volledige werkplekkit te beoordelen vóór verzending. Zodra het stroomopwaartse materiaal is ontvangen en de kar is geleverd, kan de productie doorgaan onder de normale vrijgavecontroles van de werkplaats.
+De operationele aanbeveling is daarom P-1001 voor aanvulling te markeren, de bron en levertijd te verifiëren en de volledige stationkit te beoordelen vóór verzending. Zodra het stroomopwaartse materiaal is ontvangen en de kar is geleverd, kan de productie doorgaan onder de normale vrijgavecontroles van de werkplaats.
 
 Als later 18 goede montages en één afgekeurde montage worden gemeld, moet het BOM-gebaseerde verbruiksbeleid bepalen of het materiaalverbruik wordt berekend op basis van 19 montages totaal of op een ander geverifieerd afgifterecord. Onder de aanname dat zowel goede als afgekeurde montages de volledige standaardhoeveelheid verbruiken, zou het P-1001-verbruik \(19 \times 4 = 76\) eenheden zijn en het P-1002-verbruik \(19 \times 2 = 38\) eenheden.
 
@@ -1178,7 +1225,7 @@ Dit zijn illustratieve cijfers om de regellogica uit te leggen, geen waargenomen
 </details>
 
 <details>
-<summary><strong>Bedrijfsprocedure — Vijfstaps dagelijkse regellus</strong></summary>
+<summary><strong>Bedrijfsprocedure — Vijfstaps dagelijkse regelcyclus</strong></summary>
 
 1. **Vóór de ploeg:** Voer het productieplan in, controleer de stamgegevensverwijzingen en geef geldige taken vrij.
 2. **Vóór productiestart:** Bekijk de behoefte, identificeer tekorten en communiceer aanvulvereisten naar Laser, Kanten en Verspanen.
@@ -1201,7 +1248,7 @@ Dit zijn illustratieve cijfers om de regellogica uit te leggen, geen waargenomen
 
 **Onveranderde resultaten onderzoeken:** Controleer de berekeningsmodus, planstatus, zoektoetsen en invoervalidatie. Bevestig dat het relevante plan is vrijgegeven als de implementatie filtert op vrijgegeven plannen.
 
-**Onveranderde veiligheidsvoorraad onderzoeken:** Bevestig dat de parameter als getal en niet als tekst is opgeslagen, dat de formule naar de beoogde cel verwijst en dat het werkboek opnieuw heeft berekend.
+**Onveranderde veiligheidsvoorraad onderzoeken:** Bevestig dat de parameter als getal en niet als tekst is opgeslagen, dat de formule naar de beoogde cel verwijst en dat het werkboek opnieuw is berekend.
 
 **Ongeldige rapportcodes onderzoeken:** Controleer station- en montageidentificaties tegen hun stamgegevens. Gebruik gecontroleerde lijsten waar beschikbaar en verwijder onbedoelde spaties of formaatverschillen.
 
@@ -1242,25 +1289,32 @@ Deze grenzen moeten worden overwogen bij de beslissing of het raamwerk geschikt 
 
 </details>
 
-## De bedrijfslogica en de methodiek
-
-Het systeem is gebouwd rond een eenvoudig operationeel principe: productieplannen moeten materiaalbehoeften genereren, materiaalbeschikbaarheid moet de uitvoering beperken, en werkelijke productie moet de volgende planningsbeslissing voeden.
-
-- **BOM-gebaseerde behoeftevertaling** zet geplande lasmontages om in vereisten voor afzonderlijke onderdelen. Dit legt componententekorten bloot die onzichtbaar blijven in een alleen-montages-schema en geeft planners een duidelijkere basis om productie vrij te geven.
-- **Afstemming van de voorraadpositie** onderscheidt fysieke voorraad van materiaal dat al is vastgelegd of verwacht. Dit vermindert het risico dat dezelfde voorraad als beschikbaar wordt behandeld voor meerdere productiebehoeften.
-- **Drempel-gebaseerde aanvulling** vergelijkt materiaalbehoeften met de gedefinieerde voorraadpositie en benadrukt tekorten volgens de geconfigureerde bedrijfsregels. Het resultaat is een geprioriteerd stroomopwaarts aanvulsignaal in plaats van een generieke voorraadwaarschuwing.
-- **Containergebaseerde interne logistiek** koppelt materiaalpickvereisten aan kar-toewijzingen, leverbestemmingen, verpakkingsbeperkingen en kitgereedheid. Dit helpt het logistiekteam zich te richten op het materiaal dat nodig is op elke productiewerkplek.
-- **Terugkoppeling van werkelijke productie** gebruikt productierapporten en het goedgekeurde verbruiksbeleid om de materiaalpositie te actualiseren. De werkplaats kan haar aanvulprioriteiten dan herzien met actuele bedrijfsinformatie in plaats van alleen op het oorspronkelijke plan te vertrouwen.
-
-Samen verbinden deze methodes planning, voorraad, logistiek en productierapportage tot een herhaalbaar dagelijks regelproces. Het raamwerk verbetert zichtbaarheid en beslissingsconsistentie; de betrouwbaarheid blijft afhankelijk van nauwkeurige stamgegevens, gedisciplineerde fysieke bevestigingen en gevalideerde berekeningsregels.
+--
 
 ## Andere gereedschappen uit deze serie
 
-Ontdek meer lichtgewicht beslissingsondersteunende tools voor productie en operations op het GitHub-profiel van de projecteigenaar:
+Ontdek aanvullende lichtgewicht beslissingsondersteunende tools voor productie en operations op het GitHub-profiel van de projecteigenaar:
 
-- [HyVoid op GitHub](https://github.com/HyVoid) — spreadsheetgereedschappen voor productie, planning en operations.
+- **[project-time-tracking-excel-template](https://github.com/HyVoid/project-time-tracking-excel-template)** — Welke projecten lopen uit op tijdkosten of marge? — Analyseer de toewijzing van projectarbeidskosten en de winstgevendheid over actieve projectportefeuilles.
+- **[Caf-audit-tool-for-efficient-reviews](https://github.com/HyVoid/Caf-audit-tool-for-efficient-reviews)** — Welke operationele dimensie kost de meeste omzet en vraagt de financiële lekkage om onmiddellijke tussenkomst? — Zet gestructureerde café-observaties om in een gewogen diagnostische score, een schatting van financiële lekkage en een geprioriteerde lijst met corrigerende acties.
+- **[Restaurant-Menu-Configuration-Modifier-Pricing-Toolkit](https://github.com/HyVoid/Restaurant-Menu-Configuration-Modifier-Pricing-Toolkit)** — Is het menu consistent geprijsd over alle modifiercombinaties en formaten, of wachten er verborgen prijsfouten om naar boven te komen? — Centraliseer restaurantmenu-configuratie-, modifierprijsregels en POS-gereede menugegevens in één beheerde bron van waarheid.
+- **[wedding-planner](https://github.com/HyVoid/wedding-planner)** — Welke taken, kosten en tijdlijnen van de bruiloftsplanning moeten worden gecoördineerd? — Coördineer leveranciersbeheer, taakopvolging en budgetcontrole in bruiloftsplanningsworkflows.
+- **[manufacturing-capacity-planning-template](https://github.com/HyVoid/manufacturing-capacity-planning-template)** — Wordt de arbeidscapaciteit efficiënt benut of heeft de operatie een andere bezetting of planning nodig? — Zet productieplannen en arbeidsgegevens om in capaciteitsbenutting, arbeidskostenallocatie en bezettingsbeslissingen.
+- **[cin7-excel-reporting-template](https://github.com/HyVoid/cin7-excel-reporting-template)** — Wat zegt de operationele data van Cin7 over de bedrijfsprestaties? — Vertaal Cin7-voorraad- en operationele data in uitvoerbare inzichten in de bedrijfsprestaties.
+- **[employee-performance-dashboard-excel](https://github.com/HyVoid/employee-performance-dashboard-excel)** — Welke medewerkers en projecten lopen risico op leverfalen en waar moet het management ingrijpen voordat deadlines verstrijken? — Verbind jaarlijkse werkplanning, uitvoeringsopvolging, gewogen prestatiebeoordeling en managementrapportage in één doorlopende operationele workflow.
+- **[rental-property-management-excel-template](https://github.com/HyVoid/rental-property-management-excel-template)** — Welke eenheden verliezen omzet door onopgemerkte leegstand en welke huurwissels vereisen onmiddellijke actie? — Zet boekingsrecords om in realtime bezettingsstatus, leegstandsintelligentie en operationele waarschuwingen over een volledige verhuurportefeuille.
+- **[workforce-planning-payroll-excel-dashboard](https://github.com/HyVoid/workforce-planning-payroll-excel-dashboard)** — Verbruikt de organisatie de jaarlijkse personeelscapaciteit sneller dan gepland en welke afdelingen vereisen tussenkomst voordat de overurenkosten uit de hand lopen? — Consolideer loonuitgaven, jaarlijkse gecontracteerde uren, overurenverhoudingen en personeelsbenutting in één afdelingsoverschrijdend capaciteitsplanningskader.
+- **[warehouse-billing-excel-template](https://github.com/HyVoid/warehouse-billing-excel-template)** — Zijn de magazijnfacturatiekosten nauwkeurig en herleidbaar naar onderliggende operationele registraties? — Bereken magazijnopslag-, behandelings- en transportkosten tot controleerbare klantfactuurstaten.
+- **[commercial-hvac-plumbing-bid-estimator](https://github.com/HyVoid/commercial-hvac-plumbing-bid-estimator)** — Wat is een verdedigbare, controleerbare inschrijfprijs voor dit commerciële MEP-project? — Schat de kosten van commerciële MEP-projecten en volg ze van materiaalopname tot de uiteindelijke inschrijving.
+- **[landed-cost-calculator-excel](https://github.com/HyVoid/landed-cost-calculator-excel)** — Waarom wijkt de landed cost op SKU-niveau uit mijn ERP af van de API van de expediteur, en welke allocatiemethode veroorzaakt de marge-erosie? — Stem landed cost-berekeningen af op een praktijkerssjabloon en benchmark ze om verschillen in kostenallocatie op SKU-niveau te herleiden naar de onderliggende boekhoudlogica.
+- **[hoa-budget-accounting-spreadsheet](https://github.com/HyVoid/hoa-budget-accounting-spreadsheet)** — Worden onze HOA-middelen correct toegewezen en zitten we op schema met ons budget? — Categoriseer transacties en genereer budgetafwijkingsrapporten voor HOA-financieel beheer.
+- **[homeowner-management-excel-template](https://github.com/HyVoid/homeowner-management-excel-template)** — Wat zijn mijn werkelijke totale kosten van huiseigenaarschap, inclusief alle verborgen uitgaven? — Bereken de totale kosten van huiseigenaarschap door hypotheek, nutsvoorzieningen, onderhoud en kapitaalverbeteringen te integreren.
+- **[crew-scheduling-excel-template](https://github.com/HyVoid/crew-scheduling-excel-template)** — Kan mijn huidige ploeg de werklast aan wanneer projectdata verschuiven en overlappen? — Prognostiseer de ploegbehoefte en bezettingsgaten over een horizon van 12 maanden ter ondersteuning van capaciteitsplanningsbeslissingen.
+- **[Schedule-Driven-Construction-Cash-Curve-Workbook](https://github.com/HyVoid/Schedule-Driven-Construction-Cash-Curve-Workbook)** — Hoe ontvouwen zich de cashflow en geplande voortgang van mijn bouwproject in de loop van de tijd op basis van het schema? — Zet bouwschema's en inschrijfitemregisters om in geautomatiseerde S-curves, tijdgefaseerde kostenprognoses en trackers voor geplande voortgang.
 
 ## Licentie
 
 Dit project is gespecificeerd onder de **Apache 2.0-licentie**. Raadpleeg het bestand `LICENSE` in de repository voor de bindende voorwaarden.
+
+
 
