@@ -1,130 +1,177 @@
 [ 🌐 عربي ](README.ar.md) | [ 🇩🇪 Deutsch ](README.de.md) | [ 🇫🇷 Français ](README.fr.md) | [ 🇳🇱 Nederlands ](README.nl.md) | [ 🇪🇸 Español ](README.sp.md) | [ 🇬🇧 English ](README.md)
 
-# Système de Contrôle des Flux Matières en Atelier : Modèle Excel de MRP, Supermarché Kanban et Planification de la Production de Soudage
+# Système de Contrôle des Flux Matières en Atelier : Modèle Excel de MRP, Calculatrice d'Éclatement de BOM, Suivi de Stock Kanban et Tableur de Planification de Production de Soudage
 <img width="1920" height="790" alt="image" src="https://github.com/user-attachments/assets/a63af286-1115-4c2c-aa06-6d7e04aba1e4" />
 
-**Un cadre léger de contrôle des flux matières en atelier, une calculatrice d'éclatement de nomenclatures (BOM) et un suivi de logistique interne lean pour les opérations de fabrication axées sur le soudage et la tôlerie.**
+
+**Un suivi de stocks de fabrication prêt à l'emploi, une calculatrice multi-niveaux d'éclatement de nomenclatures (BOM), un tableur de réapprovisionnement de supermarché Kanban et un modèle Excel de planification quotidienne de production pour les ateliers de fabrication métallique et de soudage.**
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
-![Platform: Browser + Excel](https://img.shields.io/badge/Platform-Browser%20%2B%20Excel-217346)
-![Tool Type: Production Control & MRP](https://img.shields.io/badge/Tool-Production%20Control%20%26%20MRP-2251FF)
+![Platform: Free Web Tool + Microsoft Excel (.xlsx)](https://img.shields.io/badge/Platform-Free%20Web%20Tool%20%2B%20Excel%20(.xlsx)-217346)
+![Compatibility: Excel 2021+ & Microsoft 365](https://img.shields.io/badge/Compatibility-Excel%202021%2B%20%26%20M365%20Dynamic%20Arrays-2251FF)
+![Category: Manufacturing MRP & Production Control](https://img.shields.io/badge/Category-Manufacturing%20MRP%20%26%20WIP%20Tracker-0A66C2)
 
-**Le Système de Contrôle des Flux Matières en Atelier est un modèle gratuit de planification de production MRP accessible via navigateur et Excel, conçu pour les ateliers de tôlerie et de soudage à haute mixité et faible volume (HMLV). Il transforme les plannings de soudage par équipe en exigences exploitables de nomenclatures (BOM), signaux de réapprovisionnement de supermarché Kanban, tâches de préparation de chariots en bord de ligne et suivi de la consommation des en-cours de production (WIP)—éliminant les ruptures qui arrêtent la ligne et le chaos des tableurs sans refontes coûteuses d'ERP/MES.**
+**Shop-Floor Material Flow Control System** est un **modèle Excel de MRP** plug-and-play, un **tableur de contrôle de stocks de fabrication** et une **calculatrice gratuite de planification de production accessible via navigateur** conçus pour les ateliers à la commande, les fabricants de métal et les opérations de soudage. Il convertit les plannings de production par équipe en **besoins exacts de pièces de nomenclature (BOM)**, **alertes de réapprovisionnement de bacs Kanban**, **checklists de préparation de chariots en bord de ligne** et **déstockage des rebuts des en-cours de production (WIP)**. Les fabricants de petite et moyenne taille et les planificateurs débutants peuvent éliminer les ruptures de pièces imprévues, mettre fin aux retards de soudage en cours d'équipe et remplacer des tableurs manuels défectueux en moins d'une minute sans payer d'abonnements à des logiciels ERP ou MES complexes.
 
-> **Accès, Démo en Direct et Disponibilité du Classeur**
+> ### Accès Rapide : Bac à Sable en Ligne Gratuit et Système Excel Téléchargeable
 >
-> - **Application Web Interactive :** Gratuite, sans inscription ni installation. [Lancer la démo web interactive du Système de Contrôle des Flux Matières en Atelier](https://hyvoid.github.io/shop-floor-mrp-kanban-excel-system/) 
->   
-> - **Modèle Excel de MRP Téléchargeable :** Prêt pour le suivi de production quotidien hors ligne. [Télécharger le classeur Excel de Contrôle de Production et de Réapprovisionnement Matières (.xlsx)](https://theseusworkshop.com/l/qnojv?utm_source=github&utm_medium=GitHub%20README)
+> - **Application Web Interactive Gratuite (Test Instantané dans le Navigateur) :** Testez le flux de travail en ligne gratuitement avec des données d'exemple de fabrication préchargées. Aucune installation ni inscription requise.  
+>   👉 **[Lancez l'Outil Web Gratuit de MRP en Atelier, d'Éclatement de BOM et de Calcul Kanban](https://hyvoid.github.io/shop-floor-mrp-kanban-excel-system/)**
+>
+> - **Classeur Microsoft Excel Réutilisable Hors Ligne (.xlsx pour les Opérations Quotidiennes d'Usine) :** Téléchargez le modèle de tableur automatisé complet pour coller vos propres références pièces, enregistrer vos données de référence BOM localement et exécuter une planification par équipe répétable hors ligne. Garanti par une **garantie de remboursement inconditionnelle de 30 jours**.  
+>   👉 **[Téléchargez le Modèle Excel Prêt à l'Emploi de MRP en Atelier, d'Éclatement de BOM et de Planification de Production (.xlsx)](https://theseusworkshop.com/l/qnojv?utm_source=github&utm_medium=GitHub%20README)**
 
 ---
 
-## Capacités Principales de Suivi de Production : Cartographie des Points de Douleur vers les Solutions
+## Ce Que Cela Vous Aide à Suivre : Des Points de Douleur en Atelier aux Solutions Excel Automatisées
 
-Pour les responsables de production à la recherche d'un **suivi de stocks de fabrication** fiable ou d'une **feuille de contrôle des en-cours de production (WIP)**, ce cadre fait le pont entre les soldes de stocks statiques et la disponibilité des postes en temps réel :
+Si vous recherchez un **modèle Excel de suivi de stocks de fabrication**, une **calculatrice de manques de BOM** ou un **tableur de suivi des en-cours de production (WIP)**, ce système remplace les estimations par des calculs automatisés avant chaque équipe :
 
-| Point de Douleur Opérationnel en Atelier | Intention de Recherche Fréquente / Module | Comment Ce Cadre de Contrôle la Résout |
+| Point de Douleur Quotidien en Usine (Réalité Débutant et Atelier) | Intention de Recherche Fréquente / Module Excel Intégré | Comment Ce Tableur Plug-and-Play la Résout Automatiquement |
 | :--- | :--- | :--- |
-| **Ruptures de Composants Imprévues aux Postes de Soudage** | **Éclatement de BOM par Équipe et Calculatrice MRP** | Développe automatiquement les plannings quotidiens d'assemblage soudé via des nomenclatures (BOM) multi-composants pour calculer la demande nette de composants par équipe et par poste avant que les opérateurs ne commencent à souder. |
-| **Angles Morts de Stock entre le Magasin et la Ligne** | **Suivi des Emplacements WIP et Supermarché Kanban** | Sépare les soldes comptables bruts des emplacements physiques des stocks—suivant les quantités exactes dans les zones tampons amont, les supermarchés Kanban, les chariots de matières en transit et les cellules de soudage robotisées/manuelles. |
-| **Demandes de Matières en Retard vers la Fabrication Amont** | **Réapprovisionnement Automatisé et Liste Prioritaire des Manques** | Calcule les écarts nets de matières en temps réel par rapport aux stocks de sécurité et signale les commandes de réapprovisionnement urgentes pour les cellules de découpe laser, pliage CNC et usinage en amont. |
-| **Chariots Expédiés sans les Pièces Critiques** | **Préparation de Kits Chariot et Préparation des Livraisons en Bord de Ligne** | Regroupe les listes de prélèvement par poste, contraintes d'emballage et capacité du chariot—attribution d'états de kit visuels explicites (`Ready`, `Partly Kitted`, `Blocked`) avant expédition. |
-| **Dérive de Stock Due aux Rebuts et Retouches Non Enregistrés** | **Consommation Rétroactive des Matières Prévue vs Réelle** | Rapproche la consommation théorique de BOM de la production réelle de l'équipe et des rebuts enregistrés en atelier, recalculant dynamiquement les soldes restants du supermarché et des postes. |
-| **Communication Fragmentée entre les Équipes** | **Tableau Andon et Risque Logistique Visuel en Atelier** | Consolide l'atteinte du plan d'équipe, l'exposition aux ruptures critiques, les ruptures du supermarché et les statuts des livraisons milk-run internes dans une seule tour de contrôle opérationnelle. |
+| **Les Soudeurs S'arrêtent Parce Qu'une Petite Équerre Manque** | **Tableur de Calculatrice MRP et d'Éclatement de BOM Multi-Niveaux** | Multiplie vos assemblages soudés planifiés par équipe par chaque composant enfant de votre **nomenclature (BOM)** pour calculer la demande exacte de pièces avant le début de l'équipe. |
+| **Les Pièces Apparaissent « En Stock » sur le Papier, Mais Personne Ne les Trouve en Atelier** | **Suivi d'Emplacement des En-Cours de Production (WIP) et des Bacs Kanban** | Sépare les totaux bruts du registre du magasin en emplacements physiques spécifiques : zones tampons amont, **bacs de supermarché Kanban**, chariots de livraison chargés et postes de soudage actifs. |
+| **Les Machines de Découpe Laser et de Pliage Sont Interrompues par des Commandes Urgentes** | **Feuille d'Alertes Automatisées de Manques Matières et de Priorités de Réapprovisionnement** | Compare la demande de matières de l'équipe aux soldes actuels du supermarché et aux seuils de stock de sécurité, générant des listes de réapprovisionnement priorisées (`Critical`, `Warning`, `Normal`) pour les machines amont de découpe laser, presse plieuse et CNC. |
+| **Les Manutentionnaires Poussent des Kits de Pièces Incomplets vers les Postes de Travail** | **Checklist de Préparation de Kits en Bord de Ligne et Suivi d'Expédition des Chariots** | Regroupe les composants requis par poste de travail, taille de contenant et capacité de chariot, en attribuant des états de préparation clairs (`Ready`, `Partly Kitted`, `Blocked`) avant que tout chariot ne quitte la zone de préparation. |
+| **Les Rebuts de Soudage Non Enregistrés Corrompent les Comptages de Stock avec le Temps** | **Calculatrice de Production Prévue vs Réelle et de Déstockage des Rebuts** | Déduit à la fois les assemblages bons terminés et les rebuts déclarés en atelier de vos soldes de stock en direct à la fin de chaque équipe, maintenant les chiffres du tableur alignés avec les comptages physiques des bacs. |
+| **Les Superviseurs Passent des Heures à Mettre à Jour des Formules Défectueuses entre les Onglets** | **Tableau de Bord Visuel de Contrôle de Production et de Manques en Atelier** | Consolide les taux d'achèvement du plan d'équipe, les principaux goulots d'étranglement de composants, les risques de rupture du supermarché Kanban et les tâches de livraison internes sur un seul écran de synthèse automatique. |
 
 ---
 
-## Tutoriel Pas à Pas : Comment Exécuter la Planification de Production Quotidienne et la Préparation des Matières
+## Tutoriel de Démarrage Rapide : Comment Exécuter la Planification de Production et la Préparation de Matières en 1 Minute
 
-Le modèle opérationnel suit une boucle de contrôle lean de fabrication répétable en 4 étapes : configurer les paramètres, maintenir les données de référence, exécuter les calculs MRP de l'équipe et déstocker la production réelle. 
+Vous n'avez pas besoin d'un diplôme d'ingénierie industrielle ni de compétences Excel avancées pour exécuter la planification des besoins en matières. Suivez ce flux de travail en 4 étapes pour tester la logique dans l'outil web gratuit, puis transférez vos opérations quotidiennes dans le classeur Excel automatisé.
 
-### Étape 1 : Configurer les Paramètres Globaux d'Atelier et de Réapprovisionnement
-**Action :** Définissez les règles opérationnelles de base de votre atelier dans le module de Configuration.
-Définissez les durées d'équipe, les équipes par jour, les stocks de sécurité, les déclencheurs de réapprovisionnement Kanban d'urgence, les seuils de préparation de kit, les limites d'emballage des chariots et les tolérances de rebut autorisées. Ces paramètres gouvernent tous les calculs en aval de **planification des besoins en matières (MRP)** et d'alertes de rupture.
+### Étape 1 : Définir Vos Règles de Base d'Atelier et de Stock de Sécurité
+**Intention de Recherche :** *Comment configurer des règles de stock de sécurité et de réapprovisionnement Kanban dans Excel*  
+Ouvrez le panneau de configuration et saisissez vos chiffres de base d'atelier : durée d'équipe, équipes par jour, zones tampons minimales de stock de sécurité, seuils de déclenchement Kanban et pourcentages de rebut autorisés. Chaque **calcul de manque MRP** et **alerte de réapprovisionnement** en aval se met à jour automatiquement selon ces règles.
 
-### Étape 2 : Importer la Nomenclature (BOM) et les Données de Référence des Centres de Travail
-**Action :** Renseignez votre catalogue de pièces de référence, le registre des postes de travail et les structures d'assemblage.
-Enregistrez les composants fabriqués et achetés, les sources de fabrication amont (p. ex. laser, presse plieuse, tour), les emplacements bacs du supermarché, les quantités d'emballage standard (SPQ) et l'utilisation quotidienne moyenne (ADU). Définissez les **BOM d'assemblages soudés** parent-enfant, classifiez les cellules de soudage robotisées vs manuelles et affectez les ressources physiques de la flotte de chariots. *(Optimisé pour environ 500 références SKU individuelles et environ 50 sous-ensembles soudés).*
+### Étape 2 : Coller Votre Liste de Pièces, Postes de Travail et Nomenclature (BOM)
+**Intention de Recherche :** *Comment construire une nomenclature (BOM) de fabrication et une liste de référence de pièces*  
+Saisissez ou collez votre catalogue de composants (références pièces, source de fabrication amont telle que découpe laser ou usinage CNC, quantité d'emballage standard et emplacement de bac Kanban) ainsi que vos **recettes d'assemblages soudés** parent-enfant. Le modèle prend en charge environ 500 références SKU de pièces individuelles et 50 assemblages parents dès l'installation.
 
-### Étape 3 : Saisir les Plannings de Production par Équipe pour Générer les Listes de Prélèvement
-**Action :** Saisissez votre planning d'équipe quotidien pour déclencher l'éclatement automatique de la demande BOM.
-Enregistrez la date de production, la plage d'équipe, la cellule de soudage cible, la référence de l'assemblage, la quantité planifiée et le statut de lancement. Le moteur de calcul développe immédiatement les quantités d'assemblage en demande au niveau composant, vérifie la **disponibilité des stocks du supermarché**, met en évidence les ruptures de pièces critiques et génère des **tâches priorisées de préparation de chariots et de livraisons milk-run**.
+### Étape 3 : Saisir le Planning d'Équipe du Jour pour Générer des Listes de Manques et de Prélèvement Automatiques
+**Intention de Recherche :** *Comment calculer les besoins en matières et générer des listes de prélèvement d'entrepôt à partir d'un planning de production*  
+Sélectionnez votre date de production, l'équipe, le poste de soudage cible, la référence de l'assemblage et la quantité planifiée. Le moteur de calcul intégré éclate immédiatement le planning en besoins de pièces enfants, vérifie le **stock du supermarché Kanban** disponible, met en évidence les déficits exacts de pièces et construit une **checklist priorisée de préparation de chariots**.
 
-### Étape 4 : Déstocker la Production Réelle, Enregistrer les Rebuts et Passer au Modèle Excel Réutilisable
-**Action :** Enregistrez les données d'exécution de l'atelier pour fermer la boucle de contrôle des stocks.
-Enregistrez les réceptions de fabrication amont, les ajustements d'inventaire tournant, les confirmations d'expédition de chariots et les rapports d'équipes de soudage terminés (pièces bonnes + rebuts). Le modèle déstocke automatiquement les composants consommés et actualise votre position de stock en temps réel pour l'équipe suivante.
-
-> **Prêt à passer des tests ponctuels dans le navigateur aux opérations d'usine quotidiennes ?**  
-> Une fois le flux de travail validé dans le bac à sable du navigateur, **[Téléchargez le Modèle Excel Réutilisable de Contrôle des Flux Matières en Atelier (.xlsx)](https://theseusworkshop.com/l/qnojv?utm_source=github&utm_medium=GitHub%20README)** pour enregistrer vos données de référence BOM personnalisées, suivre l'écart historique multi-équipes et exécuter un contrôle de production quotidien répétable hors ligne dans Microsoft Excel.
+### Étape 4 : Enregistrer la Production Réelle de l'Équipe et Télécharger le Modèle Excel Réutilisable pour les Opérations Quotidiennes
+**Intention de Recherche :** *Comment suivre la production prévue vs réelle et déstocker le stock dans Excel*  
+À la fin de l'équipe, saisissez le nombre d'assemblages bons terminés et les pièces rebutées. Le modèle déduit automatiquement les matières consommées et met à jour votre stock de départ pour l'équipe de demain.
 
 ---
 
-## Pourquoi Utiliser un Cadre Dédié de Contrôle des Flux Matières pour la Fabrication Soudée ?
+### Transformer un Flux de Fabrication Complexe en Habitude de Copier-Coller d'1 Minute
 
-Dans un **atelier de tôlerie axé sur le soudage**, un plan directeur de production (PDP) semble souvent 100 % réalisable dans un système ERP alors que les composants physiques réellement requis au point d'utilisation manquent.
+Exécuter à partir de zéro des **éclatements de demande BOM multi-niveaux**, des **calculs de zones tampons Kanban**, de l'**appariement de capacité de chariots** et du **déstockage des rebuts** exige des calculs complexes de chaîne d'approvisionnement. Cependant, **vous n'avez pas besoin de comprendre les formules sous-jacentes ni de construire vous-même une seule règle de tableur.**
 
-Cette rupture opérationnelle provient rarement d'un stock nul dans toute l'usine. Elle est plutôt causée par une déconnexion entre la **mixité d'assemblage de l'équipe**, les **besoins de BOM multiniveaux**, le stock physique présent dans le **supermarché Kanban** et l'état de chargement du **chariot de livraison en bord de ligne** affecté à un poste de soudage spécifique. Un registre de stock statique ne peut pas résoudre ce problème de synchronisation à quatre dimensions.
+Dans le **Classeur Excel de Contrôle des Flux Matières en Atelier (.xlsx)** téléchargeable, chaque règle d'appariement à tableau dynamique, recherche inter-onglets et formule d'actualisation automatique est déjà pré-construite et verrouillée :
 
-Prenons une équipe type planifiant plusieurs soudures structurales sur des cellules de soudage robotisées et des postes TIG/MIG manuels. Chaque soudure consomme un kit unique de **tôles découpées au laser, équerres pliées CNC et bagues usinées de précision**. Une seule équerre pliée manquante arrête tout l'outillage de soudage—même quand 95 % du kit est déjà préparé. Pendant ce temps, le système ERP affiche l'équerre « en stock », sans préciser si elle se trouve à la presse plieuse, en bac dans le supermarché, chargée sur un chariot ou déjà affectée à l'ordre de travail d'une autre équipe.
+1. **Aucun Glissement de Formule Requis :** Vous n'avez même pas besoin de double-cliquer sur le coin d'une cellule pour faire glisser des formules vers le bas. Collez vos propres références pièces, liste BOM et planning quotidien directement dans les tables d'entrée, et l'ensemble du tableau de bord se met à jour tout seul.
+2. **Clarté de Décision en 1 Minute pour les Débutants :** Même sans aucune expérience en analyse de données ou en contrôle de production, vous pouvez coller vos chiffres et repérer vos principaux goulots d'étranglement matières en **60 secondes**. Au lieu de passer la haute saison à réparer des cellules `VLOOKUP` défectueuses, vous obtenez un retour de décision immédiat de niveau direction afin de vous concentrer sur la gestion de votre atelier et la livraison des commandes à temps.
+3. **Achat Unique vs Abonnements Logiciels Mensuels Coûteux :** Les modules ERP et MES d'entreprise facturent des milliers de dollars d'abonnements annuels récurrents et de frais d'installation. Ce modèle Excel payant transforme un flux de travail d'usine chaotique en un fichier local standardisé que vous achetez une fois et réutilisez pour toujours sur votre propre ordinateur.
+4. **Confidentialité des Données 100 % Locale et Garantie de Remboursement de 30 Jours :** Conservez vos structures BOM propriétaires, vos références de pièces fournisseurs et vos capacités de production entièrement hors ligne sur votre disque dur local avec zéro exposition de sécurité cloud. Chaque téléchargement est protégé par une **garantie de remboursement inconditionnelle de 30 jours** — si elle ne simplifie pas votre planification quotidienne en atelier, demandez un remboursement complet sans tracas.
 
-Ce **Système de Contrôle des Flux Matières en Atelier** relie ces points de données opérationnels isolés en un flux de travail unique et synchronisé :
-1. Il traduit les objectifs de soudage de l'équipe en demande exacte au niveau composant via l'éclatement automatique de BOM.
-2. Il calcule la demande nette par rapport aux soldes physiques du supermarché et aux affectations ouvertes de chariots.
-3. Il génère des signaux de fabrication amont exploitables et des manifestes complets de préparation de kits avant le début de l'équipe.
-4. Il rapproche la consommation théorique des soudures réellement déclarées et des rebuts pour maintenir le stock comptable aligné sur la réalité physique.
-
-Le résultat est un **système de contrôle de production lean industrialisé dans Excel**—délivrant des décisions de flux matières cohérentes et auditables sans forcer les fabricants de petite et moyenne taille à acheter des modules MES complexes, des logiciels de flottes de véhicules à guidage automatique (AGV) ou des personnalisations ERP lourdes.
+👉 **[Téléchargez le Classeur Excel Automatisé Complet de MRP en Atelier et de Planification de Production (.xlsx) — Garantie Sans Risque de 30 Jours](https://theseusworkshop.com/l/qnojv?utm_source=github&utm_medium=GitHub%20README)**  
+*(Vous voulez d'abord prévisualiser le flux de travail ? **[Essayez Ici le Bac à Sable Web Gratuit de MRP et Kanban dans le Navigateur](https://hyvoid.github.io/shop-floor-mrp-kanban-excel-system/)**)*
 
 ---
 
-## Tableurs de Stock Statiques Traditionnels vs Contrôle Structuré des Flux Matières
+## La Logique Métier et la Méthodologie : Guide en Langage Simple du Contrôle en Atelier et des Fuites de Profit Cachées
 
-| Dimension Opérationnelle | Sans Ce Système (Tableurs de Stock Ad-Hoc) | Avec Ce Système (Cadre Structuré de MRP et Préparation de Kits en Atelier) |
+La plupart des ateliers petits et moyens perdent de l'argent en atelier non pas faute de commandes, mais à cause d'**angles morts opérationnels cachés** dans la façon dont les matières circulent de la fabrication brute à l'assemblage final. 
+
+Voici une explication en langage simple des cinq angles morts métier fondamentaux qui causent des livraisons manquées et du travail gaspillé, ainsi que les faits financiers objectifs et la façon dont la logique intégrée de ce tableur les corrige automatiquement :
+
+### 1. L'Angle Mort du « Kit Complété à 95 % » (Pourquoi une Équerre à 2 $ Manquante Arrête une Commande de 5 000 $)
+- **La Réalité Objective :** L'assemblage manufacturier est tout ou rien. Si un cadre soudé nécessite 15 pièces métalliques différentes et que 14 d'entre elles se trouvent au poste de travail, votre capacité réelle à terminer ce produit est de **0 %, et non de 93 %**. Dans la plupart des ateliers, les responsables planifient les équipes en regardant uniquement les commandes de produits finis, découvrant trop tard qu'une seule petite bague ou équerre est en rupture de stock.
+- **Comment la Logique Excel le Corrige (Traduction de la Demande Pilotée par la BOM) :** Lorsque vous saisissez une quantité d'assemblage planifiée dans le planning, le classeur décompose automatiquement ce produit parent en chaque pièce enfant requise. Il signale l'équerre à 2 $ manquante avant que vous n'assigniez un soudeur au poste, évitant que des opérateurs payés restent inactifs devant un travail impossible à réaliser.
+
+### 2. L'Illusion du « En Stock sur le Papier » (Double Comptage des Mêmes Pièces sur Plusieurs Équipes)
+- **La Réalité Objective :** Un tableur d'inventaire standard ne vous indique que le nombre total de pièces présentes dans le bâtiment. Supposons que votre feuille indique `100 plaques de base découpées au laser` en stock. Le Travail A de l'équipe du matin nécessite `60 plaques`, et le Travail B de l'équipe de l'après-midi nécessite `60 plaques`. Un tableur basique indique que les deux travaux ont suffisamment de pièces (`60 <= 100`), donc vous lancez les deux en atelier — causant l'épuisement du stock de matières à mi-parcours pour l'équipe de l'après-midi.
+- **Comment la Logique Excel le Corrige (Déduction du Stock Engagé) :** Le modèle soustrait automatiquement les pièces déjà promises à des équipes antérieures ou chargées sur des chariots actifs de votre solde physique en rayon. Vous voyez votre **vrai stock disponible restant**, éliminant les doubles réservations entre équipes et postes de travail.
+
+### 3. Traiter les Machines Amont comme un Distributeur Instantané (Changements de Série d'Urgence et Heures Machine Perdues)
+- **La Réalité Objective :** Les machines amont comme les découpeuses laser, les presses poinçonneuses CNC et les presses plieuses nécessitent un temps de réglage, des changements d'outillage et le calepinage des tôles. Lorsqu'un superviseur de soudage découvre un bac de pièces vide en cours d'équipe et exige une production d'urgence de 10 équerres, l'opérateur de la presse plieuse doit démonter un réglage de production en cours. Dans l'ensemble du secteur, les réglages d'urgence non planifiés réduisent la capacité machine totale de **15 % à 30 %**.
+- **Comment la Logique Excel le Corrige (Réapprovisionnement Kanban par Seuils) :** Le tableur compare la demande des équipes à venir à vos niveaux de stock de sécurité minimums et classe automatiquement l'urgence de réapprovisionnement (`Critical`, `Warning`, `Normal`) par type de machine amont. Les opérateurs amont reçoivent une liste de lots propre et priorisée des heures avant que les bacs n'atteignent réellement zéro.
+
+### 4. Transformer les Cabines de Soudage en Aires de Stockage Encombrées (Coûts de Main-d'Œuvre Cachés de Recherche de Pièces)
+- **La Réalité Objective :** Lorsque les manutentionnaires poussent des kits partiels ou des palettes désorganisées sur l'atelier juste pour « faire avancer les matières », les cellules de soudage de haute valeur deviennent des allées de stockage encombrées. Les soudeurs qualifiés finissent par passer **30 à 45 minutes par équipe** à parcourir l'atelier à la recherche de pièces manquantes ou à déplacer des assemblages à moitié terminés hors du chemin.
+- **Comment la Logique Excel le Corrige (Préparation de Chariots Contrôlée) :** Le modèle lie les listes de prélèvement directement aux chariots de livraison physiques et aux limites des contenants. Un chariot est automatiquement marqué comme `Blocked` ou `Partly Kitted` jusqu'à ce que chaque pièce requise soit disponible en quantités complètes d'emballage, garantissant que seuls des kits prêts à la production à 100 % atteignent la ligne de production.
+
+### 5. Les Rebuts Invisibles Corrompant Silencieusement le Planning de Demain (Dérive Comptable-Physique du Stock)
+- **La Réalité Objective :** Chaque usine produit occasionnellement des rebuts, des pièces déformées ou des rejets de réglage. Lorsqu'un soudeur met au rebut 4 équerres et prend discrètement 4 pièces supplémentaires du bac Kanban sans les enregistrer, votre tableur devient inexact de 4 unités. Sur un seul mois, les rebuts non enregistrés créent un « stock fantôme » massif — votre ordinateur indique que vous avez des pièces en rayon alors que le bac est complètement vide.
+- **Comment la Logique Excel le Corrige (Déstockage Automatisé de la Production et des Rebuts) :** À la fin de chaque équipe, vous saisissez à la fois les unités bonnes terminées et les pièces rebutées dans le journal. Le classeur déduit automatiquement l'utilisation BOM théorique *plus* la quantité exacte de rebuts de votre stock en direct, gardant vos chiffres numériques verrouillés sur la réalité physique sans recomptage manuel quotidien.
+
+---
+
+## Comparaison : Tableurs Manuels Ad-Hoc vs Système Excel MRP Automatisé en Atelier
+
+| Dimension Opérationnelle | Tableurs de Stock Manuels (Formules Défectueuses et Estimations) | Ce Système Excel MRP et de Préparation de Kits Automatisé (Logique Dynamique Pré-Construite) |
 | :--- | :--- | :--- |
-| **Détection des Ruptures de Composants** | **Arrêts Non Planifiés de la Ligne de Soudage :** Les ordres de travail semblent exécutables au niveau assemblage, mais les composants enfants manquants ne sont découverts par les soudeurs qu'au réglage de l'outillage. | **Éclatement et Netting de BOM Avant l'Équipe :** Les plannings d'équipe se développent automatiquement en besoins individuels de pièces, révélant les déficits exacts avant que les ordres de travail n'atteignent l'atelier. |
-| **Visibilité de l'Emplacement des En-cours de Production (WIP)** | **Aveuglement du Registre de Stock :** Les pièces apparaissent disponibles dans le stock total de l'usine, mais les caristes perdent du temps à chercher entre supermarchés, allées de préparation et postes de soudage. | **Suivi d'Emplacement Multi-Étapes :** Les données de référence et les journaux logistiques ségrègent clairement le stock détenu dans les supermarchés Kanban, chargé sur les chariots de livraison ou préparé aux postes de travail. |
-| **Planification de la Fabrication Amont** | **Expédition et Pompier :** Les cellules de découpe laser, pliage de tôle et usinage CNC reçoivent des demandes de réapprovisionnement urgentes via des relances verbales ou des notes papier. | **Signaux de Réapprovisionnement par Traction :** Les algorithmes de manque net catégorisent les priorités de réapprovisionnement (`Normal`, `Warning`, `Critical`) et acheminent la demande directement vers les centres de travail amont spécifiques. |
-| **Préparation de Kits en Bord de Ligne et Expédition des Chariots** | **Kits Partiels et Postes Encombrés :** Les chariots arrivent aux cellules de soudage avec des jeux de pièces incomplets, causant une accumulation de WIP et des changements de poste en cours d'équipe. | **États de Préparation de Kit Verrouillés :** Les tâches de prélèvement appliquent les contraintes d'emballage standard et signalent les kits de chariot comme `Ready`, `Partly` ou `Blocked` avant l'expédition en atelier. |
-| **Fiabilité du Stock et Rapprochement des Rebuts** | **Dérive Comptable-Physique du Stock :** Les soldes de stock du tableur prennent du retard sur la consommation réelle de l'atelier en raison de rebuts de soudage non déclarés, de retouches et de substitutions manuelles de matières. | **Déstockage Automatique de la Production :** Les clôtures d'équipe et les journaux de rebuts alimentent directement le moteur de consommation, actualisant dynamiquement les soldes du supermarché en temps réel. |
-| **Priorisation des Goulots d'Étranglement à l'Échelle de l'Usine** | **Gestion des Postes en Silo :** Les superviseurs résolvent les ruptures cellule par cellule, masquant les goulots d'étranglement systémiques en amont et les affectations de matières conflictuelles entre équipes. | **Tour de Contrôle Centralisée en Atelier :** Un tableau de bord unifié corrèle l'atteinte des équipes, l'exposition aux ruptures de composants, la santé du supermarché et le flux logistique interne. |
+| **Configuration et Maintenance des Formules** | **Heures de Débogage Manuel de `VLOOKUP` :** L'insertion de nouvelles lignes ou références de pièces casse les références de cellules, nécessitant un glissement constant de formules et des corrections manuelles. | **Coller et Démarrer sans Maintenance :** Construit avec des formules natives à tableau dynamique Excel qui s'étendent et recalculent automatiquement dès que vous collez vos données. |
+| **Détection des Manques de Composants** | **Arrêts de Ligne en Cours d'Équipe :** Les ordres de travail semblent prêts au niveau assemblage parent, et les pièces enfants manquantes ne sont découvertes par les opérateurs qu'au réglage des gabarits. | **Éclatement de BOM et Déduction Avant l'Équipe :** Les plannings d'équipe se décomposent automatiquement en besoins individuels de pièces, révélant les déficits exacts avant que le travail n'atteigne l'atelier. |
+| **Suivi de l'Emplacement des En-Cours de Production (WIP)** | **Aveuglement du Stock à Colonne Unique :** Les pièces paraissent disponibles dans le stock total de l'usine, pendant que les manutentionnaires perdent du temps à chercher entre rayonnages, allées et cabines. | **Visibilité Multi-Étapes des Emplacements Physiques :** Sépare clairement le stock détenu dans les **supermarchés Kanban**, chargé sur les **chariots de livraison** ou préparé aux **postes de soudage**. |
+| **Planification de la Fabrication Amont** | **Expédition Verbale et Gestion de Crise :** Les cellules de découpe laser, de pliage de tôle et d'usinage CNC sont interrompues par des notes papier urgentes et des demandes en direct. | **Signaux Automatisés de Réapprovisionnement par Traction :** Les algorithmes de manque catégorisent les priorités de réapprovisionnement (`Normal`, `Warning`, `Critical`) et regroupent les tâches par centre de travail amont. |
+| **Préparation de Kits en Bord de Ligne et Expédition des Chariots** | **Kits Partiels et Encombrement de l'Atelier :** Les chariots sont poussés vers les postes avec des composants manquants, causant des accumulations de WIP et du temps de changement de série gaspillé. | **Contrôle Strict de Préparation des Kits :** Les manifestes de prélèvement appliquent les quantités d'emballage standard (SPQ) et marquent les kits de chariot comme `Ready`, `Partly Kitted` ou `Blocked` avant expédition. |
+| **Rebuts et Exactitude du Stock** | **Dérive du Stock Fantôme :** Les soldes de stock se désynchronisent des bacs physiques en quelques jours en raison de rebuts de soudage non enregistrés, de retouches et de substitutions en atelier. | **Déstockage Automatisé par Équipe :** Les clôtures d'équipe et les journaux de rebuts alimentent directement le moteur de consommation, actualisant les soldes nets du supermarché en temps réel. |
+| **Coût et Sécurité des Données** | **Coût de Main-d'Œuvre Caché Élevé ou SaaS Coûteux :** Soit gaspiller plus de 10 heures par semaine à réparer des feuilles manuelles, soit payer des milliers par an pour des sièges ERP/MES cloud. | **Achat Unique et Confidentialité 100 % Locale :** Payez une fois, réutilisez pour toujours sur votre ordinateur de bureau local avec une **garantie de remboursement de 30 jours** et zéro exposition de données cloud. |
 
 ---
 
-## Utilisateurs Idéaux, Rôles de Fabrication et Cas d'Usage Industriels
+## À Qui S'Adresse Cet Outil : Rôles de Fabrication, Scénarios de Recherche et Cas d'Usage d'Ateliers à la Commande
 
-### À Qui S'Adresse Cet Outil (Correspondance Rôle-Flux de Travail)
+### Correspondance Rôle-Flux de Travail (Trouvez Votre Cas d'Usage Exact)
 
-- **Planificateurs de Production et Ordonnanceurs** cherchant un **modèle Excel de planification de production par équipe** pour équilibrer les objectifs quotidiens d'assemblage soudé entre centres de travail robotisés et manuels sans créer de pénurie de matières.
-- **Planificateurs Matières, Analystes de Stocks et Acheteurs** ayant besoin d'une **calculatrice légère de MRP et d'éclatement de BOM** pour traduire les plannings d'assemblages parents en demande de composants échelonnée dans le temps et priorités de réapprovisionnement amont.
-- **Ingénieurs Lean, Responsables de Magasin et Équipes de Logistique Interne (Milk-Run)** cherchant un **outil de gestion de supermarché Kanban et de préparation de chariots** pour standardiser le prélèvement en bord de ligne, le chargement des contenants et la livraison au point d'utilisation.
-- **Chefs d'Atelier de Soudage, Chefs d'Équipe Fabrication et Directeurs d'Usine** ayant besoin d'un **tableau de bord en temps réel des ruptures en atelier et de la visibilité WIP** pour vérifier la préparation des kits de poste avant les transmissions d'équipe et suivre la production réelle vs planifiée.
-- **Ingénieurs Industriels et Praticiens Excel de la Fabrication** construisant un **système de contrôle de production personnalisable et low-code** pour combler le fossé d'exécution entre la planification ERP de haut niveau et les opérations physiques de l'atelier.
+- **Propriétaires de Petites Usines, Responsables d'Ateliers à la Commande et Planificateurs Débutants** recherchant un **modèle Excel facile à utiliser de suivi de stocks et de production de fabrication** : Arrêtez de dépendre des plannings sur tableau blanc et de la mémoire. Collez vos commandes et laissez le tableur pré-construit vous dire exactement quoi fabriquer et préparer aujourd'hui.
+- **Planificateurs de Production, Ordonnanceurs Maîtres et Répartiteurs d'Atelier** cherchant un **modèle Excel de planification quotidienne de production et suivi de capacité par équipe** : Équilibrez les objectifs quotidiens d'assemblage entre cellules de soudage robotisées et cabines TIG/MIG manuelles tout en vérifiant la disponibilité à 100 % des composants avant de lancer les ordres de travail.
+- **Planificateurs Matières, Contrôleurs de Stocks et Acheteurs** ayant besoin d'un **modèle Excel de MRP léger et calculatrice d'éclatement de BOM multi-niveaux** : Traduisez les plannings d'assemblages parents en demande exacte de pièces enfants, suivez la couverture de stock de sécurité et générez des priorités claires de réapprovisionnement amont en quelques secondes.
+- **Responsables de Magasin, Ingénieurs Lean et Équipes de Logistique Interne (Milk-Run)** cherchant un **tableur de stock Kanban et checklist de préparation de chariots en bord de ligne** : Standardisez les emplacements des bacs de supermarché, les tailles d'emballage des contenants et les états de chargement des chariots afin que les manutentionnaires livrent des kits complets au point d'utilisation.
+- **Chefs d'Équipe de Soudage, Responsables de Fabrication et Superviseurs d'Équipe** nécessitant une **feuille de suivi des en-cours de production (WIP) et tableau de bord de manques en atelier** : Vérifiez la préparation des kits de poste en 1 minute lors des transmissions d'équipe et enregistrez la production réelle et les rebuts sans toucher aux formules complexes.
+- **Ingénieurs Industriels et Analystes des Opérations de Fabrication** cherchant un **classeur de contrôle de production personnalisable à tableaux dynamiques Microsoft 365** : Déployez un système de décision local transparent et sans macro (`no VBA`) qui comble le fossé entre les exports ERP hebdomadaires et l'exécution quotidienne en atelier.
 
-### Environnements de Fabrication Cibles et Cas d'Usage
+### Scénarios d'Usine Courants Où Ce Modèle Fait Gagner des Heures Chaque Semaine
 
-Ce cadre est conçu spécifiquement pour la **fabrication discrète à Haute Mixité, Faible Volume (HMLV)** et les **environnements d'atelier à la commande**, notamment :
-- **Sous-ensembles de Machines Lourdes, Agricoles et de Travaux Publics**
-- **Ateliers de Tôlerie, Découpe Laser et Pliage sur Presse Plieuse**
-- **Fournisseurs Automobiles Tier-2/Tier-3 d'Emboutissage et de Soudage Robotisé**
-- **Fabricants d'Acier Structurel, de Châssis et de Caissons Sur Mesure**
+1. **Vous En Avez Assez du Surdimensionnement des Logiciels ERP/MRP :** Votre entreprise ne peut pas justifier un déploiement ERP/MES de plus de 20 000 $, ou votre ERP existant est trop rigide pour gérer les changements de planning de soudage équipe par équipe et la préparation de chariots en atelier.
+2. **Vos Commandes de Haute Saison Croissent Plus Vite Que Votre Tableur :** Le volume de commandes augmente, et la vérification manuelle croisée de 50 assemblages contre 500 pièces individuelles découpées au laser, pliées et usinées cause des erreurs humaines coûteuses.
+3. **Vous Avez Besoin d'un Outil Hors Ligne et Sans Macro Que la DSI Ne Bloquera Pas :** Parce que le classeur utilise des **fonctions natives à tableau dynamique Excel 2021+ / Microsoft 365** avec zéro macro VBA, il s'ouvre proprement sur les ordinateurs d'entreprise standard sans fenêtres contextuelles de sécurité ni exigences de connexion cloud.
+
+---
+
+## Industries de Fabrication Cibles et Périmètre du Système
+
+### Environnements de Fabrication Idéaux
+Ce modèle est spécialement conçu pour la **fabrication discrète à Haute Mixité, Faible Volume (HMLV)**, la fabrication métallique sur mesure et les ateliers d'assemblage par lots, notamment :
+- **Ateliers à la Commande de Soudage et de Fabrication Métallique** (Cellules de Soudage MIG, TIG, par Points et Robotisées)
+- **Ateliers de Tôlerie** (Découpe Laser, Poinçonnage à Tourelle, Pliage sur Presse Plieuse CNC)
+- **Usines de Sous-Assemblage de Machines Lourdes, Agricoles et de Travaux Publics**
+- **Fournisseurs Automobiles Tier-2 / Tier-3 d'Emboutissage, de Châssis et d'Équerres Structurelles**
+- **Fabricants d'Enceintes Industrielles Sur Mesure, de Rayonnages, de Remorques et d'Acier Structurel**
 
 ### Périmètre du Système et Limites Opérationnelles
-
-Pour préserver la vitesse, la transparence et un déploiement sans surcharge informatique, cet outil a un **périmètre volontairement limité** :
-- **Ce qu'il est :** Un pont tactique d'exécution entre la planification ERP hebdomadaire/mensuelle et les mouvements de matières au niveau de l'équipe en atelier.
-- **Ce qu'il n'est pas :** Il n'est **pas** un remplacement des systèmes ERP financiers d'entreprise (SAP, Oracle, NetSuite), ni un moteur complet de Planification et d'Ordonnancement Avancés (APS) à capacité finie, ni un contrôleur de flotte AGV/AMR piloté par PLC, ni une plateforme de surveillance de machines IIoT/SCADA automatisée. La conception physique de l'implantation de l'usine, l'intégration de matériels de codes-barres et la télémétrie automatique des machines restent hors du périmètre natif du classeur.
+Pour garder le classeur rapide, transparent et immédiatement utilisable par quiconque dès le premier jour, il est **volontairement ciblé** :
+- **Ce Qu'il Est :** Un classeur d'exécution tactique plug-and-play qui relie les plannings quotidiens d'équipe, les calculs de pièces BOM multi-niveaux, les soldes des bacs Kanban, les listes de préparation de chariots et le déstockage par équipe dans Microsoft Excel.
+- **Ce Qu'il N'Est Pas :** Ce n'est ni un grand livre comptable, ni un remplacement complet d'ERP d'entreprise (comme SAP ou NetSuite), ni un contrôleur automatique de robots PLC/AGV, ni une plateforme SCADA de capteurs machines en temps réel.
 
 ---
 
-## À Propos de l'Architecture : le Tableur comme Système d'Aide à la Décision
+## À Propos de l'Architecture et de Theseus Workshop
 
-La plupart des tableurs d'usine échouent parce qu'ils sont construits comme des cimetières de données statiques plutôt que comme des modèles opérationnels interconnectés. Ce projet aborde les tableurs industriels comme des **systèmes d'aide à la décision réutilisables et à faible surcharge**, gouvernés par une question d'ingénierie centrale : 
+La plupart des tableurs d'usine échouent parce qu'ils sont construits comme des cimetières de données statiques où les utilisateurs passent plus de temps à réparer des cellules défaillantes qu'à prendre des décisions opérationnelles. 
 
-> *« Quels points de données exacts de l'atelier doivent être connectés dès maintenant pour que la prochaine décision d'ordonnancement, de préparation de kit ou de réapprovisionnement puisse être prise sans aucune ambiguïté ? »*
+Ce projet est développé par **[Theseus Workshop](https://theseusworkshop.com?utm_source=github&utm_medium=GitHub%20README)** selon une philosophie d'ingénierie stricte : **« Utilité pure. Zéro superflu. »** Chaque modèle est conçu comme un système d'aide à la décision autonome et à faible surcharge, gouverné par une question pratique unique :
 
-Le **Système de Contrôle des Flux Matières en Atelier** applique ce principe en reliant cinq couches de fabrication traditionnellement cloisonnées : **Plans de Production par Équipe → Besoins de BOM Multiniveaux → Stock du Supermarché Kanban → Logistique de Préparation des Chariots → Déstockage de la Production Réelle et des Rebuts**. 
+> *« Quels chiffres opérationnels exacts faut-il connecter dès maintenant pour qu'un dirigeant ou un planificateur puisse coller ses données et prendre la bonne décision d'ordonnancement, d'achat ou de tarification en moins de 60 secondes ? »*
 
-En imposant des paramètres opérationnels centralisés, une logique de formules traçable et des indicateurs d'exception explicites, ce cadre donne aux équipes de fabrication un contrôle immédiat de la disponibilité des matières en bord de ligne—garantissant que les bonnes pièces fabriquées arrivent au bon poste de soudage sur le bon chariot, à chaque équipe.
+En reliant **Plans de Production par Équipe → Besoins de BOM Multiniveaux → Stock du Supermarché Kanban → Logistique de Préparation des Chariots → Déstockage de la Production Réelle et des Rebuts** en une seule boucle de calcul automatisée, cette boîte à outils offre à votre atelier une visibilité de niveau entreprise dans un fichier Excel familier qui vous appartient pour toujours.
+
+### Explorer d'Autres Boîtes à Outils de Décision Métier Prêtes à l'Emploi et Modèles Excel
+
+Vous recherchez d'autres modèles Microsoft Excel automatisés, sans VBA, pour la fabrication, l'estimation des coûts, le contrôle de trésorerie et la gestion des opérations ?
+
+- 🛒 **[Obtenez ce Modèle Excel de Contrôle des Flux Matières en Atelier et de MRP (.xlsx) sur Gumroad (Garantie de Remboursement de 30 Jours)](https://theseusworkshop.com/l/qnojv?utm_source=github&utm_medium=GitHub%20README)**
+- 🌐 **[Visitez la Boutique Officielle Theseus Workshop (theseusworkshop.com) pour Parcourir Toutes les Boîtes à Outils Excel de Décision Métier, les Estimateurs de Coûts et les Tableaux de Bord Financiers](https://theseusworkshop.com?utm_source=github&utm_medium=GitHub%20README)**
+- 🖥️ **[Testez la Démo Interactive Gratuite dans le Navigateur du Système de Contrôle des Flux Matières en Atelier](https://hyvoid.github.io/shop-floor-mrp-kanban-excel-system/)**
+
 
 ## Détails Techniques
 
@@ -1242,25 +1289,32 @@ Ces limites doivent être prises en compte pour décider si le cadre convient à
 
 </details>
 
-## La Logique Métier et la Méthodologie
-
-Le système repose sur un principe opérationnel simple : les plans de production doivent générer des besoins en matières, la disponibilité des matières doit contraindre l'exécution, et la production réelle doit alimenter la prochaine décision de planification.
-
-- **La traduction des besoins basée sur la BOM** convertit les assemblages soudés planifiés en exigences de pièces individuelles. Cela révèle les ruptures de composants invisibles dans un planning limité aux assemblages et donne aux planificateurs une base plus claire pour lancer la production.
-- **Le rapprochement de la position de stock** distingue le stock physique des matières déjà engagées ou attendues. Cela réduit le risque de traiter le même stock comme disponible pour plusieurs besoins de production.
-- **Le réapprovisionnement basé sur des seuils** compare les besoins en matières à la position de stock définie et met en évidence les ruptures selon les règles opérationnelles configurées. Le résultat est un signal de réapprovisionnement amont priorisé plutôt qu'une alerte générique de stock.
-- **La logistique interne contenairisée** relie les besoins de prélèvement de matières aux affectations de chariots, destinations de livraison, contraintes d'emballage et préparation de kits. Cela aide l'équipe logistique à se concentrer sur la matière nécessaire à chaque poste de production.
-- **Le retour d'information de la production réelle** utilise les rapports de production et la politique de consommation approuvée pour actualiser la position des matières. L'atelier peut ensuite réviser ses priorités de réapprovisionnement avec des informations opérationnelles actuelles plutôt que de s'appuyer uniquement sur le plan initial.
-
-Ensemble, ces méthodes relient la planification, le stock, la logistique et le reporting de production en un processus de contrôle quotidien répétable. Le cadre améliore la visibilité et la cohérence des décisions ; sa fiabilité dépend toujours de données de référence précises, de confirmations physiques disciplinées et de règles de calcul validées.
+--
 
 ## Autres Outils de Cette Série
 
 Découvrez d'autres outils légers d'aide à la décision pour la fabrication et les opérations sur le profil GitHub du propriétaire du projet :
 
-- [HyVoid sur GitHub](https://github.com/HyVoid) — outils de tableurs pour la fabrication, la planification et les opérations.
+- **[project-time-tracking-excel-template](https://github.com/HyVoid/project-time-tracking-excel-template)** — Quels projets dérivent en coûts de temps ou en marge ? — Analysez l'allocation des coûts de main-d'œuvre et la rentabilité à travers un portefeuille de projets actifs.
+- **[Caf-audit-tool-for-efficient-reviews](https://github.com/HyVoid/Caf-audit-tool-for-efficient-reviews)** — Quelle dimension opérationnelle coûte le plus de revenus et la fuite financière exige-t-elle une intervention immédiate ? — Convertissez des observations structurées de café en score de diagnostic pondéré, estimation de fuite financière et liste d'actions correctives priorisées.
+- **[Restaurant-Menu-Configuration-Modifier-Pricing-Toolkit](https://github.com/HyVoid/Restaurant-Menu-Configuration-Modifier-Pricing-Toolkit)** — Le menu est-il tarifié de façon cohérente pour toutes les combinaisons de modificateurs et de tailles, ou des erreurs de prix cachées attendent-elles d'apparaître ? — Centralisez la configuration du menu du restaurant, les règles de tarification des modificateurs et les données de menu prêtes pour le POS dans une seule source de vérité gouvernée.
+- **[wedding-planner](https://github.com/HyVoid/wedding-planner)** — Quelles tâches, quels coûts et quels délais de préparation de mariage nécessitent une coordination ? — Coordonnez la gestion des prestataires, le suivi des tâches et le contrôle du budget à travers les workflows de préparation de mariage.
+- **[manufacturing-capacity-planning-template](https://github.com/HyVoid/manufacturing-capacity-planning-template)** — La capacité de main-d'œuvre est-elle utilisée efficacement ou l'opération a-t-elle besoin d'un autre effectif ou d'une autre planification ? — Transformez les plans de production et les données de main-d'œuvre en taux d'utilisation de capacité, allocation des coûts de main-d'œuvre et décisions de dotation.
+- **[cin7-excel-reporting-template](https://github.com/HyVoid/cin7-excel-reporting-template)** — Que disent les données opérationnelles de Cin7 sur la performance de l'entreprise ? — Traduisez les données d'inventaire et d'opérations Cin7 en insights exploitables sur la performance métier.
+- **[employee-performance-dashboard-excel](https://github.com/HyVoid/employee-performance-dashboard-excel)** — Quels employés et quels projets sont à risque d'échec de livraison et où la direction doit-elle intervenir avant que les échéances ne soient dépassées ? — Connectez la planification annuelle du travail, le suivi d'exécution, l'évaluation pondérée des performances et le reporting de direction en un seul flux opérationnel continu.
+- **[rental-property-management-excel-template](https://github.com/HyVoid/rental-property-management-excel-template)** — Quels logements perdent des revenus à cause d'une vacance non détectée et quels changements de locataires nécessitent une action immédiate ? — Transformez les enregistrements de réservation en état d'occupation en temps réel, intelligence de vacance et alertes opérationnelles sur l'ensemble d'un portefeuille locatif.
+- **[workforce-planning-payroll-excel-dashboard](https://github.com/HyVoid/workforce-planning-payroll-excel-dashboard)** — L'organisation épuise-t-elle sa capacité annuelle de main-d'œuvre plus vite que prévu et quels départements nécessitent une intervention avant que les coûts d'heures supplémentaires ne s'envolent ? — Consolidez les dépenses de paie, les heures contractuelles annuelles, les ratios d'heures supplémentaires et l'utilisation de la main-d'œuvre en un seul cadre de planification de capacité inter-départements.
+- **[warehouse-billing-excel-template](https://github.com/HyVoid/warehouse-billing-excel-template)** — Les facturations d'entrepôt sont-elles exactes et traçables jusqu'aux enregistrements opérationnels sous-jacents ? — Calculez les frais de stockage, de manutention et de transport en relevés de facturation clients auditables.
+- **[commercial-hvac-plumbing-bid-estimator](https://github.com/HyVoid/commercial-hvac-plumbing-bid-estimator)** — Quel est un prix d'offre défendable et auditable pour ce projet MEP commercial ? — Estimez et suivez les coûts des projets MEP commerciaux, du métré à la soumission finale de l'offre.
+- **[landed-cost-calculator-excel](https://github.com/HyVoid/landed-cost-calculator-excel)** — Pourquoi le coût de revient rendu (landed cost) au niveau SKU de mon ERP diffère-t-il de celui de l'API du transitaire, et quelle méthode d'allocation est à l'origine de l'érosion de la marge ? — Rapprochez et comparez les calculs de coût rendu avec un modèle de praticien pour retracer les différences d'allocation des coûts au niveau SKU jusqu'à leur logique comptable sous-jacente.
+- **[hoa-budget-accounting-spreadsheet](https://github.com/HyVoid/hoa-budget-accounting-spreadsheet)** — Nos fonds HOA sont-ils alloués correctement et sommes-nous en bonne voie par rapport à notre budget ? — Catégorisez les transactions et générez des rapports d'écarts budgétaires pour la gestion financière HOA.
+- **[homeowner-management-excel-template](https://github.com/HyVoid/homeowner-management-excel-template)** — Quel est mon véritable coût total de propriété, toutes dépenses cachées incluses ? — Calculez le coût total de propriété en intégrant le prêt immobilier, les services publics, l'entretien et les améliorations capitalistiques.
+- **[crew-scheduling-excel-template](https://github.com/HyVoid/crew-scheduling-excel-template)** — Mon équipe actuelle pourra-t-elle absorber la charge de travail lorsque les dates de projets se décalent et se chevauchent ? — Prévoyez la demande d'équipes et les déficits de dotation sur un horizon de 12 mois pour éclairer les décisions de planification de capacité.
+- **[Schedule-Driven-Construction-Cash-Curve-Workbook](https://github.com/HyVoid/Schedule-Driven-Construction-Cash-Curve-Workbook)** — Comment la trésorerie et l'avancement planifié de mon projet de construction évolueront-ils dans le temps selon le planning ? — Convertissez les plannings de construction et les registres de postes d'offre en courbes en S automatisées, prévisions de coûts par période et suivi d'avancement planifié.
 
 ## Licence
 
 Ce projet est spécifié sous **Licence Apache 2.0**. Reportez-vous au fichier `LICENSE` du dépôt pour les conditions applicables.
+
+
 
