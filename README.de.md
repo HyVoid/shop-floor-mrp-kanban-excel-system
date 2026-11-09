@@ -1,130 +1,177 @@
 [ 🌐 عربي ](README.ar.md) | [ 🇩🇪 Deutsch ](README.de.md) | [ 🇫🇷 Français ](README.fr.md) | [ 🇳🇱 Nederlands ](README.nl.md) | [ 🇪🇸 Español ](README.sp.md) | [ 🇬🇧 English ](README.md)
 
-# Materialflusssteuerungssystem für den Shopfloor: Excel-MRP-Vorlage, Kanban-Supermarkt und Schweiß-Produktionsplanung
+# Shopfloor-Materialflusssteuerungssystem: Excel-MRP-Vorlage, BOM-Auflösungsrechner, Kanban-Bestands-Tracker & Schweiß-Produktionsplanungstabelle
 <img width="1920" height="790" alt="image" src="https://github.com/user-attachments/assets/a63af286-1115-4c2c-aa06-6d7e04aba1e4" />
 
-**Ein schlankes Framework zur Materialflusssteuerung im Shopfloor, ein Stücklisten-Auflösungsrechner und ein Lean-Tracker für die interne Logistik für schweißgetriebene Fertigung und Metallverarbeitung.**
+
+**Ein sofort einsatzbereiter Fertigungs-Bestands-Tracker, ein mehrstufiger BOM-Auflösungsrechner, eine Kanban-Supermarkt-Nachschubtabelle und eine Excel-Vorlage für die tägliche Produktionsplanung – für metallverarbeitende und schweißintensive Werkstätten.**
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
-![Platform: Browser + Excel](https://img.shields.io/badge/Platform-Browser%20%2B%20Excel-217346)
-![Tool Type: Production Control & MRP](https://img.shields.io/badge/Tool-Production%20Control%20%26%20MRP-2251FF)
+![Platform: Free Web Tool + Microsoft Excel (.xlsx)](https://img.shields.io/badge/Platform-Free%20Web%20Tool%20%2B%20Excel%20(.xlsx)-217346)
+![Compatibility: Excel 2021+ & Microsoft 365](https://img.shields.io/badge/Compatibility-Excel%202021%2B%20%26%20M365%20Dynamic%20Arrays-2251FF)
+![Category: Manufacturing MRP & Production Control](https://img.shields.io/badge/Category-Manufacturing%20MRP%20%26%20WIP%20Tracker-0A66C2)
 
-**Das Materialflusssteuerungssystem für den Shopfloor ist eine kostenlose MRP-Produktionsplanungsvorlage für Browser und Excel, entwickelt für metallverarbeitende und schweißintensive Werkstätten mit hoher Teilevielfalt und geringen Stückzahlen (HMLV). Es wandelt Schichtpläne für Schweißaufträge in umsetzbare Stücklisten-Anforderungen (BOM), Kanban-Supermarkt-Nachschubsignale, Kommissionieraufgaben für fahrzeugseitige Wagen-Sets und ein Tracking des Work-in-Process-Verbrauchs (WIP)—und beseitigt damit Stillstand verursachende Materialengpässe und Tabellenchaos ohne teure ERP/MES-Neuanschaffungen.**
+**Das Shopfloor-Materialflusssteuerungssystem** ist eine Plug-and-Play-**Excel-MRP-Vorlage**, eine **Kontrolltabelle für den Fertigungsbestand** und ein **kostenloser browserbasierter Produktionsplanungsrechner** – entwickelt für Werkstattfertiger, Metallverarbeiter und Schweißbetriebe. Es wandelt tägliche Schichtproduktionspläne in exakte **Stücklisten-Anforderungen (BOM)**, **Kanban-Behälter-Nachschubalarme**, **Kommissionier-Checklisten für Materialwagen am Arbeitsplatz** und **Work-in-Process-Ausschussrückmeldung (WIP)** um. Kleine und mittlere Hersteller und Erstplaner beseitigen damit unerwartete Teileengpässe, beenden Schichtunterbrechungen beim Schweißen und ersetzen defekte manuelle Tabellen in weniger als 1 Minute – ohne teure ERP- oder MES-Softwareabonnements.
 
-> **Zugang, Live-Demo und Verfügbarkeit der Arbeitsmappe**
+> ### Schnellzugriff: Kostenlose Online-Sandbox & herunterladbares Excel-System
 >
-> - **Interaktive Webanwendung:** Kostenlos, ohne Registrierung oder Installation. [Die interaktive Web-Demo des Materialflusssteuerungssystems für den Shopfloor starten](https://hyvoid.github.io/shop-floor-mrp-kanban-excel-system/) 
->   
-> - **Herunterladbare Excel-MRP-Vorlage:** Bereit für die tägliche Produktionsverfolgung im Offline-Betrieb. [Die Excel-Arbeitsmappe für Produktionssteuerung und Materialnachschub herunterladen (.xlsx)](https://theseusworkshop.com/l/qnojv?utm_source=github&utm_medium=GitHub%20README)
+> - **Kostenlose interaktive Webanwendung (Sofort-Test im Browser):** Testen Sie den Arbeitsablauf kostenlos online mit vorgeladenen Fertigungsbeispieldaten. Keine Installation und keine Registrierung erforderlich.  
+>   👉 **[Das kostenlose interaktive Web-Tool für Shopfloor-MRP, BOM-Auflösung & Kanban-Rechner starten](https://hyvoid.github.io/shop-floor-mrp-kanban-excel-system/)**
+>
+> - **Wiederverwendbare Microsoft-Excel-Arbeitsmappe (.xlsx für den täglichen Fabrikbetrieb):** Laden Sie die vollautomatische Tabellenvorlage herunter, um Ihre eigenen Teilenummern einzufügen, Ihre BOM-Stammdaten lokal zu speichern und wiederholbare Schichtplanung offline auszuführen. Inklusive **30-tägiger bedingungsloser Geld-zurück-Garantie**.  
+>   👉 **[Die sofort einsatzbereite Excel-Vorlage für Shopfloor-MRP, BOM-Auflösung & Produktionsplanung herunterladen (.xlsx)](https://theseusworkshop.com/l/qnojv?utm_source=github&utm_medium=GitHub%20README)**
 
 ---
 
-## Kernfunktionen der Fertigungsverfolgung: Zuordnung von Problempunkten zu Lösungen
+## Was es Ihnen hilft zu verfolgen: Von Shopfloor-Problempunkten zu automatisierten Excel-Lösungen
 
-Für Produktionsleiter, die einen zuverlässigen **Bestands-Tracker für die Fertigung** oder ein **Work-in-Process-Kontrollblatt (WIP)** suchen, überbrückt dieses Framework die Lücke zwischen statischen Beständen und der Echtzeit-Bereitschaft der Arbeitsplätze:
+Wenn Sie eine **Excel-Vorlage als Fertigungs-Bestands-Tracker**, einen **BOM-Engpassrechner** oder eine **Work-in-Process-Tabelle (WIP)** suchen, ersetzt dieses System Rätselraten durch automatisierte Berechnungen vor Schichtbeginn:
 
-| Operativer Problempunkt im Shopfloor | Häufige Suchabsicht / Modul | Wie dieses Steuerungsframework das Problem löst |
+| Täglicher Problempunkt in der Fabrik (Realität für Einsteiger & Shopfloor) | Häufige Suchabsicht / integriertes Excel-Modul | Wie diese Plug-and-Play-Tabelle das Problem automatisch löst |
 | :--- | :--- | :--- |
-| **Unvorhergesehene Komponentenengpässe an Schweißarbeitsplätzen** | **Schichtbezogene BOM-Auflösung & MRP-Rechner** | Erweitert tägliche Schweißmontagepläne automatisch über mehrteilige Stücklisten (BOM), um den Nettobedarf an Komponenten pro Schicht und Arbeitsplatz zu berechnen, bevor die Schweißer mit der Arbeit beginnen. |
-| **Bestandsblinde Flecken zwischen Lager und Linie** | **WIP-Ortung & Kanban-Supermarkt-Tracker** | Trennt rohe Bestandskonten von physischen Lagerorten—verfolgt exakte Mengen über vorgelagerte Puffer, Kanban-Supermärkte, Materialwagen im Transit und robotische/manuelle Schweißzellen. |
-| **Verspätete Materialanforderungen an die vorgelagerte Fertigung** | **Automatisierter Nachschub & Engpass-Prioritätenliste** | Berechnet Netto-Materiallücken in Echtzeit gegen Sicherheitsbestände und markiert dringende Nachschubaufträge für vorgelagerte Laserschneid-, CNC-Biege- und Zerspanungszellen. |
-| **Versandte Wagen ohne kritische Teile** | **Wagen-Kommissionierung & Bereitschaft der Linienanlieferung** | Gruppiert Kommissionierlisten nach Arbeitsplatz, Verpackungsbeschränkungen und Wagenkapazität—weist explizite visuelle Kit-Status (`Ready`, `Partly Kitted`, `Blocked`) vor dem Versand zu. |
-| **Bestandsabweichung durch nicht erfassten Ausschuss und Nacharbeit** | **Soll-/Ist-Verbrauch der Materialien per Rückmeldung** | Gleicht den theoretischen BOM-Verbrauch mit der tatsächlichen Schichtproduktion und dem erfassten Shopfloor-Ausschuss ab und berechnet verbleibende Supermarkt- und Arbeitsplatzbestände dynamisch neu. |
-| **Fragmentierte Kommunikation zwischen Schichten** | **Visuelles Shopfloor-Andon & Logistik-Risikodashboard** | Führt Schichtplanerfüllung, kritische Engpassbelastung, Supermarkt-Leerbestände und interne Milk-Run-Lieferstatus in einer einzigen operativen Leitstelle zusammen. |
+| **Schweißer stehen still, weil eine kleine Halterung fehlt** | **Mehrstufiger BOM-Auflösungs- & MRP-Rechner** | Multipliziert Ihre geplanten Schweißbaugruppen der Schicht mit jeder untergeordneten Komponente Ihrer **Stückliste (BOM)**, um den exakten Teilebedarf vor Schichtbeginn zu berechnen. |
+| **Teile sind auf dem Papier „auf Lager", aber niemand findet sie in der Halle** | **Work-in-Process-Ortung (WIP) & Kanban-Behälter-Bestands-Tracker** | Trennt rohe Lagerbestandssummen nach konkreten physischen Lagerorten: vorgelagerte Puffer, **Kanban-Supermarkt-Behälter**, beladene Lieferwagen und aktive Schweißarbeitsplätze. |
+| **Laser- und Biegemaschinen werden durch Eilaufträge unterbrochen** | **Automatisierter Materialengpass- & Nachbestellprioritäten-Alarm** | Vergleicht den Schichtmaterialbedarf mit aktuellen Supermarktbeständen und Sicherheitsbestandsschwellen und erzeugt priorisierte Nachbestellisten (`Critical`, `Warning`, `Normal`) für vorgelagerte Laser-, Abkantpressen- und CNC-Maschinen. |
+| **Materialfahrer schieben unvollständige Teilekits zu den Arbeitsplätzen** | **Kommissionier-Checkliste am Arbeitsplatz & Wagen-Versand-Tracker** | Gruppiert benötigte Komponenten nach Arbeitsplatz, Behältergröße und Wagenkapazität und weist klare Bereitschaftsstatus (`Ready`, `Partly Kitted`, `Blocked`) zu, bevor ein Wagen den Bereitstellungsbereich verlässt. |
+| **Nicht erfasster Schweißausschuss verfälscht mit der Zeit die Bestandszahlen** | **Soll-Ist-Produktion & Ausschuss-Rückmeldungsrechner** | Zieht am Ende jeder Schicht sowohl fertige Gutbaugruppen als auch gemeldeten Shopfloor-Ausschuss von Ihren Live-Beständen ab und hält die Tabellenzahlen im Einklang mit den physischen Behälterbeständen. |
+| **Supervisoren verbringen Stunden mit der Reparatur defekter Formeln über mehrere Registerblätter hinweg** | **Visuelle Shopfloor-Produktionssteuerung & Engpass-Dashboard** | Führt Schichtplan-Erfüllungsgrade, die größten Komponentenengpässe, Kanban-Leerbestandsrisiken und interne Lieferaufgaben auf einer automatischen Zusammenfassungsansicht zusammen. |
 
 ---
 
-## Schritt-für-Schritt-Anleitung: Tägliche Produktionsplanung und Materialkommissionierung ausführen
+## Schnellstart-Anleitung: Produktionsplanung & Materialkommissionierung in 1 Minute ausführen
 
-Das Betriebsmodell folgt einer wiederholbaren Lean-Fertigungssteuerungsschleife in 4 Schritten: Parameter konfigurieren, Stammdaten pflegen, Schicht-MRP-Berechnungen ausführen und Ist-Produktion rückmelden. 
+Sie brauchen keinen Industrieingenieur-Abschluss oder fortgeschrittene Excel-Kenntnisse für die Materialbedarfsplanung. Folgen Sie diesem 4-Schritte-Arbeitsablauf, um die Logik im kostenlosen Web-Tool zu testen, und verlagern Sie dann Ihren Tagesbetrieb in die automatisierte Excel-Arbeitsmappe.
 
-### Schritt 1: Globale Shopfloor- und Nachschubparameter konfigurieren
-**Aktion:** Legen Sie die Grundregeln Ihres Betriebs im Konfigurationsmodul fest.
-Definieren Sie Schichtdauern, Schichten pro Tag, Sicherheitsbestandspuffer, Notfall-Kanban-Nachschubauslöser, Kit-Bereitschaftsschwellen, Wagen-Packlimiten und zulässige Ausschusstoleranzen. Diese Parameter steuern alle nachgelagerten Berechnungen der **Materialbedarfsplanung (MRP)** und Engpassalarme.
+### Schritt 1: Grundlegende Shopfloor- & Sicherheitsbestandsregeln festlegen
+**Suchabsicht:** *Wie man Sicherheitsbestand und Kanban-Nachschubregeln in Excel einrichtet*  
+Öffnen Sie den Konfigurationsbereich und geben Sie Ihre grundlegenden Betriebszahlen ein: Schichtdauer, Schichten pro Tag, minimale Sicherheitsbestandspuffer, Kanban-Auslöseschwellen und zulässige Ausschussprozentsätze. Jede nachgelagerte **MRP-Engpassberechnung** und jeder **Nachbestellalarm** aktualisiert sich automatisch auf Grundlage dieser Regeln.
 
-### Schritt 2: Stückliste (BOM) und Arbeitsplatz-Stammdaten importieren
-**Aktion:** Befüllen Sie Ihren Teilestammkatalog, das Arbeitsplatzregister und die Montagestrukturen.
-Registrieren Sie gefertigte und gekaufte Komponenten, vorgelagerte Fertigungsquellen (z. B. Laser, Abkantpresse, Drehmaschine), Supermarkt-Behälterplätze, Standard-Packmengen (SPQ) und durchschnittlichen Tagesverbrauch (ADU). Definieren Sie über- und untergeordnete **Schweißmontage-BOMs**, klassifizieren Sie robotische gegenüber manuellen Schweißzellen und weisen Sie die physischen Wagenflotten-Ressourcen zu. *(Optimiert für ca. 500 einzelne SKUs und ca. 50 Schweißbaugruppen).*
+### Schritt 2: Teileliste, Arbeitsplätze & Stückliste (BOM) einfügen
+**Suchabsicht:** *Wie man eine Fertigungs-Stückliste (BOM) und eine Teilestammliste aufbaut*  
+Geben Sie Ihren Komponentenkatalog ein oder fügen Sie ihn ein (Teilenummern, vorgelagerte Fertigungsquelle wie Laserschneiden oder CNC-Zerspanung, Standardpackmenge und Kanban-Behälterplatz) – zusammen mit Ihren über- und untergeordneten **Schweißmontage-Rezepten**. Die Vorlage unterstützt ab Werk rund 500 einzelne Teil-SKUs und 50 Elternbaugruppen.
 
-### Schritt 3: Schicht-Produktionspläne eingeben, um Kommissionierlisten zu erzeugen
-**Aktion:** Geben Sie Ihren täglichen Schichtplan ein, um die automatische BOM-Bedarfsauflösung auszulösen.
-Erfassen Sie das Produktionsdatum, das Schichtfenster, die Zielschweißzelle, die Baugruppen-Teilenummer, die geplante Produktionsmenge und den Freigabestatus. Die Berechnungsmaschine löst Baugruppenmengen sofort in Komponentenbedarf auf, prüft die **Verfügbarkeit der Supermarktbestände**, hebt kritische Teileengpässe hervor und erzeugt priorisierte **Wagen-Kommissionier- und Milk-Run-Lieferaufgaben**.
+### Schritt 3: Heutigen Schichtplan eingeben, um automatische Engpass- & Kommissionierlisten zu erzeugen
+**Suchabsicht:** *Wie man den Materialbedarf berechnet und Lager-Kommissionierlisten aus einem Produktionsplan erzeugt*  
+Wählen Sie Produktionsdatum, Schicht, Zielschweißarbeitsplatz, Baugruppen-Teilenummer und Planmenge. Die integrierte Berechnungsmaschine löst den Plan sofort in untergeordnete Teileanforderungen auf, prüft die verfügbaren **Kanban-Supermarktbestände**, hebt exakte Teiledefizite hervor und erstellt eine priorisierte **Wagen-Kommissioniercheckliste**.
 
-### Schritt 4: Ist-Produktion rückmelden, Ausschuss erfassen und zur wiederverwendbaren Excel-Vorlage übergehen
-**Aktion:** Erfassen Sie die Ausführungsdaten im Shopfloor, um die Bestandskontrollschleife zu schließen.
-Erfassen Sie vorgelagerte Fertigungseingänge, Inventurkorrekturen, Wagenversandbestätigungen und abgeschlossene Schweißschichtberichte (gute Teile + Ausschuss). Das Modell meldet verbrauchte Komponenten automatisch zurück und aktualisiert Ihre Echtzeit-Bestandsposition für die nächste Schicht.
-
-> **Bereit, vom einmaligen Browsertest zu den täglichen Fabrikabläufen zu wechseln?**  
-> Nachdem Sie den Arbeitsablauf in der Browser-Sandbox validiert haben, **[laden Sie die wiederverwendbare Excel-Vorlage zur Materialflusssteuerung im Shopfloor herunter (.xlsx)](https://theseusworkshop.com/l/qnojv?utm_source=github&utm_medium=GitHub%20README)**, um Ihre benutzerdefinierten BOM-Stammdaten zu speichern, historische Abweichungen über mehrere Schichten zu verfolgen und eine wiederholbare tägliche Produktionssteuerung offline in Microsoft Excel auszuführen.
+### Schritt 4: Tatsächliche Schichtproduktion erfassen & die wiederverwendbare Excel-Vorlage für den Tagesbetrieb herunterladen
+**Suchabsicht:** *Wie man Soll- gegen Ist-Produktion verfolgt und den Bestand in Excel rückmeldet*  
+Geben Sie am Schichtende die Anzahl der fertigen Gutbaugruppen sowie etwaiger Ausschussteile ein. Das Modell zieht verbrauchte Materialien automatisch ab und aktualisiert Ihren Anfangsbestand für die Schicht des nächsten Tages.
 
 ---
 
-## Warum ein dediziertes Materialflusssteuerungs-Framework für die Schweißfertigung?
+### Einen komplexen Fertigungsablauf in eine 1-Minuten-Kopier-und-Einfügen-Gewohnheit verwandeln
 
-In einer **schweißgetriebenen metallverarbeitenden Werkstatt** wirkt ein Produktionshauptplan (MPS) im ERP-System oft zu 100 % umsetzbar, während die tatsächlich benötigten physischen Komponenten am Verwendungsort fehlen.
+Mehrstufige **BOM-Bedarfsauflösungen**, **Kanban-Pufferberechnungen**, **Wagenkapazitätsabgleiche** und **Ausschussrückmeldungen** von Grund auf erfordern komplexe Supply-Chain-Mathematik. **Die zugrunde liegenden Formeln müssen Sie jedoch nicht verstehen und keine einzige Tabellenregel selbst erstellen.**
 
-Diese operative Fehlfunktion rührt selten daher, dass werkweit kein Bestand vorhanden ist. Vielmehr entsteht sie durch eine Trennung zwischen der **Montagemixtur der Schicht**, den **mehrebenigen BOM-Anforderungen**, dem physischen Bestand im **Kanban-Supermarkt** und dem Ladestatus des einem bestimmten Schweißplatz zugewiesenen **Linienanlieferungswagens**. Ein statisches Bestandsregister kann dieses vierfache Synchronisationsproblem nicht lösen.
+In der herunterladbaren **Shopfloor-Materialflusssteuerungs-Excel-Arbeitsmappe (.xlsx)** ist jede dynamische Array-Abgleichsregel, jeder tabellenübergreifende Verweis und jede automatische Aktualisierungsformel bereits vorgebaut und fest verankert:
 
-Betrachten Sie eine typische Schicht, die mehrere Strukturschweißkonstruktionen über robotische Schweißzellen und manuelle TIG/MIG-Stationen verteilt plant. Jede Konstruktion zieht ein einzigartiges Kit aus **lasergeschnittenen Platten, CNC-gebogenen Halterungen und präzisionszerspanten Buchsen**. Eine einzelne fehlende Biegehalterung stilllegt die gesamte Schweißvorrichtung—selbst wenn 95 % des Kits bereitstehen. Währenddessen zeigt das ERP-System die Halterung als „auf Lager", ohne zu klären, ob sie an der Abkantpresse, im Supermarktregal, auf einem Wagen oder bereits dem Arbeitsauftrag einer anderen Schicht zugeordnet ist.
+1. **Kein Formelziehen erforderlich:** Sie müssen nicht einmal auf eine Zellecke doppelklicken, um Formeln nach unten zu ziehen. Fügen Sie Ihre eigenen Teilenummern, BOM-Listen und Tagespläne direkt in die Eingabetabellen ein, und das gesamte Dashboard aktualisiert sich von selbst.
+2. **Entscheidungsklarheit in 1 Minute für Einsteiger:** Auch ohne jede Vorkenntnis in Datenanalyse oder Produktionssteuerung fügen Sie Ihre Zahlen ein und erkennen Ihre größten Materialengpässe in **60 Sekunden**. Statt in der Hauptsaison defekte `VLOOKUP`-Zellen zu reparieren, erhalten Sie sofortiges Feedback auf Entscheidungsebene – so können Sie sich auf den Betrieb Ihrer Werkstatt und termingerechte Auslieferungen konzentrieren.
+3. **Einmalkauf statt teurer monatlicher Softwareabonnements:** Enterprise-ERP- und MES-Module verlangen Tausende Dollar an wiederkehrenden Jahresabonnements und Einrichtungsgebühren. Diese kostenpflichtige Excel-Vorlage verwandelt einen chaotischen Fabrikablauf in eine standardisierte lokale Datei, die Sie einmal kaufen und für immer auf Ihrem eigenen Computer wiederverwenden.
+4. **100 % lokale Datensicherheit & 30-Tage-Geld-zurück-Garantie:** Behalten Sie Ihre proprietären BOM-Strukturen, Lieferanten-Teilenummern und Produktionskapazitäten vollständig offline auf Ihrer lokalen Festplatte – ohne jedes Cloud-Sicherheitsrisiko. Jeder Download ist durch eine **30-tägige bedingungslose Geld-zurück-Garantie** geschützt – vereinfacht sie Ihre tägliche Shopfloor-Planung nicht, fordern Sie ohne jeden Aufwand eine vollständige Rückerstattung an.
 
-Dieses **Materialflusssteuerungssystem für den Shopfloor** verbindet diese isolierten Betriebsdatenpunkte in einem synchronisierten Arbeitsablauf:
-1. Es übersetzt schichtbezogene Schweißziele über die automatische BOM-Auflösung in exakten Komponentenbedarf.
-2. Es rechnet den Bedarf gegen die physischen Supermarktbestände und offenen Wagenzuordnungen auf.
-3. Es erzeugt umsetzbare vorgelagerte Fertigungssignale und vollständige Kit-Stücklisten vor Schichtbeginn.
-4. Es gleicht den Sollverbrauch mit den gemeldeten Schweißkonstruktionen und dem Ausschuss ab, damit der Buchbestand mit der physischen Realität übereinstimmt.
-
-Das Ergebnis ist ein **produktifiziertes Lean-Produktionssteuerungssystem in Excel**—es liefert konsistente, prüfbare Materialflussentscheidungen, ohne dass kleine und mittlere Hersteller komplexe MES-Module, software für fahrerlose Transportsysteme (AGV) oder schwerfällige ERP-Anpassungen kaufen müssten.
+👉 **[Die vollautomatische Excel-Arbeitsmappe für Shopfloor-MRP & Produktionsplanung herunterladen (.xlsx) – 30 Tage risikofrei](https://theseusworkshop.com/l/qnojv?utm_source=github&utm_medium=GitHub%20README)**  
+*(Möchten Sie den Arbeitsablauf zuerst in der Vorschau sehen? **[Hier die kostenlose browserbasierte MRP- & Kanban-Web-Sandbox testen](https://hyvoid.github.io/shop-floor-mrp-kanban-excel-system/)**)*
 
 ---
 
-## Traditionelle statische Bestandstabellen vs. strukturierte Materialflusssteuerung
+## Die Geschäftslogik & Methodik: Anleitung in einfachem Deutsch zur Shopfloor-Steuerung & versteckten Gewinnverlusten
 
-| Operative Dimension | Ohne dieses System (Ad-hoc-Bestandstabellen) | Mit diesem System (strukturiertes Shopfloor-MRP- und Kit-Framework) |
+Die meisten kleinen und mittleren Werkstätten verlieren auf dem Shopfloor Geld – nicht, weil ihnen Aufträge fehlen, sondern wegen **versteckter betrieblicher blinder Flecken** darin, wie Materialien von der Rohfertigung bis zur Endmontage fließen.
+
+Im Folgenden finden Sie eine leicht verständliche Aufschlüsselung der fünf zentralen betrieblichen blinden Flecke, die verspätete Lieferungen und verschwendete Arbeitszeit verursachen – zusammen mit den objektiven finanziellen Fakten und wie die eingebaute Logik dieser Tabelle sie automatisch behebt:
+
+### 1. Der blinde Fleck des „95 % fertigen Kits" (Warum eine fehlende $2-Halterung einen $5,000-Auftrag stoppt)
+- **Die objektive Realität:** Die Fertigungsmontage ist ein Alles-oder-Nichts-Geschäft. Wenn ein geschweißter Rahmen 15 verschiedene Metallteile erfordert und 14 davon am Arbeitsplatz liegen, ist Ihre tatsächliche Fähigkeit, dieses Produkt fertigzustellen, **0 %, nicht 93 %**. In den meisten Werkstätten planen Manager Schichten, indem sie nur auf Aufträge für Fertigprodukte schauen – und stellen viel zu spät fest, dass eine einzige kleine Buchse oder Halterung nicht auf Lager ist.
+- **Wie die Excel-Logik das behebt (BOM-gesteuerte Bedarfsübersetzung):** Wenn Sie eine geplante Montagemenge in den Schichtplan eingeben, zerlegt die Arbeitsmappe dieses Elternprodukt automatisch in jedes einzelne benötigte untergeordnete Teil. Sie markiert die fehlende $2-Halterung, bevor Sie einen Schweißer an die Kabine zuweisen – und verhindert, dass bezahlte Bediener untätig neben einem nicht baubaren Auftrag stehen.
+
+### 2. Die Illusion des „auf Lager"-Bestands (Doppelzählung derselben Teile über mehrere Schichten)
+- **Die objektive Realität:** Eine gewöhnliche Bestandstabelle verrät Ihnen nur die Gesamtzahl der Teile im Gebäude. Angenommen, Ihre Tabelle besagt, dass Sie `100 laser-cut base plates` auf Lager haben. Job A in der Frühschicht benötigt `60 plates`, und Job B in der Spätschicht benötigt `60 plates`. Eine einfache Tabelle sagt Ihnen, dass beide Aufträge genug Teile haben (`60 <= 100`), also geben Sie beide in die Halle frei – wodurch der Spätschicht auf halbem Weg das Material ausgeht.
+- **Wie die Excel-Logik das behebt (Netting bereits gebundener Bestände):** Die Vorlage zieht automatisch Teile, die bereits früheren Schichten zugesagt oder auf aktive Wagen geladen wurden, von Ihrem physischen Regalbestand ab. Sie sehen Ihren **wahren verbleibenden verfügbaren Bestand** und beseitigen Doppelbuchungen über Schichten und Arbeitsplätze hinweg.
+
+### 3. Vorgelagerte Maschinen wie einen Sofort-Quellautomat behandeln (Notfallrüstungen & verlorene Maschinenstunden)
+- **Die objektive Realität:** Vorgelagerte Maschinen wie Lasermaschinen, CNC-Stanzpressen und Abkantpressen erfordern Rüstzeit, Werkzeugwechsel und Blechnestung. Wenn ein Schweißsupervisor mitten in der Schicht einen leeren Teilebehälter entdeckt und eine Notfallfertigung von 10 Halterungen fordert, muss der Abkantpressen-Bediener ein laufendes Produktionsschema abbauen. Branchenweit reduzieren ungeplante Eilrüstungen die Gesamtkapazität der Maschinen um **15 % bis 30 %**.
+- **Wie die Excel-Logik das behebt (schwellenbasierter Kanban-Nachschub):** Die Tabelle vergleicht den anstehenden Schichtbedarf mit Ihren minimalen Sicherheitsbeständen und stuft die Dringlichkeit des Nachfüllens (`Critical`, `Warning`, `Normal`) automatisch nach vorgelagertem Maschinentyp. Vorgelagerte Bediener erhalten Stunden vor dem tatsächlichen Leeren der Behälter eine saubere, priorisierte Chargenliste.
+
+### 4. Schweißkabinen in überfüllte Lagerbuchten verwandeln (versteckte Suchkosten für Teile)
+- **Die objektive Realität:** Wenn Lagermitarbeiter unvollständige Kits oder ungeordnete Paletten auf den Shopfloor schieben, nur um „das Material in Bewegung zu bringen", werden hochwertige Schweißzellen zu überfüllten Lagergassen. Fachschweißer verbringen am Ende **30 bis 45 Minuten pro Schicht** damit, durch die Halle zu laufen und fehlende Teile zu suchen oder halbfertige Baugruppen beiseitezuräumen.
+- **Wie die Excel-Logik das behebt (kontrollierte Wagen-Kit-Bereitschaft):** Die Vorlage verknüpft Kommissionierlisten direkt mit physischen Lieferwagen und Behältergrenzen. Ein Wagen wird automatisch als `Blocked` oder `Partly Kitted` markiert, bis jedes benötigte Teil in voller Packmenge verfügbar ist – sodass nur 100 % baubereite Kits die Produktionslinie erreichen.
+
+### 5. Unsichtbarer Ausschuss verfälscht still den Plan von morgen (Abweichung zwischen Buch- und physischem Bestand)
+- **Die objektive Realität:** Jede Fabrik produziert gelegentlich Ausschuss, verzogene Teile oder Rüstungsausschuss. Wenn ein Schweißer 4 Halterungen ausschusst und sich still 4 zusätzliche Stücke aus dem Kanban-Behälter nimmt, ohne sie zu erfassen, wird Ihre Tabelle um 4 Einheiten ungenau. Über einen einzelnen Monat erzeugt nicht erfasster Ausschuss massiven „Phantombestand" – Ihr Computer sagt Ihnen, dass Teile im Regal liegen, obwohl der Behälter vollständig leer ist.
+- **Wie die Excel-Logik das behebt (automatisierte Produktions- & Ausschussrückmeldung):** Am Ende jeder Schicht erfassen Sie sowohl fertige Guteinheiten als auch Ausschussteile im Protokoll. Die Arbeitsmappe zieht automatisch den theoretischen BOM-Verbrauch *plus* die exakte Ausschussmenge von Ihrem Live-Bestand ab – und hält Ihre digitalen Zahlen an der physischen Realität fest, ohne tägliche manuelle Nachzählung.
+
+---
+
+## Vergleich: Ad-hoc-manuelle Tabellen vs. automatisiertes Shopfloor-MRP-Excel-System
+
+| Operative Dimension | Manuelle Bestandstabellen (defekte Formeln & Raterei) | Dieses automatisierte Excel-MRP- & Kit-System (vorgebaute dynamische Logik) |
 | :--- | :--- | :--- |
-| **Erkennung von Komponentenengpässen** | **Ungeplante Stillstände der Schweißlinie:** Arbeitsaufträge erscheinen auf Montageebene ausführbar, fehlende Unterkomponenten entdecken Schweißer aber erst beim Vorrichtungsaufbau. | **BOM-Auflösung und Netting vor der Schicht:** Schichtpläne werden automatisch in einzelne Teileanforderungen aufgelöst und decken exakte Teiledefizite auf, bevor Arbeitsaufträge die Halle erreichen. |
-| **Ortungssichtbarkeit des Work in Process (WIP)** | **Blindheit des Bestandsregisters:** Teile erscheinen im Gesamtbestand verfügbar, doch Materialdisponenten verschwenden Suchzeit zwischen Supermärkten, Bereitstellungsgassen und Schweißplätzen. | **Mehrstufiges Ortsverfolgung:** Stammdaten und Logistikprotokolle trennen klar zwischen Bestand in Kanban-Supermärkten, auf Lieferwagen oder an Arbeitsplätzen bereitgestellt. |
-| **Planung der vorgelagerten Fertigung** | **Beeilung und Brandbekämpfung:** Laserschneid-, Blechbiege- und CNC-Zerspanungszellen erhalten dringende Nachschubanforderungen über mündliche Ermahnungen oder Zettel. | **Pull-basierte Nachschubsignale:** Netto-Engpassalgorithmen kategorisieren Nachbestellprioritäten (`Normal`, `Warning`, `Critical`) und leiten den Bedarf direkt an bestimmte vorgelagerte Arbeitszentren. |
-| **Kit-Kommissionierung an der Linie und Wagenversand** | **Unvollständige Kits und überladene Arbeitsplätze:** Wagen erreichen Schweißzellen mit unvollständigen Teilesätzen, was WIP-Stau und Platzwechsel mitten in der Schicht verursacht. | **Kontrollierte Kit-Bereitschaftszustände:** Kommissionieraufgaben erzwingen Standardpackbeschränkungen und kennzeichnen Wagen-Kits vor dem Hallenversand als `Ready`, `Partly` oder `Blocked`. |
-| **Bestandsgenauigkeit und Ausschussabgleich** | **Buchbestandsabweichung:** Tabellenbestände hinken der tatsächlichen Hallennutzung hinterher—durch nicht gemeldeten Schweißausschuss, Nacharbeit und manuelle Materialersatzteile. | **Automatisierte Produktionsrückmeldung:** Schichtabschlüsse und Ausschussprotokolle fließen direkt in die Verbrauchsmaschine und aktualisieren die Echtzeit-Supermarktbestände dynamisch. |
-| **Werkweite Engpasspriorisierung** | **Silo-Management einzelner Arbeitsplätze:** Supervisoren lösen Engpässe Zelle für Zelle und verdecken dabei systemische vorgelagerte Engpässe und konkurrierende Materialzuordnungen zwischen Schichten. | **Zentrale Shopfloor-Leitstelle:** Ein einheitliches Dashboard korreliert Schichterfüllung, Komponentenengpassbelastung, Supermarktgesundheit und internen Logistikfluss. |
+| **Einrichtung & Formelpflege** | **Stundenlanges manuelles `VLOOKUP`-Debugging:** Neue Zeilen oder Teilenummern zerstören Zellbezüge und erfordern ständiges Formelziehen und manuelle Korrekturen. | **Wartungsfreies Einfügen & Loslegen:** Gebaut mit nativen Excel-Dynamic-Array-Formeln, die sich im Moment des Einfügens Ihrer Daten automatisch erweitern und neu berechnen. |
+| **Erkennung von Komponentenengpässen** | **Linienstillstand mitten in der Schicht:** Arbeitsaufträge erscheinen auf der obersten Baugruppenebene fertig, fehlende untergeordnete Teile entdecken die Bediener erst beim Aufbau der Vorrichtung. | **BOM-Auflösung & Netting vor der Schicht:** Schichtpläne werden automatisch in einzelne Teileanforderungen aufgelöst und legen exakte Teiledefizite offen, bevor die Arbeit die Halle erreicht. |
+| **Ortung des Work-in-Process (WIP)** | **Blindheit durch einspaltigen Bestand:** Teile erscheinen im Gesamtbestand des Werks verfügbar, während Materialfahrer Zeit mit der Suche über Regale, Gassen und Kabinen verschwenden. | **Sichtbarkeit mehrstufiger physischer Lagerorte:** Trennt klar zwischen Bestand in **Kanban-Supermärkten**, auf **Lieferwagen** geladenem oder an **Schweißarbeitsplätzen** bereitgestelltem Material. |
+| **Planung der vorgelagerten Fertigung** | **Mündliche Dringlichkeit & Feuerwehrbetrieb:** Laserschneid-, Blechbiege- und CNC-Zerspanungszellen werden durch dringende Zettel und persönliche Anfragen unterbrochen. | **Automatisierte Pull-Nachschubsignale:** Engpassalgorithmen kategorisieren Nachbestellprioritäten (`Normal`, `Warning`, `Critical`) und gruppieren Aufgaben nach vorgelagertem Arbeitszentrum. |
+| **Kit-Kommissionierung am Arbeitsplatz & Wagenversand** | **Unvollständige Kits & Überlastung der Halle:** Wagen werden mit fehlenden Komponenten zu Stationen geschoben, was WIP-Staus und verschwendete Rüstzeit verursacht. | **Striktes Kit-Bereitschaftstor:** Kommissionierlisten erzwingen Standardpackmengen (SPQ) und kennzeichnen Wagen-Kits vor dem Versand als `Ready`, `Partly Kitted` oder `Blocked`. |
+| **Ausschuss & Bestandsgenauigkeit** | **Phantom-Bestandsabweichung:** Bestandssalden geraten binnen Tagen außer Takt mit den physischen Behältern – durch nicht erfassten Schweißausschuss, Nacharbeit und Materialersatz auf dem Shopfloor. | **Automatisierte Schichtrückmeldung:** Schichtabschlüsse und Ausschussprotokolle fließen direkt in die Verbrauchsmaschine und aktualisieren die Nettosupermarktbestände in Echtzeit. |
+| **Kosten & Datensicherheit** | **Hohe versteckte Lohnkosten oder teures SaaS:** Entweder 10+ Stunden pro Woche mit der Reparatur manueller Tabellen verschwenden oder Tausende pro Jahr für Cloud-ERP/MES-Plätze zahlen. | **Einmalkauf & 100 % lokale Privatsphäre:** Einmal zahlen, für immer auf Ihrem lokalen Desktop wiederverwenden – mit **30-tägiger Geld-zurück-Garantie** und ohne Cloud-Datenexposition. |
 
 ---
 
-## Ideale Anwender, Fertigungsrollen und Branchenanwendungsfälle
+## Für wen das ist: Fertigungsrollen, Suchszenarien & Werkstatt-Anwendungsfälle
 
-### Für wen ist das gedacht (Rolle-zu-Arbeitsablauf-Zuordnung)
+### Rollen-zu-Arbeitsablauf-Zuordnung (Finden Sie Ihren exakten Anwendungsfall)
 
-- **Produktionsplaner und Hauptdisponenten**, die eine **schichtbezogene Excel-Vorlage für Produktionsplanung** suchen, um tägliche Schweißmontageziele über robotische und manuelle Arbeitszentren auszubalancieren, ohne Materialhunger zu verursachen.
-- **Materialplaner, Bestandsanalysten und Einkäufer**, die einen **schlanken MRP- und BOM-Auflösungsrechner** benötigen, um Elternbaugruppenpläne in terminierten Komponentenbedarf und vorgelagerte Nachschubprioritäten zu übersetzen.
-- **Lean-Ingenieure, Lagerleiter und interne Logistikteams (Milk-Run)**, die einen **Kanban-Supermarkt-Verwaltungs- und Wagen-Kommissionierungstracker** suchen, um Linienkommissionierung, Behälterbeladung und Bereitstellung am Verwendungsort zu standardisieren.
-- **Schweißwerksleiter, Fertigungsmeister und Werkleiter**, die ein **Echtzeit-Dashboard für Shopfloor-Engpässe und WIP-Sichtbarkeit** benötigen, um die Kit-Bereitschaft von Arbeitsplätzen vor Schichtübergaben zu prüfen und Ist- gegen Planproduktion zu verfolgen.
-- **Fertigungsingenieure und Excel-Praktiker**, die ein **anpassbares Low-Code-Produktionssteuerungssystem** aufbauen, um die Umsetzungslücke zwischen übergeordneter ERP-Planung und physischen Shopfloor-Abläufen zu schließen.
+- **Kleine Fabrikbesitzer, Werkstattleiter & Erstplaner**, die eine **einfach zu bedienende Excel-Vorlage für Fertigungsbestand und Produktionsverfolgung** suchen: Verlassen Sie sich nicht mehr auf Whiteboard-Pläne und Erinnerungsvermögen. Fügen Sie Ihre Aufträge ein, und die vorgebaute Tabelle sagt Ihnen exakt, was heute gefertigt und kommissioniert werden soll.
+- **Produktionsplaner, Hauptdisponenten & Werksdisponenten**, die eine **Excel-Vorlage für die tägliche Produktionsplanung und einen Schichtkapazitäts-Tracker** suchen: Verteilen Sie tägliche Montageziele über robotische Schweißzellen und manuelle TIG/MIG-Kabinen und prüfen Sie die 100 %ige Komponentenverfügbarkeit, bevor Sie Arbeitsaufträge freigeben.
+- **Materialplaner, Bestandscontroller & Einkäufer**, die eine **schlanke Excel-MRP-Vorlage und einen mehrstufigen BOM-Auflösungsrechner** benötigen: Übersetzen Sie Elternbaugruppenpläne in exakten untergeordneten Teilebedarf, verfolgen Sie die Sicherheitsbestandsabdeckung und erzeugen Sie in Sekunden klare vorgelagerte Nachschubprioritäten.
+- **Lagersupervisoren, Lean-Ingenieure & interne Logistikteams (Milk-Run)**, die eine **Kanban-Bestandstabelle und eine Kommissioniercheckliste für Materialwagen am Arbeitsplatz** suchen: Standardisieren Sie Supermarkt-Behälterplätze, Behälterpackgrößen und Wagenbeladungszustände, damit Materialfahrer komplette Kits zum Verwendungsort liefern.
+- **Schweißwerksmeister, Fertigungsleiter & Schichtsupervisoren**, die ein **Work-in-Process-Verfolgungsblatt (WIP) und ein Shopfloor-Engpass-Dashboard** benötigen: Prüfen Sie die Kit-Bereitschaft der Stationen in 1 Minute bei Schichtübergaben und erfassen Sie Ist-Produktion und Ausschuss, ohne komplexe Formeln zu berühren.
+- **Industrieingenieure & Analysten der Fertigungsbetriebe**, die eine **anpassbare Microsoft-365-Dynamic-Array-Arbeitsmappe für die Produktionssteuerung** suchen: Setzen Sie ein transparentes, makrofreies (`no VBA`) lokales Entscheidungssystem ein, das die Lücke zwischen wöchentlichen ERP-Exporten und der täglichen Ausführung in der Halle überbrückt.
 
-### Zielfertigungsumgebungen und Anwendungsfälle
+### Häufige Fabrikszenarien, in denen diese Vorlage jede Woche Stunden spart
 
-Dieses Framework ist speziell für die **diskrete Fertigung mit hoher Teilevielfalt und geringem Volumen (HMLV)** und **Werkstattfertigungsumgebungen** konzipiert, insbesondere:
-- **Baugruppen für Schwermaschinen, Agrar- und Baumaschinen**
-- **Blechverarbeitung, Laserschneiden und Abkantpressen-Werkstätten**
-- **Automotive-Zulieferer Tier-2/Tier-3 für Stanzen und robotisches Schweißen**
-- **Hersteller von kundenspezifischem Baustahl, Rahmen und Gehäusen**
-
-### Systemumfang und Betriebsgrenzen
-
-Um Geschwindigkeit, Transparenz und Einführung ohne IT-Overhead zu erhalten, ist dieses Werkzeug **bewusst im Umfang begrenzt**:
-- **Was es ist:** Eine taktische Ausführungsbrücke zwischen wöchentlicher/monatlicher ERP-Planung und schichtbezogener Materialbewegung im Shopfloor.
-- **Was es nicht ist:** Es ist **kein** Ersatz für unternehmensweite Finanz-ERP-Systeme (SAP, Oracle, NetSuite), keine vollwertige Finite-Capacity-Advanced-Planning-and-Scheduling-Maschine (APS), kein PLC-gesteuerter AGV/AMR-Flottencontroller und keine automatisierte IIoT/SCADA-Maschinenüberwachungsplattform. Physisches Fabriklayout-Design, Barcode-Hardware-Integration und automatisierte Maschinentelemetrie bleiben außerhalb des nativen Umfangs der Arbeitsmappe.
+1. **Sie sind es leid, dass ERP/MRP-Software überdimensioniert ist:** Ihr Unternehmen kann sich entweder keinen $20,000+-ERP/MES-Rollout leisten, oder Ihr bestehendes ERP ist zu starr, um schichtweise Änderungen des Schweißplans und Wagen-Kits auf dem Shopfloor abzubilden.
+2. **Ihre Aufträge in der Hauptsaison wachsen schneller als Ihre Tabelle:** Das Auftragsvolumen steigt, und das manuelle Gegenprüfen von 50 Baugruppen gegen 500 einzelne lasergeschnittene, gebogene und zerspante Teile verursacht teure menschliche Fehler.
+3. **Sie brauchen ein Offline-Tool ohne Makros, das die IT nicht blockiert:** Da die Arbeitsmappe native **Excel-2021+-/Microsoft-365-Dynamic-Array-Funktionen** ohne VBA-Makros verwendet, öffnet sie sich auf Standard-Firmenrechnern sauber – ohne Sicherheits-Pop-ups oder Cloud-Anmeldeanforderungen.
 
 ---
 
-## Über die Architektur: das Tabellenkalkulationsblatt als Entscheidungsunterstützungssystem
+## Ziel-Fertigungsbranchen & Systemumfang
 
-Die meisten Werks-Tabellen scheitern, weil sie als statische Datenfriedhöfe statt als miteinander verbundene Betriebsmodelle aufgebaut sind. Dieses Projekt betrachtet industrielle Tabellen als **wiederverwendbare, ressourcenschonende Entscheidungsunterstützungssysteme**, gesteuert durch eine zentrale ingenieurtechnische Frage: 
+### Ideale Fertigungsumgebungen
+Diese Vorlage ist speziell für die **diskrete Einzelfertigung mit hoher Teilevielfalt und geringen Stückzahlen (HMLV)**, kundenspezifische Metallverarbeitung und Chargenmontage-Werkstätten konzipiert, darunter:
+- **Schweiß- & Metallverarbeitungs-Werkstattfertiger** (MIG-, TIG-, Punktschweiß- und robotische Schweißzellen)
+- **Blechverarbeitungswerkstätten** (Laserschneiden, Turret-Stanzen, CNC-Abkantpressen-Biegen)
+- **Submontage-Werke für Schwermaschinen, Agrar- & Baumaschinen**
+- **Automotive-Zulieferer Tier-2 / Tier-3 für Stanzen, Rahmen & Strukturhalterungen**
+- **Hersteller von kundenspezifischen Industriegehäusen, Gestellen, Anhängern & Konstruktionsstahl**
 
-> *„Welche exakten Shopfloor-Datenpunkte müssen jetzt verbunden werden, damit die nächste Planungs-, Kommissionierungs- oder Nachschubentscheidung ohne jede Mehrdeutigkeit getroffen werden kann?"*
+### Systemumfang & Betriebsgrenzen
+Damit die Arbeitsmappe schnell, transparent und ab Tag eins sofort von jedem bedienbar bleibt, ist sie **bewusst fokussiert**:
+- **Was es ist:** Eine Plug-and-Play-Arbeitsmappe für die taktische Ausführung, die tägliche Schichtpläne, mehrstufige BOM-Teileberechnungen, Kanban-Behälterbestände, Wagen-Kit-Listen und Schichtrückmeldungen innerhalb von Microsoft Excel verbindet.
+- **Was es nicht ist:** Keine Finanzbuchhaltung, kein vollwertiger Enterprise-ERP-Ersatz (etwa SAP oder NetSuite), kein automatischer PLC/AGV-Robotercontroller und keine Live-Maschinensensor-SCADA-Plattform.
 
-Das **Materialflusssteuerungssystem für den Shopfloor** wendet dieses Prinzip an, indem es fünf traditionell getrennte Fertigungsebenen verknüpft: **Schichtproduktionspläne → mehrstufiger BOM-Bedarf → Kanban-Supermarktbestand → Wagen-Kit-Logistik → Rückmeldung von Ist-Produktion und Ausschuss**. 
+---
 
-Durch zentralisierte Betriebsparameter, nachvollziehbare Formellogik und explizite Ausnahmekenner gibt dieses Framework Fertigungsteams sofortige Kontrolle über die Materialverfügbarkeit an der Linie—und stellt sicher, dass die richtigen gefertigten Teile mit dem richtigen Wagen am richtigen Schweißplatz ankommen, in jeder Schicht.
+## Über die Architektur und Theseus Workshop
+
+Die meisten Werks-Tabellen scheitern, weil sie als statische Datenfriedhöfe aufgebaut sind, in denen Anwender mehr Zeit mit der Reparatur defekter Zellen verbringen als mit dem Treffen operativer Entscheidungen.
+
+Dieses Projekt wurde von **[Theseus Workshop](https://theseusworkshop.com?utm_source=github&utm_medium=GitHub%20README)** unter einer strengen Engineering-Philosophie entwickelt: **„Reiner Nutzen. Null Schnickschnack.“** Jede Vorlage ist als eigenständiges, ressourcenschonendes Entscheidungsunterstützungssystem konzipiert, das von einer einzigen praxisnahen Frage geleitet wird:
+
+> *"Welche exakten operativen Kennzahlen müssen jetzt verbunden werden, damit ein Geschäftsinhaber oder Planer seine Daten einfügen und in unter 60 Sekunden die richtige Planungs-, Beschaffungs- oder Preisentscheidung treffen kann?"*
+
+Durch die Verknüpfung von **Schichtproduktionsplänen → mehrstufigem BOM-Bedarf → Kanban-Supermarktbestand → Wagen-Kit-Logistik → Rückmeldung von Ist-Produktion und Ausschuss** in einer automatisierten Berechnungsschleife bietet dieses Toolkit Ihrer Werkstatt Sichtbarkeit auf Enterprise-Niveau—innerhalb einer vertrauten Excel-Datei, die für immer Ihnen gehört.
+
+### Weitere Plug-and-Play-Geschäftsentscheidungs-Toolkits und Excel-Vorlagen entdecken
+
+Suchen Sie weitere automatisierte Microsoft Excel-Modelle ohne VBA für Fertigung, Kostenschätzung, Cashflow-Kontrolle und Betriebsmanagement?
+
+- 🛒 **[Diese Shopfloor-Materialflusssteuerungs- und MRP-Excel-Vorlage (.xlsx) auf Gumroad herunterladen (30 Tage Geld-zurück-Garantie)](https://theseusworkshop.com/l/qnojv?utm_source=github&utm_medium=GitHub%20README)**
+- 🌐 **[Den offiziellen Theseus Workshop-Shop (theseusworkshop.com) besuchen, um alle Geschäftsentscheidungs-Excel-Toolkits, Kostenschätzer und Finanz-Dashboards zu durchstöbern](https://theseusworkshop.com?utm_source=github&utm_medium=GitHub%20README)**
+- 🖥️ **[Die kostenlose interaktive Browser-Demo des Materialflusssteuerungssystems für den Shopfloor testen](https://hyvoid.github.io/shop-floor-mrp-kanban-excel-system/)**
+
 
 ## Technische Details
 
@@ -1040,7 +1087,7 @@ Die Formeln in diesem README sind Referenzimplementierungen und Konstruktionsmus
 Prüfen Sie vor dem betrieblichen Rollout, dass:
 
 1. Jede aktive Baugruppe eines Produktionsplans eine gültige BOM hat.
-2. Jedes BOM-Teil auf ein registriertes Teil mit gültiger Quelle und Ort verweist.
+2. Jedes BOM-Teil verweist auf ein registriertes Teil mit gültiger Quelle und gültigem Ort.
 3. Jede Produktionsanforderung bis zu ihrem Plan und ihrer BOM-Beziehung zurückverfolgbar ist.
 4. Die Bestandsverfügbarkeit eine konsistente Behandlung von physischem Bestand, Reservierungen, Zugangsmengen und Korrekturen verwendet.
 5. Jeder Produktionsbericht höchstens einmal zum Bestandsverbrauch beiträgt.
@@ -1167,7 +1214,7 @@ Der Plan erzeugt einen Bedarf von 80 Einheiten P-1001 und 40 Einheiten P-1002. B
 
 Angenommen, die konfigurierte Standardpackmenge für P-1001 beträgt 10 Einheiten. Wenn kein zusätzlicher Bedarf oder keine Bestandsbindung die Berechnung ändert, kann der unmittelbare Bruttoengpass auf ein Standardpaket von 10 Einheiten gerundet werden.
 
-Damit ist nicht automatisch bewiesen, dass die Schicht bereit ist. Der Planer muss auch die Sicherheitsbestandspolitik, den Bedarf anderer Stationen, bestätigte Eingänge, Reservierungen und berücksichtigen, ob das physische Material vor Produktionsbeginn geliefert werden kann.
+Damit ist nicht automatisch bewiesen, dass die Schicht bereit ist. Der Planer muss auch die Sicherheitsbestandspolitik, den Bedarf anderer Stationen, bestätigte Eingänge und Reservierungen berücksichtigen sowie prüfen, ob das physische Material vor Produktionsbeginn geliefert werden kann.
 
 Die betriebliche Empfehlung lautet daher, P-1001 für den Nachschub zu kennzeichnen, Quelle und Liefertermin zu prüfen und das vollständige Stations-Kit vor dem Versand zu bewerten. Sobald das vorgelagerte Material eingegangen und der Wagen geliefert ist, kann die Produktion unter den normalen Freigabekontrollen der Werkstatt fortgesetzt werden.
 
@@ -1242,25 +1289,32 @@ Diese Grenzen sollten bei der Entscheidung berücksichtigt werden, ob das Framew
 
 </details>
 
-## Die Geschäftslogik und die Methodik
-
-Das System basiert auf einem einfachen betrieblichen Prinzip: Produktionspläne sollen Materialanforderungen erzeugen, die Materialverfügbarkeit soll die Ausführung begrenzen, und die tatsächliche Produktion soll in die nächste Planungsentscheidung zurückfließen.
-
-- **BOM-gesteuerte Bedarfsübersetzung** wandelt geplante Schweißbaugruppen in Einzelteilanforderungen um. Dadurch werden Komponentenengpässe sichtbar, die in einem reinen Baugruppenplan verborgen bleiben, und Planer erhalten eine klarere Basis zur Freigabe der Produktion.
-- **Abgleich der Bestandsposition** unterscheidet physischen Bestand von bereits gebundenem oder erwartetem Material. Das senkt das Risiko, denselben Bestand für mehrere Produktionsanforderungen zu Verfügung zu halten.
-- **Schwellenbasierter Nachschub** vergleicht Materialanforderungen mit der definierten Bestandsposition und hebt Engpässe gemäß den konfigurierten Betriebsregeln hervor. Das Ergebnis ist ein priorisiertes vorgelagertes Nachschubsignal statt einer generischen Bestandswarnung.
-- **Behälterbasierte interne Logistik** verknüpft Materialkommissionieranforderungen mit Wagenzuweisungen, Lieferzielen, Verpackungsbeschränkungen und Kit-Bereitschaft. So kann sich das Logistikteam auf das Material konzentrieren, das an jedem Produktionsarbeitsplatz benötigt wird.
-- **Rückmeldung des Ist-Ausstoßes** nutzt Produktionsberichte und die genehmigte Verbrauchspolitik, um die Materialposition zu aktualisieren. Die Werkstatt kann ihre Nachschubprioritäten dann anhand aktueller Betriebsinformationen überarbeiten, statt sich allein auf den ursprünglichen Plan zu stützen.
-
-Zusammen verbinden diese Methoden Planung, Bestand, Logistik und Produktionsberichterstattung zu einem wiederholbaren täglichen Steuerungsprozess. Das Framework verbessert Sichtbarkeit und Entscheidungskonsistenz; seine Zuverlässigkeit hängt weiterhin von präzisen Stammdaten, disziplinierten physischen Bestätigungen und validierten Berechnungsregeln ab.
+--
 
 ## Weitere Werkzeuge dieser Reihe
 
 Entdecken Sie weitere schlanke Fertigungs- und Betriebsentscheidungswerkzeuge im GitHub-Profil des Projekteigentümers:
 
-- [HyVoid auf GitHub](https://github.com/HyVoid) — Tabellenwerkzeuge für Fertigung, Planung und Betrieb.
+- **[project-time-tracking-excel-template](https://github.com/HyVoid/project-time-tracking-excel-template)** — Welche Projekte driften bei Zeitkosten oder Marge? — Analysieren Sie die Verteilung der Projektpersonalkosten und die Rentabilität über aktive Projektportfolios hinweg.
+- **[Caf-audit-tool-for-efficient-reviews](https://github.com/HyVoid/Caf-audit-tool-for-efficient-reviews)** — Welche operative Dimension kostet den meisten Umsatz, und erfordert das finanzielle Leck sofortiges Eingreifen? — Wandeln Sie strukturierte Café-Beobachtungen in einen gewichteten Diagnosewert, eine Schätzung finanzieller Verluste und eine priorisierte Korrekturmaßnahmenliste um.
+- **[Restaurant-Menu-Configuration-Modifier-Pricing-Toolkit](https://github.com/HyVoid/Restaurant-Menu-Configuration-Modifier-Pricing-Toolkit)** — Ist die Speisekarte über alle Optionskombinationen und Größen hinweg konsistent kalkuliert, oder warten versteckte Preisfehler darauf, aufzutauchen? — Zentralisieren Sie Speisekartenkonfiguration, Options-Preisregeln und POS-fähige Menüdaten in einer einzigen gesteuerten Single Source of Truth.
+- **[wedding-planner](https://github.com/HyVoid/wedding-planner)** — Welche Hochzeitsplanungs-Aufgaben, Kosten und Zeitpläne erfordern Koordination? — Koordinieren Sie Lieferantenmanagement, Aufgabenverfolgung und Budgetkontrolle über Hochzeitsplanungs-Workflows hinweg.
+- **[manufacturing-capacity-planning-template](https://github.com/HyVoid/manufacturing-capacity-planning-template)** — Werden die Personalkapazitäten effizient genutzt, oder benötigt der Betrieb eine andere Besetzung oder Planung? — Wandeln Sie Produktionspläne und Personaldaten in Kapazitätsauslastung, Personalkostenverteilung und Besetzungsentscheidungen um.
+- **[cin7-excel-reporting-template](https://github.com/HyVoid/cin7-excel-reporting-template)** — Was sagen die operativen Cin7-Daten über die Geschäftsleistung aus? — Übersetzen Sie Cin7-Bestands- und Betriebsdaten in umsetzbare Einblicke in die Geschäftsleistung.
+- **[employee-performance-dashboard-excel](https://github.com/HyVoid/employee-performance-dashboard-excel)** — Welche Mitarbeiter und Projekte sind gefährdet, Lieferziele zu verpassen, und wo sollte das Management eingreifen, bevor Fristen verstreichen? — Verknüpfen Sie Jahresarbeitsplanung, Umsetzungsverfolgung, gewichtete Leistungsbewertung und Managementberichte in einem kontinuierlichen Betriebsworkflow.
+- **[rental-property-management-excel-template](https://github.com/HyVoid/rental-property-management-excel-template)** — Welche Einheiten verlieren Umsatz durch unentdeckten Leerstand, und welche Mieterwechsel erfordern sofortiges Handeln? — Wandeln Sie Buchungsdaten in Echtzeit-Belegungsstatus, Leerstands-Intelligenz und operationale Warnungen für ein gesamtes Mietportfolio um.
+- **[workforce-planning-payroll-excel-dashboard](https://github.com/HyVoid/workforce-planning-payroll-excel-dashboard)** — Verbraucht die Organisation die jährliche Personalkapazität schneller als geplant, und welche Abteilungen benötigen ein Eingreifen, bevor die Überstundenkosten ausufern? — Konsolidieren Sie Lohnausgaben, jährliche Vertragstage, Überstundenquoten und Personaleinsatz in einem abteilungsübergreifenden Kapazitätsplanungsframework.
+- **[warehouse-billing-excel-template](https://github.com/HyVoid/warehouse-billing-excel-template)** — Sind Lagerrechnungspositionen korrekt und auf zugrunde liegende Betriebsaufzeichnungen rückführbar? — Berechnen Sie Lager-, Handlings- und Transportgebühren zu prüffähigen Kundenabrechnungen.
+- **[commercial-hvac-plumbing-bid-estimator](https://github.com/HyVoid/commercial-hvac-plumbing-bid-estimator)** — Was ist ein vertretbarer, prüffähiger Angebotspreis für dieses gewerbliche MEP-Projekt? — Schätzen und verfolgen Sie die Kosten gewerblicher MEP-Projekte von der Mengenermittlung bis zur finalen Angebotseinreichung.
+- **[landed-cost-calculator-excel](https://github.com/HyVoid/landed-cost-calculator-excel)** — Warum weichen die SKU-spezifischen Landed Costs aus meinem ERP von der API des Spediteurs ab, und welches Verteilungsverfahren verursacht die Margenerosion? — Stimmen Sie Landed-Cost-Berechnungen mit einer Praxisvorlage ab, um SKU-spezifische Kostenverteilungsunterschiede bis zu ihrer zugrunde liegenden Buchhaltungslogik zurückzuverfolgen.
+- **[hoa-budget-accounting-spreadsheet](https://github.com/HyVoid/hoa-budget-accounting-spreadsheet)** — Werden die Mittel unserer Eigentümergemeinschaft (HOA) korrekt zugeteilt, und halten wir uns an unseren Etat? — Kategorisieren Sie Transaktionen und erstellen Sie Etatabweichungsberichte für das Finanzmanagement der Eigentümergemeinschaft.
+- **[homeowner-management-excel-template](https://github.com/HyVoid/homeowner-management-excel-template)** — Wie hoch sind meine tatsächlichen Gesamtkosten des Eigenheimbesitzes, einschließlich aller versteckten Ausgaben? — Berechnen Sie die Gesamtkosten des Eigenheimbesitzes, indem Sie Hypothek, Nebenkosten, Wartung und Kapitalinvestitionen zusammenführen.
+- **[crew-scheduling-excel-template](https://github.com/HyVoid/crew-scheduling-excel-template)** — Wird mein aktuelles Team die Arbeitslast bewältigen können, wenn sich Projektdaten verschieben und überlappen? — Prognostizieren Sie Teambedarf und Besetzungslücken über einen 12-Monats-Horizont, um Kapazitätsplanungsentscheidungen zu unterstützen.
+- **[Schedule-Driven-Construction-Cash-Curve-Workbook](https://github.com/HyVoid/Schedule-Driven-Construction-Cash-Curve-Workbook)** — Wie werden Cashflow und geplanter Fortschritt meines Bauprojekts im Zeitverlauf auf Basis des Terminplans verlaufen? — Wandeln Sie Bau-Terminpläne und Positionsverzeichnisse in automatisierte S-Kurven, zeitphasige Kostenprognosen und Planfortschritts-Tracker um.
 
 ## Lizenz
 
 Dieses Projekt ist unter der **Apache-Lizenz 2.0** lizenziert. Die maßgeblichen Bedingungen finden Sie in der Datei `LICENSE` des Repositorys.
+
+
 
