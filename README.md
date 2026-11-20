@@ -36,6 +36,14 @@ If you are searching for a **manufacturing inventory tracker Excel template**, *
 | **Unrecorded Welding Scrap Ruins Inventory Counts Over Time** | **Planned vs. Actual Production & Scrap Backflush Calculator** | Deducts both completed good assemblies and reported shop-floor scrap from your live inventory balances at the end of every shift, keeping spreadsheet numbers aligned with physical bin counts. |
 | **Supervisors Spend Hours Updating Broken Formulas Across Tabs** | **Visual Shop-Floor Production Control & Shortage Dashboard** | Consolidates shift plan completion rates, top component bottlenecks, Kanban stockout risks, and internal delivery tasks onto one automatic summary screen. |
 
+## Spreadsheet Preview
+
+Want to take a closer look before downloading? You can preview the spreadsheet in Google Sheets to explore its layout, structure, and calculation logic.
+
+**[View Spreadsheet Preview on Google Sheets](https://docs.google.com/spreadsheets/d/1N-N2VQVZUTa1m0OsQ1CC3GZeBjZcTMWj/edit?usp=sharing&ouid=108770714531989318327&rtpof=true&sd=true)**
+
+> **Note on Compatibility:** The Google Sheets preview may display occasional `#NAME?` errors or formula warnings due to differences between Google Sheets and Microsoft Excel formula compatibility. These are preview-only compatibility issues and do not affect the functionality of the original Excel workbook. For the intended formula behavior and full functionality, please download and open the `.xlsx` file in Microsoft Excel.
+
 ---
 
 ## Quick Start Tutorial: How to Run Production Planning & Material Kitting in 1 Minute
