@@ -1320,6 +1320,24 @@ Explore additional lightweight manufacturing and operational decision-support to
 - **[crew-scheduling-excel-template](https://github.com/HyVoid/crew-scheduling-excel-template)** — Will my current crew be able to handle the workload when project dates shift and overlap? — Forecast crew demand and staffing gaps across a 12-month horizon to support capacity planning decisions.
 - **[Schedule-Driven-Construction-Cash-Curve-Workbook](https://github.com/HyVoid/Schedule-Driven-Construction-Cash-Curve-Workbook)** — How will my construction project's cash flow and planned progress unfold over time based on the schedule? — Convert construction schedules and bid-item registers into automated S-curves, time-phased cost forecasts, and planned progress trackers.
 
+## Questions, Feedback & Product Updates
+
+This repository is part of the Theseus Workshop collection of lightweight, reusable business decision-support tools. Feedback is welcome, including questions about how to use the workbook, workflow gaps, reproducible calculation problems, and ideas for improving the tool.
+
+- **Questions and usage help:** [Open a discussion](https://github.com/HyVoid/business-decision-toolbox/discussions/categories/questions)
+- **Ideas and workflow suggestions:** [Share an idea](https://github.com/HyVoid/business-decision-toolbox/discussions/categories/ideas)
+- **Product updates:** [Follow product updates](https://github.com/HyVoid/business-decision-toolbox/discussions/categories/product-updates)
+- **Technical bugs:** Use the **Report a bug** issue form in this repository. Please include the workbook / tool version, the relevant workflow area, expected vs. actual result, and reproducible steps.
+
+
+Do not submit real production orders, customer part numbers, supplier terms, factory layouts, or confidential manufacturing BOMs. Use made-up part IDs and a small synthetic BOM.
+
+## Privacy & Data Handling Notice
+
+Please use synthetic or adequately de-identified examples when reporting an issue. Do not publish raw workbooks, customer / supplier / employee / tenant / property / investor / production / payroll / transaction records, confidential commercial data, credentials, or screenshots containing sensitive information in public GitHub issues or discussions.
+
+For browser-based tools, do not infer data storage, transmission, or retention behavior from the user interface alone. Review the current implementation and applicable data-handling notes before testing with real business data. When uncertain, use synthetic data only.
+
 ## License
 
 This project specifies the **Apache License 2.0**. Refer to the repository's `LICENSE` file for the governing terms.
